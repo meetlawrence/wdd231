@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231 – Web Frontend Development 1 – Lawrence Okon</title>
+    <meta name="description" content="Lawrence Okon | Web Frontend Development 1 | WDD 231 Course Homepage">
+    <meta name="author" content="Lawrence Okon">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/base-small.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+
 </head>
-<body>
-    <h1>Lawrence Itam Okpo</h1>
+
+<body class="home">
+    <header>
+        <div class="header-bar">
+            <span id="course-title">WDD 231 - Web Frontend Development 1 </span>
+            <nav class="navigation">
+                <button id="menu" title="Menu"></button>
+                
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Chamber Project</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Home</h1>
+        <section class="container-grid">
+
+            <!-- Left Card -->
+            <section class="card1">
+                <h2 class="card-title">About Me</h2>
+
+                <div class="about">
+                    <div class="about-text">
+                        <p>
+                            Hello! My name is Lawrence Okon, and I am a dedicated student at BYU-Pathway. I am
+                            passionate
+                            about web development and eager to learn more about creating dynamic and engaging websites.
+                            In my free time, I enjoy playing the piano, reading, and exploring new technologies.
+                            <br> <br>Studying with BYU has strengthened my programming foundation through courses like
+                            Programming Building Blocks,
+                            Functions, Classes and Web Development etc. I am now looking for internship opportunities or
+                            junior developer roles to apply and grow these skills.
+                        </p>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Right Card -->
+            <section class="card2">
+                <h2 class="card-title">My Photo</h2>
+                <div class="photo">
+                    <div class="about-photo">
+                        <img src="images/profile.webp" width="260" height="320" alt="Lawrence's portrait">
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="card3">
+            <h2 class="card-title">Web Certificate Courses</h2>
+            <div class="filters">
+                <button id="all-btn">All</button>
+                <button id="cse-btn">CSE</button>
+                <button id="wdd-btn">WDD</button>
+            </div>
+
+            <div id="course-list"></div>
+
+            <div id="total-credits"></div>
+        </section>
+
+        
+
+    </main>
+
+    <footer>
+        
+        <div class="social-icons">
+            <a href="https://tiktok.com" class="icon" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://github.com" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" class="icon" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        
+        <div class="footer1">
+            <p>
+                &copy; <span id="currentyear"></span>
+                <span class="dot">—</span>
+                Lawrence Okon
+                <span class="dot">—</span>
+                Nigeria
+            </p>
+
+            <p id="lastmodified" class="lastmod" aria-live="polite"></p>
+        </div>
+    </footer>
 </body>
+
 </html>
