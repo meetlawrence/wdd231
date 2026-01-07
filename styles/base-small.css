@@ -259,14 +259,13 @@ body.home {
 }
 
 .social-icons a {
-    border: 1px solid #ccc;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 70px;
     height: 70px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     backdrop-filter: blur(12px);
     transition: all 0.3s ease;
