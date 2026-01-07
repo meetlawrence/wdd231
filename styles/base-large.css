@@ -108,6 +108,11 @@ body.home {
     text-align: center;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
+
+h1 {
+    color: var(--accent);
+}
+
 /* Container & Grid */
 .container {
     max-width: var(--maxw);
@@ -241,6 +246,16 @@ body.home {
     border-color: var(--accent);
 } 
 
+#total-credits{
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    color: var(--accent);
+}
+
 /* Social & Footer */
 .social-icons {
     display: flex;
@@ -271,6 +286,7 @@ body.home {
     transform: translateY(-3px);
     border: none;
 } 
+
 
 .footer1 {
     background: var(--nav);
