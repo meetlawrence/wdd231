@@ -4,7 +4,7 @@
     --header: #2A2F2D;
     --accent: #C89A5B;
     --accent1: #5c4423;
-    --bg: #253844;
+    --bg: #000000;
     --card1: #2A2F2D;
     --card2: #000000;
     --ink: #ffffff;
@@ -35,7 +35,7 @@ body {
 }
 
 body.home {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)), url("../images/bg3.JPG");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,1)), url("../images/bg3.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@ body.home {
     margin: 1rem;
     text-align: center;
     font-weight: 900;
-    color: var(--accent);
+    color: var(--ink);
     font-size: clamp(1.1rem, 2vw + .6rem, 1.6rem);
 }
 /* --- Mobile Navigation & Hamburger --- */
@@ -174,8 +174,8 @@ body.home {
 
 /* Course List & Filters */
 #course-list {
-    display: flex;
-    flex-direction: column; /* Stacked on mobile */
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr; /* Stacked on mobile */
     gap: 1rem;
     margin-top: 1rem;
 }
