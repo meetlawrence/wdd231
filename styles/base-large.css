@@ -178,19 +178,26 @@ body.home {
 /* Course List & Filters */
 #course-list {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr; /* Stacked on mobile */
+    grid-template-columns: 1fr; /* Stacked on mobile */
     gap: 1rem;
     margin-top: 1rem;
 }
 
 .course-card {
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 8px;
     background: rgba(50, 36, 13, 0);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
     box-shadow: var(--shadow);
     text-align: center;
+
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    max-height: 2px;
 }
 
 .course-card.completed {
@@ -295,6 +302,12 @@ body.home {
    ========================================= */
 
 @media (min-width: 768px) {#menu { display: none; } /* Hide burger */
+
+   #course-list {
+        /* This forces exactly 3 cards per line */
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1.5rem; /* Slightly larger gap for desktop */
+    }
 
     .navigation ul {
         display: flex !important; /* Force show */
