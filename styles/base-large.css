@@ -11,7 +11,7 @@
     --muted: wheat;
     --border: #E1E7EF;
     --radius: 12px;
-    --shadow: 0 1px 3px rgba(205, 184, 120, 0.537), 0 6px 18px rgba(240, 237, 237, 0.06);
+    --shadow: 0 1px 3px rgba(255, 255, 255, 0.537), 0 6px 18px rgba(240, 237, 237, 0.06);
     --maxw: 1100px;
     --link: wheat;
     --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -185,14 +185,14 @@ body.home {
     /* border: 1px solid #ccc; */
     border-radius: 8px;
     background: rgba(50, 36, 13, 0);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: var(--shadow);
     text-align: center;
 }
 
 .course-card.completed {
-    background-color: var(--accent1);
+    background-color: #2A2F2D;
     color: white;
 }
 
