@@ -35,7 +35,7 @@ body {
 }
 
 body.home {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,1)), url("../images/bg3.JPG");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,1)), url("../images/bg3.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
