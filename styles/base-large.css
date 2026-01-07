@@ -287,6 +287,13 @@ body.home {
     border-top: 1px solid rgba(255, 255, 255, .08);
 }
 
+ .lastmod {
+    color: var(--accent);
+    font-weight: 300;
+    letter-spacing: .2px;
+
+} 
+
 /* =========================================
    DESKTOP STYLES (Media Query)
    ========================================= */
