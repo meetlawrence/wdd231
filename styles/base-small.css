@@ -275,13 +275,13 @@ body.home {
     
 }
 
-
 .social-icons a:hover {
     background-color: var(--accent);
     color: var(--ink2);
     transform: translateY(-3px);
     border: none;
 } 
+
 
 
 .footer1 {
