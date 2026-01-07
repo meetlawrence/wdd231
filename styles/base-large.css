@@ -182,7 +182,7 @@ body.home {
 
 .course-card {
     padding: 1.5rem;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 8px;
     background: rgba(50, 36, 13, 0);
     backdrop-filter: blur(12px);
@@ -218,7 +218,7 @@ body.home {
     cursor: pointer;
     background: rgba(50, 36, 13, 0);
     backdrop-filter: blur(12px);
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     transition: all 0.3s ease;
 }
 
