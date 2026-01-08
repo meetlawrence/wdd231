@@ -268,7 +268,7 @@ body.home {
     align-items: center;
     width: 70px;
     height: 70px;
-    color: #ffffff;
+    /* color: #ffffff; */
     text-decoration: none;
     backdrop-filter: blur(12px);
     transition: all 0.3s ease;
@@ -283,6 +283,12 @@ body.home {
     transform: translateY(-3px);
     border: none;
 } 
+
+/* This part helps me manipulate the color and size of the svg */
+.social-icons img {
+    filter: brightness(0) invert(1);
+    width: 50px;
+}
 
 
 
