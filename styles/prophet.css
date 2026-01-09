@@ -1,0 +1,76 @@
+:root {
+    --accent1: #6484ab;
+    --bg: #253844;
+    --ink: #ffffff;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .05), 0 6px 18px rgba(0, 0, 0, .06);
+    --maxw: 1100px;
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--bg);
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    color: var(--header);
+    text-align: center;
+    color: var(--ink);
+    font-weight: 900;
+}
+
+#cards {
+    display: grid;
+    /* This creates columns at least 320px wide, filling the rest of the space */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: #849ca8;
+    grid-gap: 20px;
+    align-items: center;
+    padding: 1rem;
+}
+
+section {
+    border: 4px solid #527eb9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 1.2rem;
+}
+
+section img {
+    padding-top: 1rem;
+    width: 70%;
+    height: auto;
+
+}
+
+section .label {
+    font-weight: bold;
+    color: var(--accent1);
+}
+
+section p {
+    font-size: 0.8rem;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    color: var(--ink);
+}
