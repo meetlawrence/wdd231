@@ -1,0 +1,28 @@
+{
+    "family_name": "Itam",
+    "move_in_date": "2024-06-24",
+    "number_of_people": 4,
+    "visited_bishopric": true,
+    "family_members": [
+        {
+            "name": "Victor",
+            "gender": "Male",
+            "birtdate": "2002-09-05"
+        },
+        {
+            "name": "Helen",
+            "gender": "Female",
+            "birtdate": "2006-05-12"
+        },
+        {
+            "name": "Marvellous",
+            "gender": "Female",
+            "birtdate": "2013-02-21"
+        },
+        {
+            "name": "Lawrence",
+            "gender": "Male",
+            "birtdate": "200-09-23"
+        }
+    ] 
+}
