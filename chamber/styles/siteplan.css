@@ -1,20 +1,19 @@
 /* Root Library - Stays global */
 :root {
     --nav: #000000;
-    --header: #01986b;
+    --header: #019877;
     --footer: #101727;
     --accent: #04836E;
     --accent1: #009865;
-    --bg: #000000;
-    --card1: #2A2F2D;
-    --card2: #000000;
+    --bg: ;
+    --card1: ;
+    --card2: ;
     --ink: #ffffff;
-    --muted: #f5deb3;
-    --border: #E1E7EF;
+    --border: ;
     --radius: 12px;
     --shadow: 0 1px 3px rgba(255, 255, 255, 0.537), 0 6px 18px rgba(240, 237, 237, 0.06);
     --maxw: 1100px;
-    --link: rgb(68, 46, 4);
+    --link: ;
     --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -71,8 +70,8 @@ margin: auto;
 
 
 h2 {
-color: #16320d;
-border-bottom: 2px solid #A68D4A;
+color: #000;
+border-bottom: 2px solid var(--footer);
 padding-bottom: 0.3rem;
 }
 
@@ -113,6 +112,6 @@ box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 
-.color-box.green { background-color: #16320d; }
-.color-box.offwhite { background-color: #E0DED1; color: #000; }
-.color-box.gold { background-color: #A68D4A; color: #000; }
+.color-box.green { background-color: var(--header); }
+.color-box.offwhite { background-color: var(--footer); color: var(--ink); }
+.color-box.gold { background-color: var(--accent); color: #000; }
