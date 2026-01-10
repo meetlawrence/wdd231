@@ -1,0 +1,50 @@
+
+/* =========================================
+   DESKTOP STYLES (Media Query)
+   ========================================= */
+
+@media (min-width: 768px) {#menu { display: none; } /* Hide burger */
+
+   #course-list {
+        /* This forces exactly 3 cards per line */
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1.5rem; /* Slightly larger gap for desktop */
+    }
+
+    .navigation ul {
+        display: flex !important; /* Force show */
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+        padding: 0.5rem 0;
+    }
+
+    .navigation a {
+        border: none;
+        padding: 0.5rem 0;
+    }
+
+    .navigation a:hover {
+        color: var(--accent);
+        transform: translateY(-2px);
+        font-style: italic;
+    }
+
+    .container-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .social-icons {
+    padding-top: 4rem;
+}
+
+
+}
+
