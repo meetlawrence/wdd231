@@ -10,6 +10,7 @@
     --card1: ;
     --card2: ;
     --ink: #ffffff;
+    --ink2: #000000;
     --border: ;
     --radius: 12px;
     --shadow: 0 1px 3px rgba(255, 255, 255, 0.537), 0 6px 18px rgba(240, 237, 237, 0.06);
@@ -37,7 +38,8 @@ header {
 }
 
 .header-bar {
-    background: rgba(22, 50, 13, 0.3);
+    display: flex;
+    background: rgba(239, 243, 237, 0.3);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -45,15 +47,130 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    height: 60px;
+    height: 80px;
     width: 100%;
-    z-index: 20;
+    /* z-index: 20; */
+    align-items: center;
+    justify-content: space-between;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
 }
 
 .header-flex {
     display: flex;
     gap: 0.5rem;
+    /* padding-left: 2rem; */
+    padding-bottom: 0.5rem;
+    align-items: center;
+    margin: 1rem;
 }
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column; /* Stacks the spans vertically */
+    line-height: 1.1;       /* Pulls the lines slightly closer together */
+    text-align: left;
+}
+
+.title-main {
+    font-weight: 800;       /* Makes "Calabar Chamber" bold */
+      /* Adjust size as needed */
+    color: var(--ink2);      /* Or your preferred dark color */
+    text-transform: uppercase; /* Optional: makes it look more professional */
+    /* letter-spacing: 0.5px; */
+}
+
+.title-sub {
+    font-weight: 400;       /* Normal weight for "of Commerce" */
+    font-size: 0.8rem;      /* Smaller size */
+    color: var(--accent);   /* Optional: use your accent color for contrast */
+}
+
+/* Ensure the logo and text are still aligned in the middle of the bar */
+.header-flex {
+    display: flex;
+    align-items: center; 
+    gap: 0.75rem;
+}
+
+/* --- Mobile Navigation & Hamburger --- */
+.navigation {
+    position: static;
+    /* background: var(--nav); */
+    /* width: 100%; */
+    display: flex;
+    justify-content: flex-end;
+    /* flex-direction: column; */
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--accent);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+#menu::before { content: "☰"; }
+#menu.open::before { content: "❌"; }
+
+.navigation ul {
+    display: none; /* Hidden on mobile by default */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: var(--ink);
+    flex-direction: column;
+    align-items: flex;
+    
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    overflow: hidden;
+    animation: slideDown 0.3s ease-out;
+}
+
+.navigation ul.open {
+    display: flex; /* Shown when toggled */
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -10px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+.navigation a {
+    display: block;
+    color: var(--footer);
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+}
+
+.navigation a.active {
+    align-content: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #009865;
+    border-radius: 8px;
+    color: var(--ink);
+    font-weight: 900;
+    border-bottom: 2px solid var(--accent);
+}
+
+
 
 .logo-container {
     background-color: var(--accent);
@@ -122,12 +239,6 @@ ul, ol {
     
 }
 
-.social-icons a:hover {
-    background-color: var(--accent);
-    color: var(--ink2);
-    transform: translateY(-3px);
-    border: none;
-} 
 
 /* This part helps me manipulate the color and size of the svg */
 .social-icons img {
