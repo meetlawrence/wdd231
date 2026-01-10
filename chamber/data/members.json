@@ -1,0 +1,85 @@
+{
+    "company": [
+        {
+            "name": "Calabar Tech Hub",
+            "address": "Cross Library Complex",
+            "number": "+234 81 234 0099",
+            "email": "info@techhub.ng",
+            "website": "www.calabartechhub.org",
+            "image": "images/techhub.png",
+            "level": "Silver"
+        },
+        {
+            "name": "Cross River Microfinance Bank",
+            "address": "12 Ekpo Abasi Street Calabar",
+            "number": "+234 81 234 6799",
+            "email": "contact@crmfb.com",
+            "website": "www.crmfb.com",
+            "image": "images/crmfb.png",
+            "level": "Member"
+        },
+        {
+            "name": "Tinapa Business Resort",
+            "address": "Adiabo, Calabar Municipal",
+            "number": "+234 80 334 5566",
+            "email": "info@tinapa.com.ng",
+            "website": "www.tinaparesort.com",
+            "image": "images/tinapa.png",
+            "level": "Gold"
+        },
+        {
+            "name": "Marina Resort",
+            "address": "The Waterfront, Calabar South",
+            "number": "+234 80 221 1144",
+            "email": "tourism@crossriverstate.gov.ng",
+            "website": "www.visitcalabar.ng",
+            "image": "images/marina.png",
+            "level": "Silver"
+        },
+        {
+            "name": "Transcorp Hotels Calabar",
+            "address": "10 Murtala Mohammed Highway",
+            "number": "+234 80 667 8899",
+            "email": "info.calabar@transcorphotels.com",
+            "website": "www.transcorphotels.com",
+            "image": "images/transcorp.png",
+            "level": "Gold"
+        },
+        {
+            "name": "The Moorhouse Hotel",
+            "address": "MCC Road, Calabar",
+            "number": "+234 81 445 5667",
+            "email": "reservations@moorhousecalabar.com",
+            "website": "www.moorhousecalabar.com",
+            "image": "images/moorhouse.png",
+            "level": "Member"
+        },
+        {
+            "name": "General Electric (GE) Factory",
+            "address": "Calabar Free Trade Zone",
+            "number": "+234 81 000 9988",
+            "email": "nigeria.info@ge.com",
+            "website": "www.ge.com/ng",
+            "image": "images/ge.png",
+            "level": "Gold"
+        },
+        {
+            "name": "Sparklight Hospital",
+            "address": "Federal Housing Estate, Calabar",
+            "number": "+234 80 555 4433",
+            "email": "admin@sparklighthospital.com",
+            "website": "www.sparklighthospital.com",
+            "image": "images/sparklight.png",
+            "level": "Silver"
+        },
+        {
+            "name": "Hit FM Calabar",
+            "address": "Ajah Close, MCC Road",
+            "number": "+234 81 777 6655",
+            "email": "info@hitfmcalabar.com",
+            "website": "www.hitfmcalabar.com",
+            "image": "images/hitfm.png",
+            "level": "Member"
+        }
+    ]
+}
