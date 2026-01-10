@@ -7,7 +7,7 @@ const navLinks = document.querySelectorAll('.navigation a');
 hamButton.addEventListener('click', () => {
     mainNav.classList.toggle('open');
     hamButton.classList.toggle('open');
-    document.body.style.overflow = mainNav.classList.contains('open') ? 'hidden' : 'auto';
+    // document.body.style.overflow = mainNav.classList.contains('open') ? 'hidden' : 'auto';
 });
 
 /* CLOSE MENU WHEN A LINK IS CLICKED */
