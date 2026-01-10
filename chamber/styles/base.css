@@ -35,7 +35,7 @@ h1, h2, h3 {
 main {
     padding: 2rem;
     /* max-width: 900px; */
-    margin-top: 80px; /* Offset for fixed header */
+    margin-top: 2rem; /* Offset for fixed header */
 }
 
 /* FIXED HEADER BAR */
