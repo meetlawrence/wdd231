@@ -1,55 +1,63 @@
+/* DESKTOP NAVIGATION LAYOUT */
+@media (min-width: 768px) {
+    
+    /* Hide Mobile Menu Toggle */
+    #menu { 
+        display: none; 
+    }
 
-/* =========================================
-   DESKTOP STYLES (Media Query)
-   ========================================= */
-
-@media (min-width: 768px) {#menu { display: none; } /* Hide burger */
-
+    /* Horizontal Menu List */
     .navigation ul {
-        display: flex !important; /* Force display on desktop */
-        flex-direction: row;      /* Side-by-side links */
-        position: static;         /* Remove the absolute positioning */
-        transform: none;          /* Remove the centering transform */
-        background: transparent;  /* Remove mobile background color */
-        width: auto;              /* Only take as much space as needed */
-        gap: 1.5rem;              /* Space between links */
-        padding-right: 2rem;      /* Gap from the right edge */
-        animation: none;          /* Disable mobile dropdown animation */
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        transform: none;
+        background: transparent;
+        width: auto;
+        gap: 1.5rem;
+        padding-right: 2rem;
+        animation: none;
     }
 
-    /* 3. Style the links for the header bar */
-    .navigation a {
-        color: var(--ink2);       /* Dark text for the light bar */
-        padding: 0.5rem 0;
-        border-bottom: 2px solid transparent;
-        text-align: left;
-    }
-
-    /* 4. Adjust the 'Active' link look for desktop */
-    .navigation a.active {
-        background-color: transparent; 
+        .navigation a:hover {
         color: var(--accent1);
-        border-bottom: 2px solid var(--accent1);
-        margin: 0;
-        border-radius: 0;
+        background-color: rgba(0, 152, 101, 0.1); /* Very light tint of your accent1 */
+        border-radius: 8px;
     }
 
+    /* Desktop Link Styling */
+    .navigation a {
+        color: var(--ink2);
+        padding: 0.5rem 0;
+        text-align: left;
+        border-bottom: 2px solid transparent;
+    }
 
+    /* Desktop Active State */
+    .navigation a.active {
+        background-color: transparent;
+        color: var(--accent1);
+        border-bottom-color: var(--accent1);
+        border-radius: 8px;
+        margin: 0;
+    }
+
+    /* FOOTER GRID LAYOUT */
     footer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 
+    /* SOCIAL ICONS */
     .social-icons {
-    padding-top: 4rem;
+        padding-top: 4rem;
     }
 
     .social-icons a:hover {
         background-color: var(--accent);
         color: var(--ink2);
         transform: translateY(-3px);
+        border-radius: 1.5rem;
         border: none;
-    } 
-
+    }
 }
-

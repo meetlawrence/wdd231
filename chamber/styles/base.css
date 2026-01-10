@@ -1,4 +1,4 @@
-/* Root Library - Stays global */
+/* ROOT VARIABLES */
 :root {
     --nav: #000000;
     --header: #019877;
@@ -6,23 +6,17 @@
     --accent: #04836E;
     --accent1: #009865;
     --accent2: #6fc5b2;
-    --bg: ;
-    --card1: ;
-    --card2: ;
     --ink: #ffffff;
     --ink2: #000000;
-    --border: ;
     --radius: 12px;
-    --shadow: 0 1px 3px rgba(255, 255, 255, 0.537), 0 6px 18px rgba(240, 237, 237, 0.06);
-    --maxw: 1100px;
-    --link: ;
-    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --font-main: "Manrope", sans-serif;
+    --font-heading: "Inter", sans-serif;
 }
 
-
-
+/* GLOBAL STYLES */
 body {
-    font-family: "Manrope", sans-serif;
+    font-family: var(--font-main);
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -30,77 +24,72 @@ body {
     color: #222;
 }
 
-header {
-    /* background: linear-gradient(to right, var(--accent1), var(--header)); */
-    /* color: var(--footer); */
-    padding: 2rem;
-    text-align: center;
+h1, h2, h3 {
+    font-family: var(--font-heading);
 }
 
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 80px auto 0;
+}
+
+/* HEADER BAR LAYOUT */
 .header-bar {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
     background: rgba(239, 243, 237, 0.3);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 80px;
-    width: 100%;
-    /* z-index: 20; */
-    align-items: center;
-    justify-content: space-between;
-    /* margin-left: 1rem;
-    margin-right: 1rem; */
+    box-shadow: var(--shadow);
+    z-index: 20;
 }
 
+/* LOGO AND TITLE BRANDING */
 .header-flex {
     display: flex;
-    gap: 0.5rem;
-    /* padding-left: 2rem; */
-    padding-bottom: 0.5rem;
     align-items: center;
+    gap: 0.75rem;
     margin: 1rem;
+}
+
+.logo-container {
+    background-color: var(--accent);
+    border-radius: 8px;
+    padding: 0.5rem;
+    display: flex;
 }
 
 .title-wrapper {
     display: flex;
-    flex-direction: column; /* Stacks the spans vertically */
-    line-height: 1.1;       /* Pulls the lines slightly closer together */
+    flex-direction: column;
+    line-height: 1.1;
     text-align: left;
 }
 
 .title-main {
-    font-weight: 800;       /* Makes "Calabar Chamber" bold */
-      /* Adjust size as needed */
-    color: var(--ink2);      /* Or your preferred dark color */
-    text-transform: uppercase; /* Optional: makes it look more professional */
-    /* letter-spacing: 0.5px; */
+    font-weight: 800;
+    color: var(--ink2);
+    text-transform: uppercase;
 }
 
 .title-sub {
-    font-weight: 400;       /* Normal weight for "of Commerce" */
-    font-size: 0.8rem;      /* Smaller size */
-    color: var(--accent);   /* Optional: use your accent color for contrast */
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--accent);
 }
 
-/* Ensure the logo and text are still aligned in the middle of the bar */
-.header-flex {
-    display: flex;
-    align-items: center; 
-    gap: 0.75rem;
-}
-
-/* --- Mobile Navigation & Hamburger --- */
+/* NAVIGATION AND HAMBURGER */
 .navigation {
-    position: static;
-    /* background: var(--nav); */
-    /* width: 100%; */
     display: flex;
     justify-content: flex-end;
-    /* flex-direction: column; */
 }
 
 #menu {
@@ -111,24 +100,21 @@ header {
     color: var(--accent);
     cursor: pointer;
     padding: 0.5rem 1rem;
-    text-align: left;
 }
 
 #menu::before { content: "☰"; }
 #menu.open::before { content: "❌"; }
 
+/* DROPDOWN MENU */
 .navigation ul {
-    display: none; /* Hidden on mobile by default */
+    display: none;
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 100%;
     background: var(--ink);
     flex-direction: column;
-    align-items: flex;
-    
     position: absolute;
-    top: 90px;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -137,85 +123,34 @@ header {
 }
 
 .navigation ul.open {
-    display: flex; /* Shown when toggled */
+    display: flex;
 }
 
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translate(-50%, -10px);
-    }
-    to {
-        opacity: 1;
-        transform: translate(-50%, 0);
-    }
-}
 .navigation a {
     display: block;
     color: var(--footer);
     text-decoration: none;
     padding: 1rem;
     text-align: center;
-    border-bottom: 2px solid transparent;
+    transition: 0.3s;
 }
 
 .navigation a.active {
-    align-content: left;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    background-color: #009865;
+    margin: 0.5rem 1rem;
+    background-color: var(--accent1);
     border-radius: 8px;
     color: var(--ink);
     font-weight: 900;
-    border-bottom: 2px solid var(--accent);
 }
 
-
-
-.logo-container {
-    background-color: var(--accent);
-    border-radius: 8px;
-    padding: 0.5rem;
-    /* align-content: center; */
+/* FOOTER AND SOCIALS */
+footer {
+    background: var(--footer);
+    color: #ffffff;
+    padding: 2rem 1rem;
+    margin-top: 8rem;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-h1, h2, h3 {
-    font-family: "Inter", sans-serif;
-}
-
-header .tagline {
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
-}
-
-
-main {
-    padding: 2rem;
-    max-width: 900px;
-    margin: auto;
-}
-
-
-h2 {
-    color: #000;
-    border-bottom: 2px solid var(--footer);
-    padding-bottom: 0.3rem;
-}
-
-h3 {
-    color: var(--ink);
-    /* padding-bottom: -2rem; */
-}
-
-ul, ol {
-    margin-left: 1.5rem;
-}
-/* Social & Footer */
 .social-icons {
     display: flex;
     gap: 1rem;
@@ -224,47 +159,22 @@ ul, ol {
 }
 
 .social-icons a {
-    border-radius: 50%;
+    width: 70px;
+    height: 70px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 70px;
-    /* color: #ffffff; */
-    text-decoration: none;
     backdrop-filter: blur(12px);
-    transition: all 0.3s ease;
-    border: none;
-    font-size: 2rem;
-    
+    transition: 0.3s;
 }
 
-
-/* This part helps me manipulate the color and size of the svg */
 .social-icons img {
     filter: brightness(0) invert(1);
     width: 50px;
 }
 
-
-footer {
-    /* display: grid; */
-    background: var(--footer);
-    color: #ffffff;
-    text-align: left;
-    padding: 1rem;
-    margin-top: 8rem;
+/* ANIMATIONS */
+@keyframes slideDown {
+    from { opacity: 0; transform: translate(-50%, -10px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
 }
-
-
-footer a {
-    color: #E0DED1;
-    text-decoration: none;
-    font-style: oblique;
-}
-
- .lastmod {
-    color: var(--accent2);
-    font-weight: 300;
-    letter-spacing: .2px;
-} 
