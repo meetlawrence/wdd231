@@ -1,8 +1,14 @@
 /* DIRECTORY CONTAINER */
+/* .hero-culture {
+    background: url("../images/masqurade.webp") no-repeat center center/cover;
+    height: 90vh;
+} */
+
+
 #cards {
     display: grid;
     /* Cards will be at least 320px, then grow to fill space equally */
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     padding: 2rem;
     max-width: var(--maxw);
@@ -34,10 +40,11 @@
 /* CARD IMAGE/LOGO */
 #cards section img {
     width: 100%;
-    max-width: 200px;
-    height: 120px;
-    object-fit: contain;
-    margin-bottom: 1rem;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    display: block;
     filter: grayscale(20%);
     transition: filter 0.3s ease;
 }
@@ -59,6 +66,9 @@
     font-size: 0.9rem;
     margin: 0.25rem 0;
     color: #555;
+    overflow-wrap: break-word; /* Standard modern way to break long strings */
+    word-wrap: break-word;     /* Legacy support for older browsers */
+    word-break: break-all;     /* Forces the break even if there's no '@' or '.' to help */
 }
 
 /* CONTACT LINK STYLE (WEBSITE) */

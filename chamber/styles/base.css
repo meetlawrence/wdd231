@@ -12,18 +12,23 @@
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     --font-main: "Manrope", sans-serif;
     --font-heading: "Inter", sans-serif;
+    --maxw: 1200px;
 }
 
 * {
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+
 /* GLOBAL STYLES */
 body {
-    min-width: none;
     font-family: var(--font-main);
     margin: 0;
-    padding: 0;
+    padding-right: 0;
     line-height: 1.6;
     background-color: #fff;
     color: #222;
@@ -34,7 +39,7 @@ h1, h2, h3 {
 }
 
 main {
-    padding: 2rem 1.5rem;
+    /* padding: 2rem 1.5rem; */
     max-width: 1200px; /* Limits growth on ultra-wide screens */
     width: 100%;       /* Allows it to fill smaller screens */
     margin: 80px auto 0 auto; /* 80px matches your header height */
