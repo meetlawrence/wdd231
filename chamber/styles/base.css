@@ -8,12 +8,14 @@
     --accent2: #6fc5b2;
     --ink: #ffffff;
     --ink2: #000000;
-    --radius: 12px;
+    --radius: 10px;
+    --radius2: 7px;
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     --font-main: "Manrope", sans-serif;
     --font-heading: "Inter", sans-serif;
     --maxw: 1200px;
 }
+
 
 * {
     box-sizing: border-box;
@@ -39,10 +41,9 @@ h1, h2, h3 {
 }
 
 main {
-    /* padding: 2rem 1.5rem; */
     max-width: 1200px; /* Limits growth on ultra-wide screens */
     width: 100%;       /* Allows it to fill smaller screens */
-    margin: 80px auto 0 auto; /* 80px matches your header height */
+    margin: 80px auto 0 auto; /* 80px matches  header height */
 }
 
 /* FIXED HEADER BAR */
@@ -63,7 +64,7 @@ main {
     z-index: 1000;
 }
 
-/* BRANDING: LOGO AND TITLES */
+/* LOGO AND TITLES */
 .header-flex {
     display: flex;
     align-items: center;
@@ -159,6 +160,7 @@ main {
     width: 100%;
     box-shadow: var(--shadow);
     animation: slideDown 0.3s ease-out;
+    
 }
 
 .navigation ul.open {
@@ -167,7 +169,7 @@ main {
 
 .navigation a {
     display: block;
-    color: var(--footer);
+    color: var(--ink2);
     text-decoration: none;
     padding: 1.2rem;
     text-align: center;

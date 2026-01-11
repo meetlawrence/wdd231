@@ -19,7 +19,7 @@
 /* INDIVIDUAL SECTION (CARD) STYLING */
 #cards section {
     background-color: var(--ink);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     padding: 1.5rem;
@@ -43,7 +43,7 @@
     height: auto;
     max-height: 150px;
     object-fit: cover;
-    border-radius: var(--radius);
+    border-radius: var(--radius2);
     display: block;
     filter: grayscale(20%);
     transition: filter 0.3s ease;
@@ -66,8 +66,7 @@
     font-size: 0.9rem;
     margin: 0.25rem 0;
     color: #555;
-    overflow-wrap: break-word; /* Standard modern way to break long strings */
-    word-wrap: break-word;     /* Legacy support for older browsers */
+    overflow-wrap: break-word; /* breaks long strings */
     word-break: break-all;     /* Forces the break even if there's no '@' or '.' to help */
 }
 
@@ -94,15 +93,13 @@
    ========================================= */
 @media (min-width: 1024px) {
     #cards {
-        /* Corrected: Fixed 3-column layout for desktop */
-        grid-template-columns: repeat(3, 1fr); 
         gap: 2.5rem;
     }
 
     /* If using the "List Style" look (row layout), 
        ensure your HTML has a <div class="card-content"> wrapper 
     */
-    #cards section.list-view {
+    /* #cards section.list-view {
         flex-direction: row;
         text-align: left;
         justify-content: flex-start;
@@ -119,7 +116,7 @@
         flex: 1; 
         min-width: 0;
         text-align: left;
-    }
+    } */
 }
 
 /* MEMBER LEVEL BADGE */
