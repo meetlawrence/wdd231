@@ -19,7 +19,7 @@
     position: absolute;
     inset: 0;
     background: var(--accent1);
-    opacity: 80%;
+    opacity: 90%;
     z-index: 1;
     pointer-events: none;
 }
