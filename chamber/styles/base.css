@@ -14,12 +14,13 @@
     --font-heading: "Inter", sans-serif;
 }
 
-/* *, *::before, *::after {
+* {
     box-sizing: border-box;
-} */
+}
 
 /* GLOBAL STYLES */
 body {
+    min-width: none;
     font-family: var(--font-main);
     margin: 0;
     padding: 0;
@@ -33,9 +34,10 @@ h1, h2, h3 {
 }
 
 main {
-    padding: 2rem;
-    /* max-width: 900px; */
-    margin-top: 2rem; /* Offset for fixed header */
+    padding: 2rem 1.5rem;
+    max-width: 1200px; /* Limits growth on ultra-wide screens */
+    width: 100%;       /* Allows it to fill smaller screens */
+    margin: 80px auto 0 auto; /* 80px matches your header height */
 }
 
 /* FIXED HEADER BAR */

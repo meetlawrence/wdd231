@@ -1,17 +1,13 @@
-/* html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-} */
-
 /* DIRECTORY CONTAINER */
 #cards {
     display: grid;
-    /* Responsive Grid: Cards will be at least 320px, then fill space */
+    /* Cards will be at least 320px, then grow to fill space equally */
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
     padding: 2rem;
     max-width: var(--maxw);
     margin: 0 auto;
+    width: 100%;
 }
 
 /* INDIVIDUAL SECTION (CARD) STYLING */
@@ -26,6 +22,8 @@
     align-items: center;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Safety: prevents card from becoming too wide if there's only one card */
+    max-width: 100%; 
 }
 
 #cards section:hover {
@@ -38,7 +36,7 @@
     width: 100%;
     max-width: 200px;
     height: 120px;
-    object-fit: contain; /* Keeps logo proportions safe */
+    object-fit: contain;
     margin-bottom: 1rem;
     filter: grayscale(20%);
     transition: filter 0.3s ease;
@@ -65,7 +63,7 @@
 
 /* CONTACT LINK STYLE (WEBSITE) */
 #cards section a {
-    margin-top: 1rem;
+    margin-top: auto; /* Pushes the button to the bottom if text heights vary */
     font-size: 0.85rem;
     font-weight: 700;
     color: var(--accent1);
@@ -82,37 +80,39 @@
 }
 
 /* =========================================
-   DESKTOP ADAPTATION (Large Screens)
+    DESKTOP ADAPTATION (Large Screens)
    ========================================= */
 @media (min-width: 1024px) {
     #cards {
-        grid-template-columns: repeat(auto-fill, minmax); /* Force 3 columns on large screens */
+        /* Corrected: Fixed 3-column layout for desktop */
+        grid-template-columns: repeat(3, 1fr); 
         gap: 2.5rem;
     }
 
-    /* Optional: If you want a "List Style" look on desktop instead of cards */
-    /* Uncomment the code below to switch desktop to a wide row layout */
-    
-    /* #cards section {
+    /* If using the "List Style" look (row layout), 
+       ensure your HTML has a <div class="card-content"> wrapper 
+    */
+    #cards section.list-view {
         flex-direction: row;
         text-align: left;
         justify-content: flex-start;
         padding: 1rem 2rem;
+        gap: 2rem;
     }
-    #cards section img {
+
+    #cards section.list-view img {
         max-width: 100px;
         margin-bottom: 0;
-    } */
+    }
 
     #cards section .card-content {
-        flex: 1; /* Allows text to take up remaining space and wrap */
-        min-width: 0; /* Critical fix for flexbox text overflow */
+        flex: 1; 
+        min-width: 0;
+        text-align: left;
     }
-   
 }
 
 /* MEMBER LEVEL BADGE */
-/* You can add this class in your JS: card.classList.add(company.level.toLowerCase()) */
 .silver { border-top: 5px solid #C0C0C0 !important; }
 .gold { border-top: 5px solid #FFD700 !important; }
 .member { border-top: 5px solid var(--accent); }
