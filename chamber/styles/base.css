@@ -39,6 +39,9 @@ body {
 h1, h2, h3 {
     font-family: var(--font-heading);
 }
+h1 {
+    font-size: 3.5rem;
+}
 
 main {
     /* max-width: 1200px; Limits growth on ultra-wide screens */
