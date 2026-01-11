@@ -2,7 +2,7 @@
 .hero-directory {
     position: relative;
     width: 100%;
-    /* height: 100vh; */
+    height: 60vh;
     background: url("../images/masqurade.webp") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
