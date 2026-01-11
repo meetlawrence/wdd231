@@ -1,85 +1,166 @@
 {
     "company": [
         {
-            "name": "Calabar Tech Hub",
-            "address": "Cross Library Complex",
-            "number": "+234 81 234 0099",
-            "email": "info@techhub.ng",
-            "website": "www.calabartechhub.org",
-            "image": "images/techhub.png",
-            "level": "Silver"
-        },
-        {
-            "name": "Cross River Microfinance Bank",
-            "address": "12 Ekpo Abasi Street Calabar",
-            "number": "+234 81 234 6799",
-            "email": "contact@crmfb.com",
-            "website": "www.crmfb.com",
-            "image": "images/crmfb.png",
-            "level": "Member"
-        },
-        {
-            "name": "Tinapa Business Resort",
-            "address": "Adiabo, Calabar Municipal",
-            "number": "+234 80 334 5566",
-            "email": "info@tinapa.com.ng",
-            "website": "www.tinaparesort.com",
-            "image": "images/tinapa.png",
-            "level": "Gold"
-        },
-        {
-            "name": "Marina Resort",
-            "address": "The Waterfront, Calabar South",
-            "number": "+234 80 221 1144",
-            "email": "tourism@crossriverstate.gov.ng",
-            "website": "www.visitcalabar.ng",
-            "image": "images/marina.png",
-            "level": "Silver"
-        },
-        {
-            "name": "Transcorp Hotels Calabar",
-            "address": "10 Murtala Mohammed Highway",
-            "number": "+234 80 667 8899",
-            "email": "info.calabar@transcorphotels.com",
-            "website": "www.transcorphotels.com",
-            "image": "images/transcorp.png",
-            "level": "Gold"
-        },
-        {
-            "name": "The Moorhouse Hotel",
-            "address": "MCC Road, Calabar",
-            "number": "+234 81 445 5667",
-            "email": "reservations@moorhousecalabar.com",
-            "website": "www.moorhousecalabar.com",
-            "image": "images/moorhouse.png",
-            "level": "Member"
-        },
-        {
-            "name": "General Electric (GE) Factory",
-            "address": "Calabar Free Trade Zone",
-            "number": "+234 81 000 9988",
-            "email": "nigeria.info@ge.com",
-            "website": "www.ge.com/ng",
-            "image": "images/ge.png",
-            "level": "Gold"
-        },
-        {
-            "name": "Sparklight Hospital",
-            "address": "Federal Housing Estate, Calabar",
-            "number": "+234 80 555 4433",
-            "email": "admin@sparklighthospital.com",
-            "website": "www.sparklighthospital.com",
-            "image": "images/sparklight.png",
-            "level": "Silver"
-        },
-        {
-            "name": "Hit FM Calabar",
-            "address": "Ajah Close, MCC Road",
-            "number": "+234 81 777 6655",
-            "email": "info@hitfmcalabar.com",
-            "website": "www.hitfmcalabar.com",
-            "image": "images/hitfm.png",
-            "level": "Member"
-        }
+    "name": "Box Media",
+    "address": "12 Etim Edem Park, Calabar",
+    "number": "+234 802 111 2233",
+    "email": "contact@box-media.com.ng",
+    "website": "www.box-media.com.ng",
+    "image": "images/box-media.png",
+    "level": "Gold"
+  },
+  {
+    "name": "OneClick",
+    "address": "45 Marian Road, Calabar",
+    "number": "+234 803 444 5566",
+    "email": "support@oneclick.com",
+    "website": "www.oneclick.com",
+    "image": "images/oneclick.png",
+    "level": "Silver"
+  },
+  {
+    "name": "Net Tech Inc.",
+    "address": "88 Murtala Mohammed Highway, Calabar",
+    "number": "+234 805 777 8899",
+    "email": "hello@net-tech.org",
+    "website": "www.net-tech.org",
+    "image": "images/net-tech.png",
+    "level": "Member"
+  },
+  {
+    "name": "Ilume",
+    "address": "22 Ndidem Usang Iso Road, Calabar",
+    "number": "+234 809 000 1122",
+    "email": "info@ilume.com.ng",
+    "website": "www.ilume.com.ng",
+    "image": "images/illume.png",
+    "level": "Gold"
+  },
+  {
+    "name": "North Creation",
+    "address": "15 Calabar Road, Calabar",
+    "number": "+234 701 333 4455",
+    "email": "design@north-creation.com",
+    "website": "www.north-creation.com",
+    "image": "images/north-creation.png",
+    "level": "Silver"
+  },
+  {
+    "name": "Purechips Delight",
+    "address": "66 Atekong Drive, Calabar",
+    "number": "+234 708 666 7788",
+    "email": "sales@purechips.net",
+    "website": "www.purechips.net",
+    "image": "images/purechips.png",
+    "level": "Member"
+  },
+  {
+    "name": "Vision56 Inc.",
+    "address": "56 Etta Agbor Road, Calabar",
+    "number": "+234 902 999 0011",
+    "email": "vision@vision56.com",
+    "website": "www.vision56.com",
+    "image": "images/vision56.png",
+    "level": "Gold"
+  },
+  {
+    "name": "Forte Sounds",
+    "address": "10 Parliamentary Road, Calabar",
+    "number": "+234 905 222 3344",
+    "email": "office@forte.com.ng",
+    "website": "www.forte.com.ng",
+    "image": "images/forte.png",
+    "level": "Member"
+  },
+  {
+    "name": "Flaire Atelier",
+    "address": "19 Chamley Street, Calabar",
+    "number": "+234 810 555 6677",
+    "email": "connect@flaire.com",
+    "website": "www.flaire.com",
+    "image": "images/flaire.png",
+    "level": "Silver"
+  },
+  {
+    "name": "Tina Connects",
+    "address": "7 Watt Market, Calabar",
+    "number": "+234 812 888 9900",
+    "email": "tina@tina-fashions.com",
+    "website": "www.tina-fashions.com",
+    "image": "images/tina.png",
+    "level": "Member"
+  },
+  {
+    "name": "Tech Essential",
+    "address": "33 Goldie Street, Calabar",
+    "number": "+234 814 111 2222",
+    "email": "essentials@techessential.ng",
+    "website": "www.techessential.ng",
+    "image": "images/tech-essential.png",
+    "level": "Gold"
+  },
+  {
+    "name": "Rons Creation",
+    "address": "14 Target Road, Calabar",
+    "number": "+234 816 333 4444",
+    "email": "ron@ronscreation.com",
+    "website": "www.ronscreation.com",
+    "image": "images/rons-creation.png",
+    "level": "Silver"
+  },
+  {
+    "name": "Color Library",
+    "address": "55 IBB Way, Calabar",
+    "number": "+234 818 555 6666",
+    "email": "print@colorlibrary.com",
+    "website": "www.colorlibrary.com",
+    "image": "images/color-library.png",
+    "level": "Member"
+  },
+  {
+    "name": "Afrogram Studio",
+    "address": "29 Bogobiri Street, Calabar",
+    "number": "+234 703 777 8888",
+    "email": "studio@afrogram.studio",
+    "website": "www.afrogram.studio",
+    "image": "images/afrogram-studio.png",
+    "level": "Gold"
+  },
+  {
+    "name": "Catchy Snacks",
+    "address": "39 Mary Slessor Avenue, Calabar",
+    "number": "+234 706 999 0000",
+    "email": "get@catchy.com",
+    "website": "www.catchy.com",
+    "image": "images/catchy.png",
+    "level": "Silver"
+  },
+  {
+    "name": "Keplan Consulting",
+    "address": "101 Duke Town, Calabar",
+    "number": "+234 901 222 3333",
+    "email": "consult@keplan.com",
+    "website": "www.keplan.com",
+    "image": "images/kaplan-consulting.png",
+    "level": "Member"
+  },
+  {
+    "name": "Food Crumbs",
+    "address": "25 Diamond Hill, Calabar",
+    "number": "+234 908 444 5555",
+    "email": "eat@foodcalabar.com",
+    "website": "www.foodcalabar.com",
+    "image": "images/food.png",
+    "level": "Silver"
+  },
+  {
+    "name": "Blue Library",
+    "address": "77 Ekpo Abasi, Calabar",
+    "number": "+234 912 666 7777",
+    "email": "read@bluelibrary.org",
+    "website": "www.bluelibrary.org",
+    "image": "images/blue-library.png",
+    "level": "Member"
+  }
     ]
 }
