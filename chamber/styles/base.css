@@ -41,7 +41,7 @@ h1, h2, h3 {
 }
 
 main {
-    max-width: 1200px; /* Limits growth on ultra-wide screens */
+    /* max-width: 1200px; Limits growth on ultra-wide screens */
     width: 100%;       /* Allows it to fill smaller screens */
     margin: 80px auto 0 auto; /* 80px matches  header height */
 }
