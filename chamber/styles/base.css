@@ -139,12 +139,12 @@ main {
     transform: translateY(8.5px) rotate(45deg);
 }
 
-#menu.open .bar:nth-child(2) {
+/* #menu.open .bar:nth-child(2) {
     opacity: 0;
     transform: translateX(-10px);
-}
+} */
 
-#menu.open .bar:nth-child(3) {
+#menu.open .bar:nth-child(2) {
     transform: translateY(-8.5px) rotate(-45deg);
 }
 

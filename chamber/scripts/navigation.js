@@ -5,9 +5,12 @@ const navLinks = document.querySelectorAll('.navigation a');
 
 /* TOGGLE MENU */
 hamButton.addEventListener('click', () => {
-    mainNav.classList.toggle('open');
+    const isOpen = mainNav.classList.toggle('open');
     hamButton.classList.toggle('open');
-    // document.body.style.overflow = mainNav.classList.contains('open') ? 'hidden' : 'auto';
+    
+    // Lock both html and body at the same time
+    document.documentElement.style.overflow = isOpen ? 'hidden' : '';
+    document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
 /* CLOSE MENU WHEN A LINK IS CLICKED */
@@ -15,5 +18,7 @@ navLinks.forEach(link => {
     link.addEventListener('click', () => {
         mainNav.classList.remove('open');
         hamButton.classList.remove('open');
+
+        document.body.style.overflow = '';
     });
 });
