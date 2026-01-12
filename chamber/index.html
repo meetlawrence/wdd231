@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calabar Chamber of Commerce | Directory</title>
+    <meta name="description" content="Explore the Calabar Chamber of Commerce business directory to connect with over 500 local businesses, organizations, and partners in Cross River State.">
+    <meta name="author" content="Lawrence Okon">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Calabar Chamber of Commerce">
+    <meta property="og:description" content="Explore Calabar Chamber of Commerce directory page, see our businesses and links">
+    <meta property="og:url" content="https://meetlawrence.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://meetlawrence.github.io/wdd231/chamber/images/main1.jpeg">
+
+    <!-- icon -->
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+   
+    <!-- Banner image preload -->
+    <link rel="preload" fetchpriority="high" as="image" href="images/banners/main2.webp" type="image/webp">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/directory.css">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/display.js" defer></script>
+
+</head>
+<body class="home">
+    <header>
+        <div class="header-bar">
+            <div class="header-flex">
+                <div class="logo-container">
+                    <img src="images/logo.svg" alt="Logo" width="35">
+                </div>
+                <div class="title-wrapper">
+                    <span class="title-main">Calabar Chamber</span>
+                    <span class="title-sub">of Commerce</span>
+                </div>
+            </div>
+            
+            <nav class="navigation">
+                <button id="menu" aria-label="Toggle Menu">
+                    <!-- <span class="bar"></span> -->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <footer>
+        <div class="address">
+            <h2>Calabar Chamber of Commerce</h2>
+            <p>123 Murtala Mohammed Highway<br>Calabar, Cross River State, Nigeria</p>
+            <p>info@calabarchamber.org</p>
+            <p><a href="tel:+2349066678117" class="footer-link">+234 (0) 906 667 8117</a> </p>
+
+        </div>
+        
+        <div class="social-icons">
+            <a href="https://tiktok.com" class="icon" target="_blank">
+                <img src="images/icons/tiktok.svg" alt="TikTok">
+            </a>
+            <a href="https://Instagram.com" class="icon" target="_blank">
+                <img src="images/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com" class="icon" target="_blank">
+                <img src="images/icons/x-twitter.svg" alt="twitter">
+            </a>
+        </div>
+        
+        <div class="dev-info">
+                <h2>WDD321 Class Project</h2>
+                <p>Lawrence Okon</p>
+                <p>&copy; <span id="currentyear"></span>
+                Calabar Chamber of Commerce
+                </p>
+
+            <p id="lastmodified" class="lastmod" aria-live="polite"></p>
+        </div>
+    </footer>
+</body>
+</html>

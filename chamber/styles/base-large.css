@@ -21,8 +21,8 @@
     }
 
     .navigation a:hover {
-        color: var(--accent1);
-        background-color: rgba(0, 152, 101, 0.1); /* Very light tint of your accent1 */
+        color: var(--ink);
+        background-color: var(--accent1); /* Very light tint of your accent1 */
         border-radius: 8px;
     }
 

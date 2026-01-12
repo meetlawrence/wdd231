@@ -180,11 +180,6 @@ main {
     transition: 0.3s;
 }
 
-.navigation a:hover {
-    background-color: rgba(0, 152, 101, 0.05);
-    color: var(--accent1);
-}
-
 .navigation a.active {
     margin: 0.5rem 1rem;
     background: linear-gradient(to right, var(--accent1), var(--accent));
