@@ -40,7 +40,7 @@ const displayCompanies = (companies) => {
 
         // Assembly
         card.appendChild(image);
-        card.appendChild(name);
+        // card.appendChild(name);
         card.appendChild(address);
         card.appendChild(number);
         card.appendChild(email);

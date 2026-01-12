@@ -18,8 +18,8 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: var(--accent);
-    opacity: 80%;
+    background: var(--primary);
+    opacity: 70%;
     z-index: 1;
     pointer-events: none;
 }
@@ -45,7 +45,7 @@
 #cards {
     display: grid;
     /* Cards will be at least 320px, then grow to fill space equally */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 2rem;
     padding: 2rem;
     max-width: var(--maxw);
@@ -57,7 +57,7 @@
 #cards section {
     background-color: var(--ink);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: var(--radius);
+    /* border-radius: var(--radius); */
     box-shadow: var(--shadow);
     padding: 1.5rem;
     display: flex;

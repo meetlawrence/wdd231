@@ -2,7 +2,7 @@
 :root {
     --nav: #000000;
     --header: #019877;
-    --footer: #101727;
+    --primary: #101727;
     --accent: #04836E;
     --accent1: #009865;
     --accent2: #6fc5b2;
@@ -195,7 +195,7 @@ main {
 
 /* FOOTER & SOCIALS */
 footer {
-    background: var(--footer);
+    background: var(--primary);
     color: #ffffff;
     padding: 3rem 1.5rem;
     margin-top: 8rem;
