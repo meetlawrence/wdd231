@@ -200,8 +200,17 @@ footer {
     padding: 3rem 1.5rem;
     /* margin-top: 8rem; */
 }
+footer p, h2 {
+    font-size: 1rem;
+    margin-bottom: -1rem;
+}
+
+footer .lastmod {
+    color: var(--accent);
+}
 
 .social-icons {
+    margin-top: 2rem;
     display: flex;
     gap: 1.5rem;
     justify-content: center;
@@ -219,10 +228,6 @@ footer {
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.social-icons a:hover {
-    transform: translateY(-5px);
-    background-color: var(--accent);
-}
 
 .social-icons img {
     filter: brightness(0) invert(1);

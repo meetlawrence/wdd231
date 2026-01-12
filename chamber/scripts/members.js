@@ -58,7 +58,7 @@ const displayCompanies = (companies) => {
     cards.innerHTML = companies.map(company => `
         <section class="card">
             <img src="${company.image}" alt="Logo of ${company.name}" loading="lazy">
-            <h3>${company.name}</h3>
+            <h2>${company.name}</h2>
             <p>${company.address}</p>
             <p>${company.number}</p>
             <p>${company.email}</p>

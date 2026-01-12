@@ -19,10 +19,9 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css"> -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
     <link rel="stylesheet" href="styles/directory.css">
@@ -32,6 +31,9 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/members.js" defer></script>
     <script src="scripts/display.js" defer></script>
+
+    <!-- image preload -->
+    <link rel="preload" fetchpriority="high" as="image" href="images/banners/main2.webp" type="image/webp">
 
 </head>
 <body class="home">
@@ -48,7 +50,7 @@
             </div>
             
             <nav class="navigation">
-                <button id="menu">
+                <button id="menu" aria-label="Toggle Menu">
                     <!-- <span class="bar"></span> -->
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -73,18 +75,20 @@
         </section>
 
         <div class="menu view-toggle">
-            <button id="grid">Grid View</button>
-            <button id="list">List View</button>
+            <button id="grid" aria-label="Switch to Grid View">Grid View</button>
+            <button id="list" aria-label="Switch to List View">List View</button>
         </div>
 
-        <article id="cards" class="grid"></article>
+        <article id="cards" class="grid">
+            <h2 class="visually-hidden">Member Directory</h2>
+        </article>
 
         <!-- <div id="cards" class="content"></div> -->
     </main>
 
     <footer>
         <div class="address">
-            <h3>Calabar Chamber of Commerce</h3>
+            <h2>Calabar Chamber of Commerce</h2>
             <p>123 Murtala Mohammed Highway<br>Calabar, Cross River State, Nigeria</p>
             <p>info@calabarchamber.org</p>
             <p>+234 (0) 906 667 8117</p>
@@ -93,23 +97,22 @@
         
         <div class="social-icons">
             <a href="https://tiktok.com" class="icon" target="_blank">
-                <img src="images/icons/tiktok-brands-solid.svg" alt="TikTok">
+                <img src="images/icons/tiktok.svg" alt="TikTok">
             </a>
             <a href="https://Instagram.com" class="icon" target="_blank">
-                <img src="images/icons/instagram-brands-solid.svg" alt="Instagram">
+                <img src="images/icons/instagram.svg" alt="Instagram">
             </a>
             <a href="https://twitter.com" class="icon" target="_blank">
-                <img src="images/icons/x-twitter-brands-solid-full.svg" alt="twitter">
+                <img src="images/icons/x-twitter.svg" alt="twitter">
             </a>
         </div>
         
         <div class="dev-info">
-            <p>
-                <h3>WDD321 Class Project</h3>
+                <h2>WDD321 Class Project</h2>
                 <p>Lawrence Okon</p>
-                &copy; <span id="currentyear"></span>
+                <p>&copy; <span id="currentyear"></span>
                 Calabar Chamber of Commerce
-            </p>
+                </p>
 
             <p id="lastmodified" class="lastmod" aria-live="polite"></p>
         </div>

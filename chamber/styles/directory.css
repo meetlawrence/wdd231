@@ -4,7 +4,7 @@
 .hero-directory {
     position: relative;
     width: 100%;
-    background: url("../images/main2.jpeg") no-repeat center center/cover;
+    background: url("../images/banners/main2.webp") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,12 +20,23 @@
     position: absolute;
     inset: 0;
     background: var(--primary);
-    opacity: 70%;
+    opacity: 0.7;
     z-index: 1;
-    pointer-events: none;
+
 }
 
-.hero-text, .social-icons {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.hero-text {
     position: relative;
     z-index: 2;
 }
@@ -93,7 +104,7 @@
     gap: 2rem;
 }
 
-#cards.grid section h3 {
+#cards.grid section h2 {
     display: none; /* hides title*/
 }
 
@@ -206,7 +217,7 @@
         display: none; /* Hide logos in list view to save space */
     }
 
-    #cards.list section h3 {
+    #cards.list section h2 {
         font-size: 1rem;
         margin: 0;
         flex: 1; /* Give name some space */
