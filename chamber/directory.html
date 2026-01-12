@@ -31,6 +31,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/members.js" defer></script>
+    <script src="scripts/display.js" defer></script>
 
 </head>
 <body class="home">
@@ -71,7 +72,14 @@
             </div>
         </section>
 
-        <div id="cards" class="content"></div>
+        <div class="menu">
+            <button id="grid">Grid View</button>
+            <button id="list">List View</button>
+        </div>
+
+        <article id="cards" class="grid"></article>
+
+        <!-- <div id="cards" class="content"></div> -->
     </main>
 
     <footer>
