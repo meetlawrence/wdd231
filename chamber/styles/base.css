@@ -77,7 +77,7 @@ main {
 }
 
 .logo-container {
-    background-color: var(--accent);
+    background: linear-gradient(to right, var(--accent1), var(--accent));
     border-radius: 8px;
     padding: 0.5rem;
     display: flex;
