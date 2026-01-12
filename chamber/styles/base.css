@@ -5,7 +5,8 @@
     --primary: #101727;
     --accent: #04836E;
     --accent1: #009865;
-    --accent2: #6fc5b2;
+    --accent2: #8ed7c7;
+    --accent3: #045443;
     --ink: #ffffff;
     --ink2: #000000;
     --radius: 10px;
@@ -103,7 +104,7 @@ main {
 .title-sub {
     font-weight: 400;
     font-size: 0.75rem;
-    color: var(--accent);
+    color: var(--accent3);
 }
 
 /* MOBILE NAVIGATION & ANIMATED HAMBURGER */
@@ -206,7 +207,7 @@ footer p, h2 {
 }
 
 footer .lastmod {
-    color: var(--accent);
+    color: var(--accent2);
 }
 
 /* This ensures the phone number stays white */
@@ -214,7 +215,7 @@ footer .lastmod {
 .footer-link:visited, 
 .footer-link:hover {
     color: var(--ink);
-    text-decoration: none; /
+    text-decoration: none;
 }
 .social-icons {
     margin-top: 2rem;

@@ -141,7 +141,7 @@
 }
 
 #cards section:hover img {
-    filter: grayscale(0%);
+    scale: 105%;
 }
 
 /* CARD TEXT STYLING */
@@ -166,12 +166,12 @@
     margin-top: auto;
     font-size: 0.85rem;
     font-weight: 700;
-    color: var(--accent1);
+    color: var(--accent3);
     text-decoration: underline;
 }
 
 #cards section a:hover {
-    background-color: var(--accent1);
+    background-color: var(--accent3);
     color: var(--ink);
 }
 
