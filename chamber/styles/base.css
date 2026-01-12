@@ -208,6 +208,10 @@ footer p, h2 {
 footer .lastmod {
     color: var(--accent);
 }
+footer .phone{
+    color: var(--ink);
+    font-style: italic;
+}
 
 .social-icons {
     margin-top: 2rem;
