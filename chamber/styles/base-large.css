@@ -41,6 +41,8 @@
         border-bottom-color: var(--accent1);
         border-radius: 8px;
         margin: 0;
+        background: none;
+        font-weight: 900;
     }
 
     /* FOOTER GRID LAYOUT */
