@@ -36,10 +36,6 @@
     border: 0;
 }
 
-.hero-text {
-    position: relative;
-    z-index: 2;
-}
 
 .hero-text {
     text-align: center;
@@ -47,6 +43,8 @@
     margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-text h1 {
@@ -206,11 +204,20 @@
 
     /* Individual Section Adjustments for LIST VIEW */
     #cards.list section {
-        flex-direction: row; /* Make content horizontal */
-        justify-content: space-around;
+        display: grid;
+        /* This creates 5 distinct columns: Name, Address, Phone, emails, Website */
+        grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1fr; 
         align-items: center;
         text-align: left;
-        padding: 0.75rem 1.5rem;
+        padding: 0.75rem 1rem;
+        border-radius: 0; /* Flat rows look better in lists */
+        border: none;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    /* Zebra Striping for better readability */
+    #cards.list section:nth-child(even) {
+        background-color: #f9f9f9;
     }
 
     #cards.list section img {
