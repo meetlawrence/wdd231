@@ -208,11 +208,14 @@ footer p, h2 {
 footer .lastmod {
     color: var(--accent);
 }
-footer .phone{
-    color: var(--ink);
-    font-style: italic;
-}
 
+/* This ensures the phone number stays white */
+.footer-link, 
+.footer-link:visited, 
+.footer-link:hover {
+    color: var(--ink);
+    text-decoration: none; /
+}
 .social-icons {
     margin-top: 2rem;
     display: flex;
