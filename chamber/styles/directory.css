@@ -1,5 +1,5 @@
 /* ============================================ */
-/* 1. HERO & DIRECTORY HEADER (Unchanged)       */
+/* HERO & DIRECTORY HEADER                      */
 /* ============================================ */
 .hero-directory {
     position: relative;
@@ -46,6 +46,12 @@
 /* ============================================ */
 /* 2. VIEW SWITCHER MENU                        */
 /* ============================================ */
+
+/* Hides the toggle buttons on mobile by default */
+.view-toggle {
+    display: none;
+} 
+
 .menu {
     margin: 1rem auto;
     padding: 0.5rem;
@@ -90,36 +96,6 @@
     display: none; /* hides title*/
 }
 
-/* LIST MODE - Changes layout to a vertical stack */
-#cards.list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem; /* Tighter gap for list view */
-}
-
-/* Individual Section Adjustments for LIST VIEW */
-#cards.list section {
-    flex-direction: row; /* Make content horizontal */
-    justify-content: space-around;
-    align-items: center;
-    text-align: left;
-    padding: 0.75rem 1.5rem;
-}
-
-#cards.list section img {
-    display: none; /* Hide logos in list view to save space */
-}
-
-#cards.list section h3 {
-    font-size: 1rem;
-    margin: 0;
-    flex: 1; /* Give name some space */
-}
-
-#cards.list section p {
-    margin: 0 10px;
-    flex: 1;
-}
 
 /* ============================================ */
 /*  INDIVIDUAL CARD STYLING                     */
@@ -192,9 +168,60 @@
 /* ============================================ */
 /*  BADGES & RESPONSIVENESS                     */
 /* ============================================ */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+    .view-toggle {
+        display: block;
+        margin: 1rem auto;
+        text-align: center;
+    }
     #cards.grid {
         gap: 2.5rem;
+    }
+
+/* LIST MODE - Changes layout to a vertical stack */
+#cards.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Tighter gap for list view */
+}
+
+/* Individual Section Adjustments for LIST VIEW */
+#cards.list section {
+    flex-direction: row; /* Make content horizontal */
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    padding: 0.75rem 1.5rem;
+}
+
+#cards.list section img {
+    display: none; /* Hide logos in list view to save space */
+}
+
+#cards.list section h3 {
+    font-size: 1rem;
+    margin: 0;
+    flex: 1; /* Give name some space */
+}
+
+#cards.list section p {
+    margin: 0 10px;
+    flex: 1;
+}
+
+
+}
+
+@media (max-width: 767px) {
+    /* Force Grid View on mobile even if the "list" class is somehow added */
+    #cards {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    #cards section img {
+        display: block !important; /* Ensure images always show on mobile */
     }
 }
 
