@@ -37,7 +37,7 @@
     /* Desktop Active State */
     .navigation a.active {
         background-color: transparent;
-        color: var(--accent1);
+        color: var(--accent3);
         border-bottom-color: var(--accent1);
         border-radius: 8px;
         margin: 0;
