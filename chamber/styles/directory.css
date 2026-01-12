@@ -75,7 +75,7 @@
     border: 1px solid var(--primary);
     margin: 0 5px;
     transition: all 0.3s ease;
-        color: var(--accent1);
+    color: var(--accent3);
 }
 
 .menu button:hover {
