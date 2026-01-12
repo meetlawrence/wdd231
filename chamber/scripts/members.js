@@ -27,11 +27,12 @@ const displayCompanies = (companies) => {
         address.textContent = company.address;
         number.textContent = company.number;
         email.textContent = company.email;
+        website.textContent = company.website;
         
         // Website Link
-        website.textContent = "Visit Website";
-        website.setAttribute('href', `https://${company.website}`);
-        website.setAttribute('target', '_blank');
+        // website.textContent = "Visit Website";
+        // website.setAttribute('href', `https://${company.website}`);
+        // website.setAttribute('target', '_blank');
 
         // Image Attributes
         image.setAttribute('src', company.image); // Direct path from JSON
