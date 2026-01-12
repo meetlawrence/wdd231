@@ -187,7 +187,7 @@ main {
 
 .navigation a.active {
     margin: 0.5rem 1rem;
-    background-color: var(--accent3);
+    background: linear-gradient(to right, var(--accent1), var(--accent));
     border-radius: 8px;
     color: var(--ink);
     font-weight: 900;
