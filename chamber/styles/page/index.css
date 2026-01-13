@@ -72,6 +72,16 @@
 }
 
 /* Cards */
+
+.card-content {
+    border-bottom: 1px solid var(--ink2);  
+    background: rgb(250, 247, 247); 
+}
+
+.events {
+    padding: 0 2rem;
+}
+
 .card-title {
     margin: 0;
     padding: .75rem 1rem;
@@ -85,14 +95,8 @@
     justify-content: center;
 }
 
-section .card1 
 
-.card1, .card2, .card3 {
-    /* border-radius: var(--radius); */
-    overflow: hidden;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);    
-}
+
 
 hr {
     border: none;
