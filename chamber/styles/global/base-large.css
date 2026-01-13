@@ -1,0 +1,66 @@
+/* DESKTOP NAVIGATION LAYOUT */
+@media (min-width: 768px) {
+    
+    /* Hide Mobile Menu Toggle */
+    #menu { 
+        display: none; 
+    }
+
+    /* Horizontal Menu List */
+    .navigation ul {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        transform: none;
+        background: transparent;
+        width: auto;
+        gap: 1.5rem;
+        padding-right: 2rem;
+        animation: none;
+        box-shadow: none;
+    }
+
+    .navigation a:hover {
+        color: var(--ink);
+        background-color: var(--accent1); /* Very light tint of your accent1 */
+        border-radius: 8px;
+    }
+
+    /* Desktop Link Styling */
+    .navigation a {
+        color: var(--ink2);
+        padding: 0.5rem 0;
+        text-align: left;
+        border-bottom: 2px solid transparent;
+    }
+
+    /* Desktop Active State */
+    .navigation a.active {
+        background-color: transparent;
+        color: var(--accent3);
+        border-bottom-color: var(--accent1);
+        border-radius: 8px;
+        margin: 0;
+        background: none;
+        font-weight: 900;
+    }
+
+    /* FOOTER GRID LAYOUT */
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* SOCIAL ICONS */
+    .social-icons {
+        padding-top: 1rem;
+    }
+
+    .social-icons a:hover {
+        background-color: var(--accent);
+        color: var(--ink2);
+        transform: translateY(-3px);
+        border-radius: 1.5rem;
+        border: none;
+    }
+}

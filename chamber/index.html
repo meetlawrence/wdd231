@@ -25,15 +25,15 @@
     <link rel="preload" fetchpriority="high" as="image" href="images/banners/main2.webp" type="image/webp">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/base-large.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/global/base.css">
+    <link rel="stylesheet" href="styles/global/base-large.css">
+    <link rel="stylesheet" href="styles/page/index.css">
 
     <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/members.js" defer></script>
-    <script src="scripts/display.js" defer></script>
+    <!-- <script src="scripts/members.js" defer></script> -->
+    <!-- <script src="scripts/display.js" defer></script> -->
 
 </head>
 <body class="home">
@@ -66,6 +66,25 @@
         </div>
     </header>
 
+    <main class="container">
+        <section class="hero hero-directory" aria-label="A glass facade of a business tower in Calabar">
+            <div class="hero-text">
+                <h1 class="nigeria">Calabar Chamber of Commerce</h1>
+                <p class="info">Connecting Business. Building Calabar. <br>The official platform for business growth, policy influence, and economic development in Cross River State. </p> 
+            </div>
+        </section>
+
+        <div class="menu view-toggle">
+            <button id="grid" aria-label="Switch to Grid View">Grid View</button>
+            <button id="list" aria-label="Switch to List View">List View</button>
+        </div>
+
+        <article id="cards" class="grid">
+            <h2 class="visually-hidden">Member Directory</h2>
+        </article>
+
+        <!-- <div id="cards" class="content"></div> -->
+    </main>
     
     <footer>
         <div class="address">
