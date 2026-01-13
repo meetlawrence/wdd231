@@ -61,6 +61,7 @@
     padding-bottom: 2rem;
     font-size: 2rem;
     font-weight: 900;
+    color: var(--accent3);
 }
 
 .container-grid {
@@ -74,7 +75,7 @@
 .card-title {
     margin: 0;
     padding: .75rem 1rem;
-    background: var(--header);
+    background: linear-gradient(to right, var(--accent1), var(--accent));
     color: #fff;
     font-size: 1.1rem;
     border-bottom: 1px solid var(--border);
@@ -84,12 +85,21 @@
     justify-content: center;
 }
 
-.card1, .card2 {
-    border-radius: var(--radius);
+section .card1 
+
+.card1, .card2, .card3 {
+    /* border-radius: var(--radius); */
     overflow: hidden;
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);    
 }
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    /* margin: 10px 0;            */
+}
+
 
 
 /* ============================================ */
