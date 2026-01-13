@@ -32,7 +32,7 @@
     <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <!-- <script src="scripts/members.js" defer></script> -->
+    <script src="scripts/weather.js" defer></script>
     <!-- <script src="scripts/display.js" defer></script> -->
 
 </head>
@@ -89,7 +89,7 @@
                 <section class="card1">
                     <div class="card-content">
                         <h2 class="card-title">Events</h2>
-                        <div class="events">
+                        <div class="card-inside">
                             <p><strong>Mar 15:</strong> Business Networking Mixer – Transcorp Hotels</p>
                             <hr>
                             <p><strong>Apr 05:</strong> Export Readiness Workshop – Chamber Hall</p>
@@ -102,10 +102,16 @@
                 </section>
                 <!-- Middle Card -->
                 <section class="card2">
-                    <h2 class="card-title">Current Weather</h2>
-                    <div class="photo">
-                        <div class="about-photo">
-                            
+                    <div card-content>
+                        <h2 class="card-title">Current Weather</h2>
+                        <div class="card-inside">
+                            <h2 id="city"> </h2>
+                            <!-- <p id="country"></p> -->
+                            <figure>
+                                <img id="weather-icon" src="" alt="">
+                                <figcaption id="desc"></figcaption>
+                            </figure>
+                            <p id="current-temp"></p>
                         </div>
                     </div>
                 </section>
