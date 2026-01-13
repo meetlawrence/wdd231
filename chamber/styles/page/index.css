@@ -102,11 +102,10 @@
 
 /* 2. Target the even paragraphs */
 .card-inside p:nth-of-type(even) {
-    background-color: rgba(0, 0, 0, 0.05); /* Use a dark tint if background is light */
-    /* OR use rgba(255, 255, 255, 0.1) if your card is dark */
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
-/* 3. Style the <hr> to play nice with stripes */
+/*  Styling the hr with zebra stripes */
 .card-inside hr {
     border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.1); 
@@ -129,18 +128,14 @@
 /* weather Card style */
 /* ============================== */
 .weather-info {
+    padding: 0 2rem; /* Matches card-inside padding */
     display: flex;
-    align-items: center; /* Vertically centers the left and right sides */
-    justify-content: space-between; /* Pushes content to the far edges */
-    padding: 20px;
-    background: #ffffff10; /* Optional: light glass effect */
-    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Left Side: Icon and Description */
 .weather-left {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     flex: 1; /* Takes up equal space */
 }
@@ -178,6 +173,32 @@
     opacity: 0.8;
 }
 
+
+/* ============================= */
+/* Forecast card style */
+/* ============================= */
+.forecast-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.forecast-day {
+    font-weight: bold;
+    min-width: 50px;
+}
+
+.forecast-temp {
+    font-weight: 900;
+    color: var(--accent3); /* Or whatever your dark/highlight color is */
+}
+
+/* Ensure images don't overflow */
+.forecast-row img {
+    width: 45px;
+    height: 45px;
+}
 
 
 /* ============================================ */
