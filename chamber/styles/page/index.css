@@ -22,7 +22,6 @@
     background: var(--primary);
     opacity: 0.7;
     z-index: 1;
-
 }
 
 .visually-hidden {
@@ -35,7 +34,6 @@
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
-
 
 .hero-text {
     text-align: center;
