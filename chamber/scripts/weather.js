@@ -5,12 +5,13 @@ const myDesc = document.querySelector('#desc');
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const myHumidityDesc = document.querySelector('#humidity');
+// const myPressure = document.querySelector('#pressure');
 
 // THIS CREATES REQUIRED VARIABLES FOR THE URL
 const myKey = "647f73e4a3733a4a1632b09f427c8935"
-const myLat = "6.430527735280686"
-const myLong = "3.0847163255090755"
-
+const myLat = "4.9757"
+const myLong = "8.3417"
 
 // This constructs a full path using the default format
 // const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.63&appid={647f73e4a3733a4a1632b09f427c8935}'
@@ -46,11 +47,13 @@ function displayResults(data) {
     const fullCountryName = regionNames.of(data.sys.country); 
 
     // This combines the city and country names together
-    myCity.innerHTML = `${data.name}, ${fullCountryName}`;
+    myCity.innerHTML = `Calabar, ${fullCountryName}`;
 
     // This generates the description and weather information
     myDesc.innerHTML = data.weather[0].description
-    currentTemp.innerHTML = `${data.main.temp}&deg;C`
+    currentTemp.innerHTML = `Temperature: ${data.main.temp}&deg;C`
+    myHumidityDesc.innerHTML = `Humidity: ${data.main.humidity}%`
+    // myPressure.innerHTML = data.main.pressure
 
     // This manipulates the weather icon
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
