@@ -39,7 +39,7 @@
 }
 
 .hero-actions {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     display: flex;
     justify-content: center;
     z-index: 2;
