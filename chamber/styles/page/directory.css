@@ -4,6 +4,7 @@
 .hero-directory {
     position: relative;
     width: 100%;
+    background-color: var(--primary); /* This is a fall back color */
     background: url("../../images/banners/main2.webp") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
@@ -15,7 +16,7 @@
     overflow: hidden;
 }
 
-.hero::before {
+.hero-directory::before {
     content: "";
     position: absolute;
     inset: 0;
