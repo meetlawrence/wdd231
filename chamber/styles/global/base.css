@@ -7,7 +7,8 @@
     --accent1: #009865;
     --accent2: #8ed7c7;
     --accent3: #045443;
-    --accent4: rgb(250, 250, 250);
+    --accent4: #fafafa;
+    --background: #ffffff;
     --ink: #ffffff;
     --ink2: #000000;
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -18,26 +19,9 @@
     --maxw: 1200px;
 }
 
-.darkmode {
-    /* Backgrounds: Shift from black/navy to deeper, softer charcoal-blues */
-    --nav: #080c14;           /* Slightly lighter than black to show depth */
-    --header: #013d30;        /* Deep forest green (muted header) */
-    --primary: #0b111e;       /* Deepest background layer */
-    
-    /* Accents: Muted/Desaturated versions of your brand emerald */
-    --accent: #05a38a;        /* Brighter/lighter to pop against dark bg */
-    --accent1: #10b981;       /* Vibrant emerald for highlights */
-    --accent2: #24413a;       /* Dark desaturated green for card backgrounds */
-    --accent3: #8ed7c7;       /* Using your light teal as a high-contrast accent */
-    --accent4: #1a1a1a;       /* Dark neutral for secondary elements */
-    
-    /* Typography: Inverting the ink */
-    --ink: #e2e8f0;           /* Soft off-white (easier on eyes than pure #fff) */
-    --ink2: #ffffff;          /* Pure white for bold headings only */
-    
-    /* Effects */
-    --shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
-}
+/* .darkmode {
+
+} */
 
 #theme-switch{
     height: 50px;
@@ -51,10 +35,9 @@
     align-items: center;
     position: fixed;
     top: 20px;
-    /* right: 20px; */
 }
  
-#theme-switch svg {
+/* #theme-switch svg {
     fill: var(--ink2);
 }
 
@@ -68,7 +51,7 @@
 
 .darkmode #theme-switch svg:last-child {
     display: block;
-}
+} */
 
 * {
     box-sizing: border-box;
@@ -84,7 +67,7 @@ body {
     margin: 0;
     padding-right: 0;
     line-height: 1.6;
-    background-color: #fff;
+    background-color: var(--background);
     color: #222;
 }
 
@@ -114,7 +97,7 @@ main {
     background: rgba(239, 243, 237, 0.6); /* Frosted glass effect */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2);
     box-shadow: var(--shadow);
     z-index: 1000;
 }
