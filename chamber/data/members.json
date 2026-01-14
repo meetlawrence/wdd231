@@ -1,30 +1,12 @@
 {
     "company": [
-        {
-    "name": "Box Media",
-    "address": "12 Etim Edem Park, Calabar",
-    "number": "+234 802 111 2233",
-    "email": "contact@box-media.com.ng",
-    "website": "www.box-media.com.ng",
-    "image": "images/box-media.png",
-    "level": "Gold"
-  },
-  {
-    "name": "OneClick",
-    "address": "45 Marian Road, Calabar",
-    "number": "+234 803 444 5566",
-    "email": "support@oneclick.com",
-    "website": "www.oneclick.com",
-    "image": "images/oneclick.png",
-    "level": "Silver"
-  },
   {
     "name": "Net Tech Inc.",
     "address": "88 MM Highway, Calabar",
     "number": "+234 805 777 8899",
     "email": "hello@net-tech.org",
     "website": "www.net-tech.org",
-    "image": "images/net-tech.png",
+    "image": "images/businesses/net-tech.webp",
     "level": "Member"
   },
   {
@@ -33,7 +15,7 @@
     "number": "+234 809 000 1122",
     "email": "info@ilume.com.ng",
     "website": "www.ilume.com.ng",
-    "image": "images/illume.png",
+    "image": "images/businesses/illume.webp",
     "level": "Gold"
   },
   {
@@ -42,7 +24,7 @@
     "number": "+234 701 333 4455",
     "email": "design@north-creation.com",
     "website": "www.north-creation.com",
-    "image": "images/north-creation.png",
+    "image": "images/businesses/north-creation.webp",
     "level": "Silver"
   },
   {
@@ -51,7 +33,7 @@
     "number": "+234 708 666 7788",
     "email": "sales@purechips.net",
     "website": "www.purechips.net",
-    "image": "images/purechips.png",
+    "image": "images/businesses/purechips.webp",
     "level": "Member"
   },
   {
@@ -60,17 +42,8 @@
     "number": "+234 902 999 0011",
     "email": "vision@vision56.com",
     "website": "www.vision56.com",
-    "image": "images/vision56.png",
+    "image": "images/businesses/vision56.webp",
     "level": "Gold"
-  },
-  {
-    "name": "Forte Sounds",
-    "address": "10 Parliamentary Road, Calabar",
-    "number": "+234 905 222 3344",
-    "email": "office@forte.com.ng",
-    "website": "www.forte.com.ng",
-    "image": "images/forte.png",
-    "level": "Member"
   },
   {
     "name": "Flaire Atelier",
@@ -78,34 +51,7 @@
     "number": "+234 810 555 6677",
     "email": "connect@flaire.com",
     "website": "www.flaire.com",
-    "image": "images/flaire.png",
-    "level": "Silver"
-  },
-  {
-    "name": "Tina Connects",
-    "address": "7 Watt Market, Calabar",
-    "number": "+234 812 888 9900",
-    "email": "tina@tina-fashions.com",
-    "website": "www.tina-fashions.com",
-    "image": "images/tina.png",
-    "level": "Member"
-  },
-  {
-    "name": "Tech Essential",
-    "address": "33 Goldie Street, Calabar",
-    "number": "+234 814 111 2222",
-    "email": "essentials@techessential.ng",
-    "website": "www.techessential.ng",
-    "image": "images/tech-essential.png",
-    "level": "Gold"
-  },
-  {
-    "name": "Rons Creation",
-    "address": "14 Target Road, Calabar",
-    "number": "+234 816 333 4444",
-    "email": "ron@ronscreation.com",
-    "website": "www.ronscreation.com",
-    "image": "images/rons-creation.png",
+    "image": "images/businesses/flaire.webp",
     "level": "Silver"
   },
   {
@@ -114,7 +60,7 @@
     "number": "+234 818 555 6666",
     "email": "print@colorlibrary.com",
     "website": "www.colorlibrary.com",
-    "image": "images/color-library.png",
+    "image": "images/businesses/color-library.webp",
     "level": "Member"
   },
   {
@@ -123,7 +69,7 @@
     "number": "+234 703 777 8888",
     "email": "studio@afrogram.studio",
     "website": "www.afrogram.studio",
-    "image": "images/afrogram-studio.png",
+    "image": "images/businesses/afrogram-studio.webp",
     "level": "Gold"
   },
   {
@@ -132,7 +78,7 @@
     "number": "+234 706 999 0000",
     "email": "get@catchy.com",
     "website": "www.catchy.com",
-    "image": "images/catchy.png",
+    "image": "images/businesses/catchy.webp",
     "level": "Silver"
   },
   {
@@ -141,25 +87,7 @@
     "number": "+234 901 222 3333",
     "email": "consult@keplan.com",
     "website": "www.keplan.com",
-    "image": "images/kaplan-consulting.png",
-    "level": "Member"
-  },
-  {
-    "name": "Food Crumbs",
-    "address": "25 Diamond Hill, Calabar",
-    "number": "+234 908 444 5555",
-    "email": "eat@foodcalabar.com",
-    "website": "www.foodcalabar.com",
-    "image": "images/food.png",
-    "level": "Silver"
-  },
-  {
-    "name": "Blue Library",
-    "address": "77 Ekpo Abasi, Calabar",
-    "number": "+234 912 666 7777",
-    "email": "read@bluelibrary.org",
-    "website": "www.bluelibrary.org",
-    "image": "images/blue-library.png",
+    "image": "images/businesses/kaplan-consulting.webp",
     "level": "Member"
   }
     ]
