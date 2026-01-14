@@ -49,6 +49,7 @@
 .join-button {
     display: inline-block;
     padding: 1rem 2.5rem;
+    margin-top: -1.5rem;
     font-size: 1.2rem;
     font-weight: 700;
     text-decoration: none;
@@ -343,6 +344,9 @@
     padding-right: 6rem;
     }
 
+    .join-button {
+    margin-top: 4rem;
+    }
     
     .hero-text {
         text-align: left;
