@@ -1,66 +1,65 @@
-// This selects HTML element in the document
+// Select HTML elements
 const myCity = document.querySelector('#city');
-const myCountry = document.querySelector('#country');
-const myDesc = document.querySelector('#desc'); 
 const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
 const myHumidityDesc = document.querySelector('#humidity');
-// const myPressure = document.querySelector('#pressure');
+const iconContainer = document.querySelector('#icon-container');
+const myDesc = document.querySelector('#desc');
 
-// THIS CREATES REQUIRED VARIABLES FOR THE URL
-const myKey = "647f73e4a3733a4a1632b09f427c8935"
-const myLat = "4.9757"
-const myLong = "8.3417"
+//  API Configuration
+const myKey = "647f73e4a3733a4a1632b09f427c8935";
+const myLat = "4.9757";
+const myLong = "8.3417";
+const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
 
-// This constructs a full path using the default format
-// const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.63&appid={647f73e4a3733a4a1632b09f427c8935}'
-
-// This constructs a full path using template literals
-const myURL = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`
-
-// Try to grab the current weather data
+// Fetch Data
 async function apiFetch() {
-  try {
-    const response = await fetch(myURL);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data); // testing only
-      displayResults(data); // uncomment when ready
-    } else {
-        throw Error(await response.text());
+    try {
+        const response = await fetch(myURL);
+        if (response.ok) {
+            const data = await response.json();
+            displayResults(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.error("Weather API Error:", error);
     }
-  } catch (error) {
-      console.log(error);
-  }
 }
 
-// Display the json data onto my webpage
+// Display Results
 function displayResults(data) {
-    // console.log("hello") //this was to test whether the console is functioning properly
-    // myCity.innerHTML = data.name
-    
-    // This create the translator toll
+    // Internationalization for Country Name
     const regionNames = new Intl.DisplayNames(['en'], {type: 'region'});
-
-    // This converts the code (NG) into the full name (Nigeria)
     const fullCountryName = regionNames.of(data.sys.country); 
 
-    // This combines the city and country names together
-    myCity.innerHTML = `Calabar, ${fullCountryName}`;
+    // Update Text (City, Temp, Humidity)
+    myCity.innerHTML = `Calabar, <strong>${fullCountryName}</strong>`;
 
-    // This generates the description and weather information
-    myDesc.innerHTML = data.weather[0].description
-    currentTemp.innerHTML = `Temperature: ${data.main.temp}&deg;C`
-    myHumidityDesc.innerHTML = `Humidity: ${data.main.humidity}%`
-    // myPressure.innerHTML = data.main.pressure
+    const description = data.weather[0].description;
+    myDesc.textContent = description.charAt(0).toUpperCase() + description.slice(1);
 
-    // This manipulates the weather icon
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
-    weatherIcon.setAttribute('src', iconsrc)
-    weatherIcon.setAttribute('alt', data.weather[0].description)
+    currentTemp.innerHTML = `Temperature: ${Math.round(data.main.temp)}°C`;
+    myHumidityDesc.innerHTML = `Humidity: ${data.main.humidity}%`;
+
+    
+
+    // Handle Icon Creation
+    if (iconContainer) {
+        iconContainer.innerHTML = ''; // Clear container
+        
+        const img = document.createElement('img');
+        const iconCode = data.weather[0].icon;
+        const description = data.weather[0].description;
+        
+        img.setAttribute('src', `https://openweathermap.org/img/wn/${iconCode}@2x.png`);
+        img.setAttribute('alt', description);
+        img.setAttribute('id', 'weather-icon');
+        
+        // Add a tooltip so users can see the description on hover
+        img.setAttribute('title', description.toUpperCase());
+
+        iconContainer.appendChild(img);
+    }
 }
 
-
-// Start the process
 apiFetch();

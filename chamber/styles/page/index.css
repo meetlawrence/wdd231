@@ -26,9 +26,9 @@
 }
 
 .hero-text {
-    text-align: center;
     max-width: 500px;
     margin-bottom: 1.5rem;
+    display: flex; /* Added to support flex-direction */
     flex-direction: column;
     position: relative;
     z-index: 2;
@@ -40,7 +40,6 @@
 }
 
 .hero-actions {
-    /* margin-top: 2rem; */
     display: flex;
     justify-content: center;
     z-index: 2;
@@ -138,7 +137,6 @@
     color: #fff;
     font-size: 1.1rem;
     border-bottom: 1px solid var(--border);
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,7 +181,6 @@
 
 /* Left Side: Icon and Description */
 .weather-left {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,7 +241,7 @@
 
 .forecast-temp {
     font-weight: 900;
-    color: var(--accent3); /* Or whatever your dark/highlight color is */
+    color: var(--accent3); 
 }
 
 /* Ensure images don't overflow */
@@ -275,19 +272,19 @@
     padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-left: 8px solid var(--border);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 /* Hover State */
 .spotlight-card:hover {
     background-color: var(--accent4);
-    /* transform: translateY(-5px); */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: filter 0.3s ease;
-
-    .spotlight-name {
-        border-bottom: 1px solid #9c8e8e;
-    } 
 }
+
+.spotlight-card:hover .spotlight-name {
+    border-bottom: 1px solid #9c8e8e;
+}
+
 
 /* Tier-specific colors */
 .spotlight-card.gold { border-left-color: #FFD700; }
@@ -326,7 +323,7 @@
 }
 
 /* ============================================ */
-/* BADGES & RESPONSIVENESS                     */
+/* BADGES & RESPONSIVENESS                      */
 /* ============================================ */
 @media (min-width: 768px) {
     .view-toggle {
@@ -336,25 +333,21 @@
     }
 
     .hero-directory {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-    padding-top: 5rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 5rem 6rem 2rem; /* Shorthand for top, sides, bottom */
     }
 
     .join-button {
-    margin-top: 4rem;
+        margin-top: 4rem;
     }
     
     .hero-text {
         text-align: left;
-
     }
 
     .hero-text h1 {
-        margin: 0;
         line-height: 0.9;
     }
 
@@ -375,6 +368,5 @@
         grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
         gap: 1rem;
         padding: 4rem;
-        margin: 0;
     }
 }
