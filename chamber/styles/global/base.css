@@ -39,7 +39,36 @@
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
 }
 
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--accent4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    /* right: 20px; */
+}
+ 
+#theme-switch svg {
+    fill: var(--ink2);
+}
 
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
 
 * {
     box-sizing: border-box;
