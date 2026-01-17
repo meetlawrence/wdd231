@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="styles/global/base.css">
     <link rel="stylesheet" href="styles/global/base-large.css">
-    <link rel="stylesheet" href="styles/page/index.css">
+    <link rel="stylesheet" href="styles/page/join.css">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
@@ -51,9 +51,9 @@
                 </button>
                 
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
                     <li><a href="discover.html">Discover</a></li>
                 </ul>
             </nav>
@@ -61,71 +61,38 @@
     </header>
 
     <main class="container">
-        <section class="hero hero-directory" aria-label="A glass facade of a business tower in Calabar">
-            <div class="hero-text">
-                <h1 class="nigeria">Calabar Chamber of Commerce</h1>
-                <p class="info">Connecting Business. Building Calabar. <br>The official platform for business growth, policy influence, and economic development in Cross River State. </p> 
+        <form method="GET" action="thanks.html" class="designOne">
+            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+            <label>Organizational Title
+                <input type="text" name="org-title" title="Organizational Title" 
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" 
+                    title="Minimum 7 characters. Only letters, hyphens, and spaces allowed.">
+            </label>
+            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+            <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+            <label>Business/Organization Name* <input type="text" name="organization" title="Organization Name" required autocomplete="organization"></label>
+            <label>Membership Level*
+                <select name="membership" required title="Membership Level">
+                    <option value="" disabled selected>Select a level...</option>
+                    <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+            <label>
+                Business/Organization Description
+                <textarea name="description" title="Enter a brief description of your organization"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <div class="form-actions">
+                <input type="submit" value="Register Now" class="submit-btn">
             </div>
+        </form>
 
-            <div class="hero-actions">
-                <a href="join.html" class="join-button" target="_blank">Join Now</a>
-            </div>
-        </section>
-
-        <section class="home-content">
-            <div class="page-title">
-                <h2>Home</h2>
-            </div>
-
-            <div class="container-grid">
-
-                <section class="card1">
-                    <div class="card-content">
-                        <h2 class="card-title">Events</h2>
-                        <div class="card-inside">
-                            <p><strong>Mar 15:</strong> Business Networking Mixer – Transcorp Hotels</p>
-                            <hr>
-                            <p><strong>Apr 05:</strong> Export Readiness Workshop – Chamber Hall</p>
-                            <hr>
-                            <p><strong>May 20:</strong> Canaan City Trade Fair – U.J. Esuene Stadium</p>
-                            <hr>
-                            <p><strong>Jun 12:</strong> SME Digital Growth Summit – Tinapa Resort</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="card2">
-                    <div class="card-content">
-                        <h2 class="card-title">Current Weather</h2>
-                        <div class="weather-info">
-                            <div class="weather-left">
-                                <div id="icon-container"></div>
-                                <p id="desc"></p>
-                            </div>
-
-                            <div class="weather-right">
-                                <p id="city"></p>
-                                <p id="current-temp"></p>
-                                <p id="humidity"></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="card3">
-                    <div class="card-content">
-                        <h2 class="card-title">Weather Forecast</h2>
-                        <div class="card-inside" id="forecast-container">
-                            </div>
-                    </div>
-                </section>
-            </div>
-
-            <div class="spotlight-section">
-                <div class="spotlight-container" id="spotlight-wrapper"></div>
-            </div>
-
-        </section> 
     </main> 
     <footer>
         <div class="address">
