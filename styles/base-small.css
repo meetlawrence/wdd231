@@ -290,6 +290,36 @@ body.home {
     width: 50px;
 }
 
+/* ============================ */
+/*            Dialog            */
+/* ============================ */
+
+dialog {
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 .5rem #777;
+  width: 70%;
+  max-width: 600px;
+}
+
+/* dialog h2{
+    background-color: #000000;
+    color: #E1E7EF;
+} */
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+}
 
 
 .footer1 {
