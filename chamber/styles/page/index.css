@@ -54,8 +54,6 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-    
-    /* Colors - Feel free to change var(--accent) to your brand color */
     background-color: var(--accent); 
     color: var(--ink);
     
