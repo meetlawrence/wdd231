@@ -1,13 +1,13 @@
 /* Form Container Styling */
 
 main {
-    padding: 1rem;
+padding: 0;
 }
 
 .form-body{
     max-width: 600px;
-    margin: 2rem auto;
-    padding: 2rem;
+    margin: 1rem 0;
+    padding: 1.3rem;
     background-color: var(--accent4); 
     border-radius: 8px;
     box-shadow: var(--shadow);
