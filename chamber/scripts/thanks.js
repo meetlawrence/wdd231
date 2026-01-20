@@ -18,6 +18,6 @@ document.querySelector("#results").innerHTML = `
 <p><strong>Email:</strong> <span>${myInfo.get("email")}</span></p>
 <p><strong>Phone:</strong> <span>${myInfo.get("phone")}</span></p>
 <p><strong>Organization:</strong> <span>${myInfo.get("organization")}</span></p>
-<p><strong>Membership:</strong> <span style="text-transform: uppercase; color: var(--accent1); font-weight: bold;">${myInfo.get("membership")}</span></p>
+<p><strong>Membership:</strong> <span>${myInfo.get("membership")}</span></p>
 <p><strong>Description:</strong> <span>${myInfo.get("description")}</span></p>
 `
