@@ -250,7 +250,7 @@ footer ul {
 .footer-link:visited, 
 .footer-link:hover {
     color: var(--ink);
-    text-decoration: none;
+    text-decoration: underline;
 }
 .social-icons {
     margin-top: 2rem;
