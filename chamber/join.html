@@ -26,9 +26,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/forecast.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/levels.js" defer></script>
 </head>
 
 <body class="home">
@@ -61,39 +59,86 @@
     </header>
 
     <main class="container">
-        <form method="GET" action="thanks.html" class="designOne">
-            <div class="form-body">
-                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                <label>Organizational Title
-                    <input type="text" name="org-title" title="Organizational Title" 
-                        autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" 
-                        title="Minimum 7 characters. Only letters, hyphens, and spaces allowed.">
-                </label>
-                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
-                <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
-                <label>Business/Organization Name <input type="text" name="organization" title="Organization Name" required autocomplete="organization"></label>
-                <label>Membership Level
-                    <select name="membership" required title="Membership Level">
-                        <option value="" disabled selected>Select a level...</option>
-                        <option value="np">NP Membership (Non-Profit - No Fee)</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                    </select>
-                </label>
-                <label>
-                    Business/Organization Description
-                    <textarea name="description" title="Enter a brief description of your organization"></textarea>
-                </label>
-
-                <input type="hidden" name="timestamp" id="timestamp">
+        <section class="hero hero-directory" aria-label="A glass facade of a business tower in Calabar">
+            <div class="hero-text">
+                <h1>Your Gateway to Global Trade</h1>
+                <p class="info">Align your business with a legacy of excellence. Join hundreds of professionals working together to create a thriving, innovative, and sustainable economy in Cross River</p> 
             </div>
+        </section>
 
-            <div class="form-actions">
-                <input type="submit" value="Register Now" class="submit-btn">
-            </div>
-        </form>
+        <div class="content">
+            <form method="GET" action="thanks.html" class="designOne">
+                <h2>Membership Application Form</h2>
+                <div class="form-body">
+                    <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                    <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                    <label>Organizational Title
+                        <input type="text" name="org-title" title="Organizational Title" 
+                            autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" 
+                            title="Minimum 7 characters. Only letters, hyphens, and spaces allowed.">
+                    </label>
+                    <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+                    <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+                    <label>Business/Organization Name <input type="text" name="organization" title="Organization Name" required autocomplete="organization"></label>
+                    <label>Membership Level
+                        <select name="membership" required title="Membership Level">
+                            <option value="" disabled selected>Select a level...</option>
+                            <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label>
+                        Business/Organization Description
+                        <textarea name="description" title="Enter a brief description of your organization"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </div>
+
+                <div class="form-actions">
+                    <input type="submit" value="Register Now" class="submit-btn">
+                </div>
+            </form>
+
+            <section class="level">
+                <h2>Membership Levels</h2>
+                <!-- <div class="level-card">
+                    <h3>Non Profit Membership</h3>
+                    <button id="openButton1">Learn More</button>
+                </div>
+                <div class="level-card">
+                    <h3>Bronze Membership</h3>
+                    <button id="openButton2">Learn More</button>
+                </div>
+                <div class="level-card">
+                    <h3>Silver Membership</h3>
+                    <button id="openButton3">Learn More</button>    
+                </div>
+                <div class="level-card">
+                    <h3>Gold Membership</h3>
+                    <button id="openButton4">Learn More</button>
+                </div>
+
+                <dialog id="dialogBox">
+                    <div></div>
+                    <button id="closeButton">Close</button>
+                </dialog> -->
+
+                <div id="showHere"></div>
+
+                <!-- One single dialog for all temples -->
+                <dialog id="mydialog">
+                <div>
+                    <h2></h2>
+                    <button>X</button>
+                </div>
+                <p></p>
+                </dialog>
+
+            </section>
+        </div>
 
     </main> 
     <footer>
