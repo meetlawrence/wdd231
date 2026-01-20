@@ -32,6 +32,7 @@
 }
 
 .confirmation-card h1 {
+    font-size: 2rem;
     color: var(--primary);
     margin-bottom: 0.5rem;
 }
