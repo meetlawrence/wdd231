@@ -6,7 +6,7 @@ document.getElementById("currentyear").textContent = year;
 const ModifiedDate = new Date(document.lastModified);
 
 let options = {
-	weekday: "long",
+	weekday: "short",
 	year: "numeric",
 	month: "long",
 	day: "numeric",

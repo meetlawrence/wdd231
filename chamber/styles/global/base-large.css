@@ -22,7 +22,7 @@
 
     .navigation a:hover {
         color: var(--ink);
-        background-color: var(--accent1); /* Very light tint of your accent1 */
+        background-color: var(--accent1); 
         border-radius: 8px;
     }
 

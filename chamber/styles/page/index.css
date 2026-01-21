@@ -149,19 +149,19 @@
     padding: 0 2rem;
 }
 
-/* 1. Remove margins so background colors touch the <hr> lines */
+/* Remove margins so background colors touch the <hr> lines */
 .card-inside p {
     font-size: 0.9rem;
     margin: 0;           /* Removes the gap between stripes */
     padding: 12px 1rem;  /* Adds space back inside the stripe */
 }
 
-/* 2. Target the even paragraphs */
+/* Target the even paragraphs */
+/* Zebra Stripped */
 .card-inside p:nth-of-type(even) {
     background-color: #f9f9f9;
 }
 
-/* Styling the hr with zebra stripes */
 .card-inside hr {
     border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.1); 
@@ -185,11 +185,12 @@
     align-items: center;
     flex: 1; /* Takes up equal space */
     /* Create a soft halo background */
+    /* I got this from the internet */
     background: radial-gradient(circle, rgba(255, 215, 0, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
 }
 
 #weather-icon {
-    width: 100px; /* Increase size slightly */
+    width: 100px; /* Increase size */
     height: auto;
     /* This creates a soft glow around the icon shape itself */
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));

@@ -2,7 +2,7 @@ const forecastKey = "647f73e4a3733a4a1632b09f427c8935";
 const lat = "4.9757";
 const lon = "8.3417";
 
-// Note the endpoint is "forecast" not "weather"
+// Note: the endpoint is "forecast" not "weather"
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${forecastKey}&units=metric`;
 
 async function getForecast() {

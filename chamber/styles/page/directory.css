@@ -244,13 +244,11 @@
 
 @media (max-width: 767px) {
     /* Force Grid View on mobile even if the "list" class is somehow added */
+    /* I learnt this from the internet */
+    
     #cards {
         display: grid !important;
         grid-template-columns: 1fr !important;
         gap: 1.5rem;
     }
 }
-
-/* .silver { border-top: 5px solid #C0C0C0 !important; }
-.gold { border-top: 5px solid #FFD700 !important; }
-.member { border-top: 5px solid var(--accent); } */

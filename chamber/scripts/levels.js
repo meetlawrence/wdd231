@@ -69,7 +69,7 @@ function showStuff(item) {
 window.addEventListener('DOMContentLoaded', () => {
     const timestampField = document.getElementById('timestamp');
     
-    // Set the value to the current date and time in a readable ISO format
+    // This sets the value to the current date and time in a readable ISO format
     const now = new Date();
     timestampField.value = now.toISOString(); 
 

@@ -79,7 +79,6 @@ h1 {
 }
 
 main {
-    /* max-width: 1200px; Limits growth on ultra-wide screens */
     width: 100%;       /* Allows it to fill smaller screens */
     margin: 80px auto 0 auto; /* 80px matches the header height */
 }
@@ -174,11 +173,6 @@ main {
     transform: translateY(8.5px) rotate(45deg);
 }
 
-/* #menu.open .bar:nth-child(2) {
-    opacity: 0;
-    transform: translateX(-10px);
-} */
-
 #menu.open .bar:nth-child(2) {
     transform: translateY(-8.5px) rotate(-45deg);
 }
@@ -243,7 +237,7 @@ footer ul {
     margin: 0;
 }
 
-/* This ensures the phone number stays white */
+/* This ensures the phone number and links stays white */
 .footer-link, 
 .footer-link:visited, 
 .footer-link:hover {
