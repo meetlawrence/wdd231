@@ -4,7 +4,7 @@ const cards = document.querySelector('#cards');
 async function getCompanyData() {
     const response = await fetch(url);
     const data = await response.json();
-    // Passing the 'company' array from your JSON
+    // Passing the 'company' array from JSON
     displayCompanies(data.company);
 }
 

@@ -5,13 +5,13 @@ const myInfo = new URLSearchParams(getString);
 console.log(myInfo);
 
 
-// This function converts the time to human readable. Gotten online
+// This function converts the time to readable. Gotten online
 function formatTime(time) {
     if (!time) return "N/A";
     const date = new Date(time);
     return date.toLocaleString('en-GB', {
         day: 'numeric',
-        month: 'long',
+        month: 'short',
         year: 'numeric',
         hour: '2-digit',
         minute: '2-digit'
