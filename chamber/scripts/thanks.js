@@ -4,6 +4,20 @@ console.log(getString);
 const myInfo = new URLSearchParams(getString);
 console.log(myInfo);
 
+
+// This function converts the time to human readable. Gotten online
+function formatTime(time) {
+    if (!time) return "N/A";
+    const date = new Date(time);
+    return date.toLocaleString('en-GB', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+}
+
 // console.log(myInfo.get("first"));
 // console.log(myInfo.get("last"));
 // console.log(myInfo.get("phone"));
@@ -20,4 +34,5 @@ document.querySelector("#results").innerHTML = `
 <p><strong>Organization:</strong> <span>${myInfo.get("organization")}</span></p>
 <p><strong>Membership:</strong> <span>${myInfo.get("membership")}</span></p>
 <p><strong>Description:</strong> <span>${myInfo.get("description")}</span></p>
+<p><strong>Submission Date:</strong> <span>${formatTime(myInfo.get("timestamp"))}</span></p>
 `

@@ -65,6 +65,18 @@ function showStuff(item) {
     mydialog.showModal();
 }
 
+// Function to capture the current date and time on page load
+window.addEventListener('DOMContentLoaded', () => {
+    const timestampField = document.getElementById('timestamp');
+    
+    // Set the value to the current date and time in a readable ISO format
+    const now = new Date();
+    timestampField.value = now.toISOString(); 
+
+    // For debugging: Verify in console that the time was captured
+    console.log("Form loaded at: " + timestampField.value);
+});
+
 
 // const openButton = document.querySelector("#openButton");
 // const dialogBox = document.querySelector("#dialogBox");

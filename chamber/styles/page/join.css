@@ -171,6 +171,8 @@ form input[type="submit"]:hover {
 
 .learn-more-btn:hover { background-color: var(--accent1); }
 
+
+
 /* Card Animations */
 @keyframes floatIn {
     from {
@@ -218,10 +220,18 @@ form input[type="submit"]:hover {
 }
 
 #mydialog button {
-    border: 1px solid rgba(8, 8, 0, 0.23);
-    border-radius: 5px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
     cursor: pointer;
-    transition: background 0.2s;
+    padding: 0;
+    line-height: 1;
+}
+
+#mydialog button:hover {
+    color: #d70000; 
 }
 
 ::backdrop {
