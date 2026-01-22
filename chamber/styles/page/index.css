@@ -5,11 +5,9 @@
     position: relative;
     width: 100%;
     background-color: var(--primary) !important;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.4), 
-        rgba(0, 0, 0, 0.9)
-    ), 
-    url("../../images/banners/main1.webp") no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.9)),
+        url("../../images/banners/main1.webp") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,13 +33,14 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-color: var(--accent); 
+    background-color: var(--accent);
     color: var(--ink);
-    
+
     /* Shaping */
-    border-radius: 50px; /* Pill shape */
+    border-radius: 50px;
+    /* Pill shape */
     border: 2px solid transparent;
-    
+
     /* Smoothness */
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -52,7 +51,8 @@
     background-color: transparent;
     color: var(--accent2);
     border-color: var(--accent2);
-    transform: translateY(-3px); /* Lifts the button */
+    transform: translateY(-3px);
+    /* Lifts the button */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -80,7 +80,8 @@
 
 .container-grid {
     display: flex;
-    flex-direction: column; /* Stacked on mobile */
+    flex-direction: column;
+    /* Stacked on mobile */
     gap: 1.5rem;
     padding-bottom: 2rem;
 }
@@ -89,7 +90,8 @@
 /* Cards                                        */
 /* ============================================ */
 .card-content {
-    flex: 1; /* This forces the content to grow and fill the parent section */
+    flex: 1;
+    /* This forces the content to grow and fill the parent section */
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -111,8 +113,9 @@
     justify-content: center;
 }
 
-.card-inside, .weather-info {
-    flex: 1; 
+.card-inside,
+.weather-info {
+    flex: 1;
 }
 
 .card-inside {
@@ -122,8 +125,10 @@
 /* Remove margins so background colors touch the <hr> lines */
 .card-inside p {
     font-size: 0.9rem;
-    margin: 0;           /* Removes the gap between stripes */
-    padding: 12px 1rem;  /* Adds space back inside the stripe */
+    margin: 0;
+    /* Removes the gap between stripes */
+    padding: 12px 1rem;
+    /* Adds space back inside the stripe */
 }
 
 /* Target the even paragraphs */
@@ -134,15 +139,17 @@
 
 .card-inside hr {
     border: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.1); 
-    margin: 0; /* Ensures no white space between p and hr */
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0;
+    /* Ensures no white space between p and hr */
 }
 
 /* ============================== */
 /* weather Card style             */
 /* ============================== */
 .weather-info {
-    padding: 0 2rem; /* Matches card-inside padding */
+    padding: 0 2rem;
+    /* Matches card-inside padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -153,14 +160,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1; /* Takes up equal space */
+    flex: 1;
+    /* Takes up equal space */
     /* Create a soft halo background */
     /* I got this from the internet */
     background: radial-gradient(circle, rgba(255, 215, 0, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
 }
 
 #weather-icon {
-    width: 100px; /* Increase size */
+    width: 100px;
+    /* Increase size */
     height: auto;
     /* This creates a soft glow around the icon shape itself */
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
@@ -175,7 +184,8 @@
 /* Right Side: City, Temp, and Humidity */
 .weather-right {
     flex: 1;
-    text-align: right; /* Aligns text to the right edge */
+    text-align: right;
+    /* Aligns text to the right edge */
 }
 
 #city {
@@ -211,7 +221,7 @@
 
 .forecast-temp {
     font-weight: 900;
-    color: var(--accent3); 
+    color: var(--accent3);
 }
 
 /* Ensure images don't overflow */
@@ -229,6 +239,7 @@
     border-top: 1px solid var(--ink2);
     margin-bottom: -2rem;
 }
+
 .spotlight-container {
     display: flex;
     flex-direction: column;
@@ -240,7 +251,7 @@
     background: var(--ink);
     border-radius: 8px;
     padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-left: 8px solid var(--border);
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
@@ -257,8 +268,13 @@
 
 
 /* Tier-specific colors */
-.spotlight-card.gold { border-left-color: #FFD700; }
-.spotlight-card.silver { border-left-color: #C0C0C0; }
+.spotlight-card.gold {
+    border-left-color: #FFD700;
+}
+
+.spotlight-card.silver {
+    border-left-color: #C0C0C0;
+}
 
 .spotlight-name {
     margin-top: 0;
@@ -306,13 +322,14 @@
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
-        padding: 5rem 6rem 2rem; /* Shorthand for top, sides, bottom */
+        padding: 5rem 6rem 2rem;
+        /* Shorthand for top, sides, bottom */
     }
 
     .join-button {
         margin-top: 4rem;
     }
-    
+
     .hero-text {
         text-align: left;
     }
@@ -322,7 +339,7 @@
     }
 
     /* This line made the cards the same height */
-    .container-grid > section {
+    .container-grid>section {
         display: flex;
         flex-direction: column;
     }
