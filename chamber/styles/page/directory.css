@@ -2,9 +2,22 @@
 /* HERO & DIRECTORY HEADER                      */
 /* ============================================ */
 .hero-directory {
-    background: url("../../images/banners/main2.webp") no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.01), 
+        rgba(0, 0, 0, 0.9)
+    ), 
+    url("../../images/banners/main2.webp") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--ink);
+    padding: 2rem;
+    overflow: hidden;
 }
-
 
 /* ============================================ */
 /* 2. VIEW SWITCHER MENU                        */

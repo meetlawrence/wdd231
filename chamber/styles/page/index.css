@@ -4,8 +4,11 @@
 .hero-directory {
     position: relative;
     width: 100%;
-    background-color: var(--primary); /* This is a fall back color */
-    background: url("../../images/banners/main1.webp") no-repeat center center/cover;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.01), 
+        rgba(0, 0, 0, 0.9)
+    ), 
+    url("../../images/banners/main1.webp") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,8 +49,8 @@
 /* Hover State */
 .join-button:hover {
     background-color: transparent;
-    color: var(--accent3);
-    border-color: var(--accent3);
+    color: var(--accent2);
+    border-color: var(--accent2);
     transform: translateY(-3px); /* Lifts the button */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
