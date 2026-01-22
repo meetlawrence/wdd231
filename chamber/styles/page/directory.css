@@ -2,56 +2,9 @@
 /* HERO & DIRECTORY HEADER                      */
 /* ============================================ */
 .hero-directory {
-    position: relative;
-    width: 100%;
-    background-color: var(--primary); /* This is a fall back color */
     background: url("../../images/banners/main2.webp") no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--ink);
-    padding: 2rem;
-    overflow: hidden;
 }
 
-.hero-directory::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--primary);
-    opacity: 0.7;
-    z-index: 1;
-
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
-
-.hero-text {
-    text-align: center;
-    max-width: 500px;
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-}
-
-.hero-text h1 {
-    margin: 0;
-    line-height: 0.9;
-}
 
 /* ============================================ */
 /* 2. VIEW SWITCHER MENU                        */

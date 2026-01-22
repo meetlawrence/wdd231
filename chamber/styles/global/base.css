@@ -11,6 +11,7 @@
     --background: #ffffff;
     --ink: #ffffff;
     --ink2: #000000;
+    --ink3: rgb(133, 133, 133);
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     --radius: 10px;
     --radius2: 7px;
@@ -215,6 +216,48 @@ main {
     color: var(--ink);
     font-weight: 900;
 }
+
+.hero-directory {
+    position: relative;
+    width: 100%;
+    background-color: var(--primary); /* This is a fall back color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--ink);
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.hero-directory::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--ink3);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+
+.hero-text {
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+    display: flex; /* Added to support flex-direction */
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    color: var(--primary);
+}
+
+.hero-text h1 {
+    margin: 0;
+    line-height: 0.9;
+}
+
+
+
 
 /* FOOTER & SOCIALS */
 footer {

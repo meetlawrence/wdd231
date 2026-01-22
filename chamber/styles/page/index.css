@@ -16,29 +16,6 @@
     overflow: hidden;
 }
 
-.hero-directory::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--primary);
-    opacity: 0.7;
-    z-index: 1;
-}
-
-.hero-text {
-    max-width: 500px;
-    margin-bottom: 1.5rem;
-    display: flex; /* Added to support flex-direction */
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-}
-
-.hero-text h1 {
-    margin: 0;
-    line-height: 0.9;
-}
-
 .hero-actions {
     display: flex;
     justify-content: center;
@@ -69,8 +46,8 @@
 /* Hover State */
 .join-button:hover {
     background-color: transparent;
-    color: var(--accent2);
-    border-color: var(--accent2);
+    color: var(--accent3);
+    border-color: var(--accent3);
     transform: translateY(-3px); /* Lifts the button */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
