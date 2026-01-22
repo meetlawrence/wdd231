@@ -6,7 +6,7 @@
     width: 100%;
     background-color: var(--primary) !important;
     background: linear-gradient(
-        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.04), 
         rgba(0, 0, 0, 0.9)
     ), 
     url("../../images/banners/main2.webp") no-repeat center center/cover;
