@@ -4,6 +4,7 @@
 .hero-directory {
     position: relative;
     width: 100%;
+    background-color: var(--primary) !important;
     background: linear-gradient(
         rgba(0, 0, 0, 0.4), 
         rgba(0, 0, 0, 0.9)
