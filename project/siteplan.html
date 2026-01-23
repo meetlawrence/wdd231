@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbegChop - Calabar Campus Food Delivery</title>
+    <meta name="description" content="AbegChop: The fastest way to get delicious campus meals delivered to your hostel at the University of Calabar.">
+    <meta name="author" content="Lawrence Okon">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+
+<body class="light-theme">
+    <header id="header">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="logo-icon">
+                    <img class="icon-small" src="images/abegchop.svg" alt="AbegChop Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>AbegChop</h1>
+                    <div class="location">
+                        <svg class="icon-small"><use href="images/sprites.svg#icon-location"></use></svg>
+                        <span>Calabar Campus</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <button id="theme-toggle" class="icon-button" aria-label="Toggle Theme">
+                    <svg id="theme-icon-moon" class="icon"><use href="images/sprites.svg#icon-moon"></use></svg>
+                    <svg id="theme-icon-sun" class="icon hidden"><use href="images/sprites.svg#icon-sun"></use></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+            
+            <div class="hero-content">
+                <h2 class="hero-title">AbegChop</h2>
+                <p class="hero-subtitle">A hyper-local, high-efficiency campus food directory and order-generation platform.</p>
+            </div>
+
+            <div class="content">
+                <section>
+                    <h2>Description</h2>
+                    <hr>
+                    <p><strong>AbegChop</strong> is a 3-page, data-driven web application designed to bridge the gap between campus food vendors and hungry students.</p>
+                </section>
+
+                <section>
+                    <h2>Purpose</h2>
+                    <hr>
+                    <p>The primary purpose of AbegChop is to solve information asymmetry on campus. 
+                        Students often waste limited time between lectures walking to various canteens only to find their preferred food is sold out or the queue is too long.<br> 
+                        By centralizing local vendor menus into a single mobile-optimized interface, the site:</p>
+                    <ul>
+                        <li><strong>Reduces Foot Traffic:</strong> Students can check availability before leaving their hostel or classroom.</li>
+                        <li><strong>Simplifies Ordering:</strong> By generating a clear order summary, it reduces communication errors at noisy canteen counters.</li>
+                        <li><strong>Supports Local Vendors:</strong> Small campus kiosks that lack the budget for major delivery apps get a professional digital presence to reach more students.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Pages</h2>
+                    <hr>
+                    <ul>
+                        <li>Home</li>
+                        <li>Order</li>
+                        <li>Join</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Features</h2>
+                    <hr>
+                    <ul>
+                        <li>Responsive Design: Fully optimized, mobile-friendly interface with dynamic JS interactivity.</li> 
+                        <li>Dynamic Menu: Integrated Fetch API to load 15+ meal options from a JSON dataset.</li> 
+                        <li>Advanced Filtering: Interactive category filters and accessible modals for vendor details.</li> 
+                        <li>State Persistence: Implemented LocalStorage to allow users to save favorite meals.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Scenarios</h2>
+                    <hr>
+                    <ul>
+                        <li>Bassey, a UNICAL student at Malabor Republic, uses the responsive site on his phone to filter for "Swallow" options and checks prep times to see if he can grab a meal between lectures.</li>
+                        <li>Ekong, a hungry student in the library, uses the dynamic menu to find the cheapest "Rice" dishes from 15+ vendors and saves them to his favorites list using LocalStorage for easy access later.</li>
+                        <li>Ini, an off-campus student at CRUTECH, explores the interactive UI to view vendor details via the modal dialogs, ensuring she finds a spot near the campus gate that’s currently open.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Color Schema</h2>
+                <div class="color-space">
+                        <div class="card">
+                            <h3>Primary</h3>
+                            <div class="color-box primary">Header</div>
+                        </div>
+                        <div class="card">
+                            <h3>Secondary</h3>
+                            <div class="color-box secondary">Buttons</div>
+                        </div>
+                        <div class="card">
+                            <h3>Accent</h3>
+                            <div class="color-box accent">Cards</div>
+                        </div>
+                    </div>    <hr>
+                    
+                </section>
+
+                <section>
+                    <h2>Typography</h2>
+                    <hr>
+                    <p><strong>Headings:</strong> -apple-system, BlinkMacSystemFont, Segoe UI, Roboto</p>
+                    <p><strong>Body:</strong> -apple-system, BlinkMacSystemFont, Segoe UI, Roboto</p>
+                </section>
+
+                <section>
+                    <hr>
+                    <h2>Wireframe</h2>
+                    <p>This is a wireframe of the homepage of my project</p>
+                    <div class="wireframe">
+                        <img src="images/wireframe.png" alt="wireframe of homepage">
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Logo</h2>
+                    <hr>
+                    <p>This is the logo I created for AbegChop</p>
+                    <div class="logo">
+                        <img src="images/abegchop.svg" alt="logo of AbegChop">
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img class="icon-small" src="images/abegchop.svg" alt="AbegChop">
+                        </div>
+                        <h3>AbegChop</h3>
+                    </div>
+                    <p class="footer-desc">Calabar's favorite food delivery service.🔥</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" aria-label="facebook page" target="_blank">
+                            <svg class="icon"><use href="images/sprites.svg#icon-facebook"></use></svg>
+                        </a>
+                        <a href="https://instagram.com" class="social-link" aria-label="instagram page" target="_blank">
+                            <svg class="icon"><use href="images/sprites.svg#icon-instagram"></use></svg>
+                        </a>
+                        <a href="https://x.com" class="social-link" aria-label="twitter page" target="_blank">
+                            <svg class="icon"><use href="images/sprites.svg#icon-twitter"></use></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Developer</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://meetlawrence.github.io/wdd231/index.html" target="_blank">Lawrence Okon</a></li>
+                        <li><a href="https://meetlawrence.github.io/wdd231/index.html#course-list" target="_blank">WDD231</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Me</h4>
+                    <ul class="footer-contacts">
+                        <li>
+                            <svg class="icon"><use href="images/sprites.svg#icon-location"></use></svg>
+                            <span>Calabar, Nigeria</span>
+                        </li>
+                        <li>
+                            <svg class="icon"><use href="images/sprites.svg#icon-phone"></use></svg>
+                            <span>+234 906 6678 117</span>
+                        </li>
+                        <li>
+                            <svg class="icon"><use href="images/sprites.svg#icon-mail"></use></svg>
+                            <span>lokon4@byupathway.edu</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 AbegChop. All rights reserved. Made with ❤️ for Calabar students.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
