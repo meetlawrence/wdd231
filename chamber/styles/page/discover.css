@@ -1,0 +1,201 @@
+/* ============================================ */
+/* HERO & DIRECTORY HEADER                      */
+/* ============================================ */
+.hero-directory {
+    position: relative;
+    width: 100%;
+    background-color: var(--primary) !important;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.04), 
+        rgba(0, 0, 0, 0.9)
+    ), 
+    url("../../images/banners/main4.webp") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--ink);
+    padding: 2rem;
+    overflow: hidden;
+}
+
+/* Base container - shared properties 
+
+/* ============================================ */
+/*  INDIVIDUAL CARD STYLING                     */
+/* ============================================ */
+
+#allPlaces {
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--ink);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "location"
+    "button";
+}
+
+.card:hover {
+    transform: translateY(-5px); /*Lift effect on hover */
+}
+
+.card img {
+    width: 100%;
+    grid-area: photograph;
+}
+
+.card h2 {
+    margin: 1rem 10px;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    grid-area: name;
+}
+
+.card p {
+    margin: 1rem 10px;
+    line-height: 1.5;
+    color: #555;
+    grid-area: description;
+}
+
+.card address {
+    margin: 1rem 10px;
+    line-height: 1.5;
+    color: #555;
+    grid-area: location;
+}
+
+.card strong {
+  color: #333;
+}
+
+/* Style for the Learn More button on each card */
+.learnMoreBtn {
+    background-color: #007bff; /* Change this to your primary theme color */
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+    margin-top: auto; /* Pushes button to bottom of card if using flex */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    grid-area: button;
+}
+
+/* Hover and Active States */
+.learnMoreBtn:hover {
+    background-color: #0056b3; /* Slightly darker shade */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.learnMoreBtn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Accessibility: focus ring for keyboard users */
+.learnMoreBtn:focus {
+    outline: 3px solid rgba(0, 123, 255, 0.4);
+    outline-offset: 2px;
+}
+
+
+/* The Modal Box */
+#mydialog {
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background: white;
+    /* Animation for smooth entrance */
+    animation: slideIn 0.3s ease-out;
+}
+
+/* The Dimmed Background */
+#mydialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px); /* Modern blur effect */
+}
+
+/* Close Button (top right) */
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: #f1f1f1;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+#closeModal:hover {
+    background: #e0e0e0;
+    color: #d9534f;
+}
+
+/* Content Spacing */
+#myinfo p {
+    margin: 1rem 0;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* Entrance Animation */
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* ============================================ */
+/*  BADGES & RESPONSIVENESS                     */
+/* ============================================ */
+/* Medium Display */
+@media only screen and (min-width: 38rem) {
+    .card {
+        grid-template-areas: 
+        "photograph name"
+        "photograph description"
+        "button location"
+    }
+    
+
+    .card img {
+    width: 200px;
+    }
+
+}
+
+/* Large Display */
+@media only screen and (min-width: 64rem){
+    #allPlaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+
+}
