@@ -173,6 +173,7 @@ form input[type="submit"]:hover {
     border-radius: 8px;
     width: 80%;
     box-shadow: 0 8px 10px rgb(67, 67, 60);
+        animation: slideIn 0.3s ease-out;
 }
 
 #mydialog div {
@@ -214,6 +215,12 @@ form input[type="submit"]:hover {
     background-color: rgba(227, 225, 225, 0.5);
     backdrop-filter: blur(2px);
 }
+/* Entrance Animation */
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
 
 /* ============================================ */
 /* LAYOUT & RESPONSIVENESS                      */

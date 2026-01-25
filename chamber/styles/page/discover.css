@@ -172,6 +172,7 @@
     to { transform: translateY(0); opacity: 1; }
 }
 
+
 /* ============================================ */
 /*  BADGES & RESPONSIVENESS                     */
 /* ============================================ */
@@ -187,6 +188,21 @@
 
     .card img {
     width: 200px;
+    }
+
+    /* Ensure the image container hides the "zoom" overflow */
+    .card figure, .card {
+        overflow: hidden;
+    }
+
+    /* The Hover Effect */
+    .card img {
+        transition: transform 0.5s ease, filter 0.3s ease;
+    }
+
+    .card figure:hover img {
+        transform: scale(1.05); /* Slight zoom in */
+        filter: brightness(1.1); /* Subtle "light up" effect */
     }
 
 }

@@ -21,10 +21,12 @@ const displayPlaces = (placeList) => {
             </figure>
             <h2>${place.name}</h2>
             <address><strong>Address:</strong> ${place.address}</address>
-            <p>${place.description}</p>
+
             <button class="learnMoreBtn" data-name="${place.name}">Learn More</button>
         </section>
     `).join('');
+
+    // <div class="card-content"></div>
 
     // 3. ATTACH EVENT LISTENERS TO BUTTONS
     const buttons = document.querySelectorAll('.learnMoreBtn');
@@ -37,21 +39,21 @@ const displayPlaces = (placeList) => {
     });
 }
 
-// 4. MODAL DISPLAY LOGIC
+// MODAL DISPLAY LOGIC
 function showStuff(place) {
     if (!place) return;
     
     mytitle.textContent = place.name;
     myinfo.innerHTML = `
         <p><strong>Cost:</strong> ${place.cost || 'N/A'}</p>
-        <p><strong>Details:</strong> ${place.description}</p>
+        <p><strong>Description:</strong> ${place.description}</p>
         <p><strong>Location:</strong> ${place.address}</p>
     `;
     
     mydialog.showModal();
 }
 
-// 5. CLOSE MODAL LOGIC
+// CLOSE MODAL LOGIC
 if (closeBtn) {
     closeBtn.addEventListener('click', () => {
         mydialog.close();
@@ -65,5 +67,5 @@ mydialog.addEventListener('click', (event) => {
     }
 });
 
-// 6. INITIALIZE
+// INITIALIZE
 displayPlaces(places);
