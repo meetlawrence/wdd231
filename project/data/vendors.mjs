@@ -65,7 +65,7 @@ export const vendors = [
     id: "v6",
     name: "Pizza Palace",
     image: "images/vendors/pizza.webp", // Rating 4.0 - Kept original
-    rating: 4.0,
+    rating: 4.1,
     deliveryTime: "40-50 min",
     address: "Diamond Hill",
     description: "Italian style pizza.",
@@ -239,6 +239,19 @@ export const vendors = [
     description: "Cakes and desserts.",
     menu: [
       { id: "f22", name: "Chocolate Cake Slice", price: 2000, image: "images/food/cake.webp" }
+    ]
+  },
+  {
+    id: "v21",
+    name: "Morning Glory Cafe",
+    image: "images/vendors/image4.jpg",
+    rating: 4.7,
+    deliveryTime: "15-25 min",
+    address: "Ikot Ansa",
+    description: "Breakfast platters, pancakes, and fresh coffee.",
+    menu: [
+      { id: "f23", name: "Pancake Stack", price: 3000, image: "images/food/pancakes.webp" },
+      { id: "f24", name: "Full English Breakfast", price: 5500, image: "images/food/breakfast.webp" }
     ]
   }
 ];

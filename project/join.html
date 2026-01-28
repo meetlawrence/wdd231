@@ -132,56 +132,50 @@
             </div>
         </section>
         
-        <section id="join-form" class="registration-section">
-            <div class="form-container">
-                <form action="#" class="vendor-form">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="business-name">Business Name</label>
-                            <input type="text" id="business-name" name="business-name" placeholder="e.g. Mama G's Kitchen" required>
-                        </div>
+        <form method="GET" action="thanks.html" class="designOne">
+            <section class="vendor-form">
+                <h2>Vendor Partnership Application</h2>
+                <div class="form-body">
+                    <label>Manager First Name <input type="text" name="first" required autocomplete="given-name" title="Manager's First Name"></label>
+                    <label>Manager Last Name <input type="text" name="last" required autocomplete="family-name" title="Manager's Last Name"></label>
+                    
+                    <label>Business Name <input type="text" name="business-name" required title="Official Restaurant or Business Name" autocomplete="organization"></label>
+                    
+                    <label>Cuisine/Business Type
+                        <select name="business-type" required title="Primary category of food">
+                            <option value="" disabled selected>Select category...</option>
+                            <option value="Local Delicacies">Local Delicacies (Afang, Edikang Ikong, etc.)</option>
+                            <option value="Fast Food">Fast Food (Burgers, Pizza, Fries)</option>
+                            <option value="Grills">Grills & Suya</option>
+                            <option value="Pastries">Pastries & Snacks</option>
+                            <option value="Drinks">Drinks & Smoothies</option>
+                        </select>
+                    </label>
 
-                        <div class="form-group">
-                            <label for="vendor-category">Food Category</label>
-                            <select id="vendor-category" name="vendor-category" required>
-                                <option value="" disabled selected>Select category</option>
-                                <option value="african">African Dishes</option>
-                                <option value="fast-food">Fast Food & Snacks</option>
-                                <option value="pastries">Pastries & Cakes</option>
-                                <option value="drinks">Drinks & Smoothies</option>
-                            </select>
-                        </div>
+                    <label>Business Email <input type="email" name="email" required placeholder="kitchen@abegchop.com" title="Business Email" autocomplete="email"></label>
+                    <label>Business Phone <input type="tel" name="phone" required autocomplete="tel" title="Format: 987-555-1234" placeholder="987-555-1234"></label>
+                    
+                    <label>Average Preparation Time (Minutes)
+                        <input type="number" name="prep-time" required min="5" max="60" placeholder="e.g. 20" title="How long it takes to prepare a standard meal">
+                    </label>
 
-                        <div class="form-group">
-                            <label for="contact-name">Contact Person (Owner)</label>
-                            <input type="text" id="contact-name" name="contact-name" placeholder="Full Name" required>
-                        </div>
+                    <label>Business Address (Calabar Location)
+                        <input type="text" name="address" required placeholder="e.g. Mary Slessor Ave" title="Physical kitchen location">
+                    </label>
 
-                        <div class="form-group">
-                            <label for="phone">WhatsApp Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="080..." required>
-                        </div>
+                    <label>
+                        Menu Highlight / Short Description
+                        <textarea name="description" required title="Briefly describe your best-selling meals" placeholder="We specialize in authentic Calabar white soup and fresh poundo..."></textarea>
+                    </label>
 
-                        <div class="form-group full-width">
-                            <label for="address">Business Location/Address</label>
-                            <input type="text" id="address" name="address" placeholder="e.g. Near Unical Small Gate" required>
-                        </div>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </div>
 
-                        <div class="form-group full-width">
-                            <label for="menu-desc">Briefly describe your menu</label>
-                            <textarea id="menu-desc" name="menu-desc" rows="4" placeholder="Tell us what you specialize in..."></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form-footer">
-                        <button type="submit" class="submit-btn">
-                            <span>Submit Application</span>
-                            <svg class="icon-small"><use href="images/icons/sprites.svg#icon-sparkle"></use></svg>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </section>
+                <div class="form-actions">
+                    <input type="submit" value="Join AbegChop" class="submit-btn">
+                </div>
+            </section>
+        </form>
     </main>
 
     <footer class="footer">

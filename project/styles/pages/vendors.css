@@ -5,7 +5,7 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 3rem 1.5rem;
-    padding-bottom: 0;
+    padding-bottom: 2cqh;
     transition: background-color 0.3s;
 }
 
@@ -98,10 +98,15 @@
     color: #fbbf24;
 }
 
-.rating-text {
+.vendor-rating {
     font-weight: 700;
     font-size: 0.875rem;
 }
+
+.dark-theme .vendor-rating {
+    color: #111827;
+}
+
 
 .vendor-info {
     position: absolute;
@@ -133,7 +138,7 @@
 
 
 /* ============================================ */
-/* VIEW SWITCHER MENU                        */
+/* VIEW SWITCHER MENU                           */
 /* ============================================ */
 
 
@@ -223,12 +228,12 @@
 
     }
 
-    /* 3. Hide the entire image container (and everything inside it) in List Mode */
+    /* Hide the entire image container (and everything inside it) in List Mode */
     #cards.list .vendor-image-container {
         display: none;
     }
 
-    /* 4. Show the plain text elements for the list */
+    /* Show the plain text elements for the list */
     #cards.list .list-only-title {
         display: block;
         font-size: 1.1rem;
@@ -246,6 +251,10 @@
 
     #cards.list .vendor-card:nth-child(even) {
         background-color: #f9f9f9;
+    }
+
+    .dark-theme #cards.list .vendor-card:nth-child(even) {
+        background-color: #374151;
     }
 
     /* Reset hover for list mode */

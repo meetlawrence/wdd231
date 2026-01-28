@@ -75,4 +75,5 @@ listBtn?.addEventListener('click', () => {
 });
 
 closeBtn?.addEventListener('click', () => mydialog.close());
+mydialog.addEventListener('click', (e) => e.target === mydialog && mydialog.close());
 displayVendors(vendors);

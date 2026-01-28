@@ -14,6 +14,16 @@
         display: none;
     }
 
+
+    .header-container {
+        display: flex;
+        justify-content: space-between; /* Pushes .header-left and .header-right apart */
+        align-items: center;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 1rem 1.5rem;
+    }
     /* Reposition the dropdown content to sit flat in the header */
     .dropdown-content {
         position: static; /* Removes the "floating" behavior */
@@ -60,7 +70,24 @@
     }
 
     /* 5. Space out the header-right elements */
-    .header-right {
-        gap: 2rem;
+
+
+    /* Contains the logo and location */
+    .header-left {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
+
+    /* Contains the Cart, Theme, and Menu buttons */
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 2rem; /* Comfortable spacing between icons */
+        margin-left: auto; /* Solidifies the push to the right */
+    }
+
+    .menu-dropdown { order: 1; }
+    #cart-button { order: 2; }
+    #theme-toggle { order: 3; }
 }
