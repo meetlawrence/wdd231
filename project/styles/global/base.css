@@ -184,7 +184,6 @@ body {
     /* opacity: 0; */
     transform: translateY(-10px) scale(0.95);
     transition: all 0.2s;
-    pointer-events: none;
 }
 
 .dropdown-content.show { 
@@ -237,7 +236,6 @@ body {
 .dropdown-content.show {
     opacity: 1;
     transform: translateY(0) scale(1);
-    pointer-events: all;
 }
 
 .light-theme .dropdown-content {
@@ -315,7 +313,7 @@ body {
 }
 
 .dropdown-item.active .dropdown-title {
-    color: #f97316; /* Keep text readable over the blur */
+    color:  #fbbf24; /* Keep text readable over the blur */
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 

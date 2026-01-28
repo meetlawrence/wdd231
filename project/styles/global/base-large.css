@@ -33,10 +33,9 @@
         gap: 1.5rem;
         background: transparent !important;
         border: none !important;
-        box-shadow: none !important;
-        opacity: 1 !important;
-        pointer-events: all !important;
-        transform: none !important;
+        box-shadow: none;
+        opacity: 1;
+        transform: none;
         width: auto;
         padding: 0;
         margin: 0;
@@ -64,7 +63,6 @@
 
     /* Highlight effect on hover */
     .dropdown-item:hover .dropdown-title {
-        color: none; 
         text-decoration: underline;
         text-underline-offset: 8px;
     }
@@ -73,7 +71,7 @@
     .dropdown-item.active {
         background: none;
         border: none;
-        border-radius: none;
+        border-radius: 0;
         box-shadow:none;
     }
 

@@ -5,7 +5,7 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 3rem 1.5rem;
-    padding-bottom: 2cqh;
+    padding-bottom: 2rem;
     transition: background-color 0.3s;
 }
 
@@ -89,13 +89,6 @@
     gap: 0.25rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
     animation: pulse 0.4s;
-}
-
-.star-icon {
-    width: 16px;
-    height: 16px;
-    fill: #fbbf24;
-    color: #fbbf24;
 }
 
 .vendor-rating {
