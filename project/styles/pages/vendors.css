@@ -5,6 +5,7 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 3rem 1.5rem;
+    padding-bottom: 0;
     transition: background-color 0.3s;
 }
 
