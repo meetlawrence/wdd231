@@ -1,30 +1,26 @@
 import { vendors } from '../data/vendors.mjs';
 
-const showHere = document.querySelector('#vendors-grid');
+const showHere = document.querySelector('#all-vendors-grid');
+const cardsContainer = document.querySelector('#cards'); 
 const mydialog = document.querySelector("#mydialog");
 const mytitle = document.querySelector("#mytitle"); 
 const myinfo = document.querySelector("#myinfo");
 const closeBtn = document.querySelector("#closeModal");
 
-const shuffleVendors = (array) => [...array].sort(() => Math.random() - 0.5);
+const gridBtn = document.querySelector('#grid');
+const listBtn = document.querySelector('#list');
 
 function displayVendors(vendorList) {
     if (!showHere) return;
-    
     showHere.innerHTML = ""; 
 
-    // 1. Filter for 4.5+ Rating
-    // 2. Shuffle the result
-    // 3. Take only the top 3
-    const featured = shuffleVendors(vendorList.filter(v => v.rating >= 4.5)).slice(0, 3);
-
-    featured.forEach((vendor) => {
-        const card = document.createElement('div');
-        card.className = 'vendor-card';
+    vendorList.forEach((vendor) => {
+        const card = document.createElement('section');
+        card.className = 'vendor-card'; 
         
         card.innerHTML = `
             <div class="vendor-image-container">
-                <img src="${vendor.image}" alt="${vendor.name}" class="vendor-image">
+                <img src="${vendor.image}" alt="${vendor.name}" class="vendor-image" loading="lazy">
                 <div class="vendor-gradient"></div>
                 <div class="vendor-rating">⭐ ${vendor.rating}</div>
                 <div class="vendor-info">
@@ -32,6 +28,10 @@ function displayVendors(vendorList) {
                     <div class="vendor-delivery">🕒 ${vendor.deliveryTime}</div>
                 </div>
             </div>
+            <h2 class="list-only-title">${vendor.name}</h2>
+            <p class="list-only-info">${vendor.address}</p>
+            <p class="list-only-info">${vendor.deliveryTime}</p>
+            <p class="list-only-info">${vendor.number}</p>
         `;
 
         card.addEventListener('click', () => showStuff(vendor));
@@ -39,29 +39,40 @@ function displayVendors(vendorList) {
     });
 }
 
+
 function showStuff(vendor) {
-    if (!vendor) return;
-    
     mytitle.textContent = vendor.name;
     myinfo.innerHTML = `
         <div class="modal-detail">
             <p><strong>📍 Location:</strong> ${vendor.address}</p>
-            <p><strong>📝 Description:</strong> ${vendor.description}</p>
-            <p><strong>🕒 Prep Time:</strong> ${vendor.deliveryTime}</p>
+            <p><strong>📞 Contact:</strong> ${vendor.number}</p>
+            <p><strong>✉️ Email:</strong> ${vendor.email}</p>
+            <p><strong>📝 About:</strong> ${vendor.description || 'Quality food from the heart of Calabar.'}</p>
             <hr>
-            <button id="order-btn" class="btn">View Full Menu & Order</button>
+            <button id="order-btn" class="btn">Order from ${vendor.name}</button>
         </div>
     `;
-    
     mydialog.showModal();
-
-    document.querySelector('#order-btn').addEventListener('click', () => {
-        localStorage.setItem('selectedVendorId', vendor.id);
-        window.location.href = 'order.html';
-    });
 }
 
-closeBtn?.addEventListener('click', () => mydialog.close());
-mydialog.addEventListener('click', (e) => e.target === mydialog && mydialog.close());
+// Toggle logic
+gridBtn?.addEventListener('click', () => {
+    cardsContainer.classList.add('grid');
+    cardsContainer.classList.remove('list');
 
+    // Manage active states
+    gridBtn.classList.add('active');
+    listBtn.classList.remove('active');
+});
+
+listBtn?.addEventListener('click', () => {
+    cardsContainer.classList.add('list');
+    cardsContainer.classList.remove('grid');
+
+    // Manage active states
+    listBtn.classList.add('active');
+    gridBtn.classList.remove('active');
+});
+
+closeBtn?.addEventListener('click', () => mydialog.close());
 displayVendors(vendors);

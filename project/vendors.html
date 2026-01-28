@@ -126,7 +126,7 @@
                 </div>
                 
                 <h2 class="hero-title">Explore All Vendors</h2>
-                <p class="hero-subtitle">Find the best meals across UNICAL campus</p>
+                <p class="hero-subtitle">Find the best Food Vendors across UNICAL campus</p>
             </div>
             <div class="vendor-btn-container">
                 <a href="join.html" class="btn">
@@ -137,10 +137,15 @@
 
         </section>
 
-        <section id="vendors" class="vendors-section">
-            <h2 id="vendors-title" class="section-title">Popular Right Now 🔥</h2>
-            <div id="vendors-grid" class="vendors-grid"></div>
-        </section>
+        <section id="all-vendors" class="vendors-section">
+            <div class="menu view-toggle">
+            <button id="grid" aria-label="Switch to Grid View">Grid View</button>
+            <button id="list" aria-label="Switch to List View">List View</button>
+        </div>
+
+        <article id="cards" class="grid">
+            <div id="all-vendors-grid" class="vendors-grid grid-layout"></div>
+        </article>
 
     </main>
 
