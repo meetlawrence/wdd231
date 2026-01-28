@@ -49,7 +49,7 @@ function showStuff(vendor) {
             <p><strong>📝 Description:</strong> ${vendor.description}</p>
             <p><strong>🕒 Prep Time:</strong> ${vendor.deliveryTime}</p>
             <hr>
-            <button id="order-btn" class="primary-btn">View Full Menu & Order</button>
+            <button id="order-btn" class="btn">View Full Menu & Order</button>
         </div>
     `;
     

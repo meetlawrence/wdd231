@@ -108,7 +108,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    line-height: 1.1;
+    line-height: 1.5;
     animation: fadeIn 0.7s 0.3s both;
 }
 
@@ -225,34 +225,6 @@
 
 .stat-desc {
     color: var(--text-secondary);
-}
-
-.view-all-container {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 3rem;
-    padding-bottom: 0.5rem;
-}
-
-.view-all-btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: linear-gradient(to right, #ea580c, #dc2626);
-    color: white;
-    padding: 12px 32px;
-    border-radius: 50px;
-    text-decoration: none;
-
-    transition: all 0.3s;
-    box-shadow: 0 10px 15px -3px var(--shadow);
-
-}
-
-.view-all-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 15px -3px var(--shadow);
-    font-weight: 600;
 }
 
 /* How It Works */
@@ -386,5 +358,3 @@
 .step-desc {
     color: var(--text-secondary);
 }
-
-

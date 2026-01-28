@@ -74,20 +74,21 @@
                                 <p class="dropdown-desc">Return to start</p>
                             </div>
                         </a>
-                        <a href="order.html" class="dropdown-item">
+                        <a href="order.html" class="dropdown-item" class="active">
                             <span class="dropdown-emoji" aria-hidden="true">🍽️</span>
                             <div>
                                 <p class="dropdown-title">Order</p>
                                 <p class="dropdown-desc">Browse available meals</p>
                             </div>
                         </a>
-                        <a href="vendors.html" class="dropdown-item" class="active">
+                        <a href="vendors.html" class="dropdown-item">
                             <span class="dropdown-emoji" aria-hidden="true">👨‍🍳</span>
                             <div>
                                 <p class="dropdown-title">Vendors</p>
                                 <p class="dropdown-desc">Eplore or partner with us</p>
                             </div>
                         </a>
+
 
                         <hr class="dropdown-divider">
 
@@ -127,19 +128,90 @@
                 
                 <h2 class="hero-title">Explore All Vendors</h2>
                 <p class="hero-subtitle">Find the best meals across UNICAL campus</p>
-            </div>
-            <div class="vendor-btn-container">
-                <a href="join.html" class="btn">
-                    <span>Become a Vendor</span>
-                    <svg class="icon"><use href="images/icons/sprites.svg#icon-sparkle"></use></svg>
-                </a>
+
+                <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for food or vendors..." class="search-input">
+                <button class="search-button">
+                    <svg class="icon">
+                        <use href="images/icons/sprites.svg#icon-search"></use>
+                    </svg>
+                    <span class="search-text">Search</span>
+                </button>
             </div>
 
+             <!-- Food Categories -->
+            <div id="categories" class="categories-sticky">
+                <div class="categories-container">
+                    <div class="categories-scroll" id="categories-list">
+                        <!-- Categories will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="vendors" class="vendors-section">
             <h2 id="vendors-title" class="section-title">Popular Right Now 🔥</h2>
             <div id="vendors-grid" class="vendors-grid"></div>
+
+            <div class="view-all-container">
+                <a href="vendors.html" class="btn">
+                    <span>Explore All Vendors</span>
+                    <svg class="icon"><use href="images/icons/sprites.svg#icon-explore"></use></svg>
+                </a>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Getting your food is super easy!</p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-content step-bg-blue">
+                        <div class="step-icon step-icon-blue">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-search"></use></svg>
+                        </div>
+                        <div class="step-number step-number-blue">1</div>
+                    </div>
+                    <h3 class="step-title">Browse</h3>
+                    <p class="step-desc">Explore delicious food from campus vendors</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-content step-bg-green">
+                        <div class="step-icon step-icon-green">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-vendor"></use></svg>
+                        </div>
+                        <div class="step-number step-number-green">2</div>
+                    </div>
+                    <h3 class="step-title">Choose</h3>
+                    <p class="step-desc">Select your favorite meals</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-content step-bg-orange">
+                        <div class="step-icon step-icon-orange">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-cart"></use></svg>
+                        </div>
+                        <div class="step-number step-number-orange">3</div>
+                    </div>
+                    <h3 class="step-title">Order</h3>
+                    <p class="step-desc">Add to cart and checkout easily</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-content step-bg-pink">
+                        <div class="step-icon step-icon-pink">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-enjoy"></use></svg>
+                        </div>
+                        <div class="step-number step-number-pink">4</div>
+                    </div>
+                    <h3 class="step-title">Enjoy</h3>
+                    <p class="step-desc">Fast delivery right to you!</p>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -198,7 +270,9 @@
                     <h4 class="footer-title">Developer</h4>
                     <ul class="footer-links">
                         <li><a href="https://meetlawrence.github.io/wdd231/index.html" >Lawrence Okon</a></li>
-                        <li><a href="https://meetlawrence.github.io/wdd231/index.html#course-list">WDD231</a></li>                        
+                        <li><a href="https://meetlawrence.github.io/wdd231/index.html#course-list">WDD231</a></li>
+
+                        
                     </ul>
                 </div>
 

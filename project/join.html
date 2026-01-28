@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles/global/base-large.css">
     <link rel="stylesheet" href="styles/global/utilities.css">
     <link rel="stylesheet" href="styles/pages/home.css">
-    <link rel="stylesheet" href="styles/pages/vendors.css">
+    <link rel="stylesheet" href="styles/pages/join.css">
 
     <script type="module" src="scripts/main.js" defer></script>
     <script type="module" src="scripts/vendors.js" defer></script>
@@ -67,7 +67,7 @@
                     </button>
                     
                     <nav id="menu-dropdown" class="dropdown-content">
-                        <a href="index.html" class="dropdown-item">
+                        <a href="index.html" class="dropdown-item" class="active">
                             <span class="dropdown-emoji" aria-hidden="true">🛖</span>
                             <div>
                                 <p class="dropdown-title">Home</p>
@@ -81,13 +81,14 @@
                                 <p class="dropdown-desc">Browse available meals</p>
                             </div>
                         </a>
-                        <a href="vendors.html" class="dropdown-item" class="active">
+                        <a href="vendors.html" class="dropdown-item">
                             <span class="dropdown-emoji" aria-hidden="true">👨‍🍳</span>
                             <div>
                                 <p class="dropdown-title">Vendors</p>
                                 <p class="dropdown-desc">Eplore or partner with us</p>
                             </div>
                         </a>
+
 
                         <hr class="dropdown-divider">
 
@@ -125,23 +126,62 @@
                     <span>Calabar's #1 Food Delivery</span>
                 </div>
                 
-                <h2 class="hero-title">Explore All Vendors</h2>
-                <p class="hero-subtitle">Find the best meals across UNICAL campus</p>
+                <h2 class="hero-title">Start Selling on AbegChop</h2>
+                <p class="hero-subtitle">Turn your kitchen into a campus favorite. Easy setup, fast payouts, and zero stress.</p>                
+                
             </div>
-            <div class="vendor-btn-container">
-                <a href="join.html" class="btn">
-                    <span>Become a Vendor</span>
-                    <svg class="icon"><use href="images/icons/sprites.svg#icon-sparkle"></use></svg>
-                </a>
+        </section>
+        
+        <section id="join-form" class="registration-section">
+            <div class="form-container">
+                <form action="#" class="vendor-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="business-name">Business Name</label>
+                            <input type="text" id="business-name" name="business-name" placeholder="e.g. Mama G's Kitchen" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="vendor-category">Food Category</label>
+                            <select id="vendor-category" name="vendor-category" required>
+                                <option value="" disabled selected>Select category</option>
+                                <option value="african">African Dishes</option>
+                                <option value="fast-food">Fast Food & Snacks</option>
+                                <option value="pastries">Pastries & Cakes</option>
+                                <option value="drinks">Drinks & Smoothies</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-name">Contact Person (Owner)</label>
+                            <input type="text" id="contact-name" name="contact-name" placeholder="Full Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">WhatsApp Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="080..." required>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="address">Business Location/Address</label>
+                            <input type="text" id="address" name="address" placeholder="e.g. Near Unical Small Gate" required>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="menu-desc">Briefly describe your menu</label>
+                            <textarea id="menu-desc" name="menu-desc" rows="4" placeholder="Tell us what you specialize in..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-footer">
+                        <button type="submit" class="submit-btn">
+                            <span>Submit Application</span>
+                            <svg class="icon-small"><use href="images/icons/sprites.svg#icon-sparkle"></use></svg>
+                        </button>
+                    </div>
+                </form>
             </div>
-
         </section>
-
-        <section id="vendors" class="vendors-section">
-            <h2 id="vendors-title" class="section-title">Popular Right Now 🔥</h2>
-            <div id="vendors-grid" class="vendors-grid"></div>
-        </section>
-
     </main>
 
     <footer class="footer">
@@ -198,7 +238,9 @@
                     <h4 class="footer-title">Developer</h4>
                     <ul class="footer-links">
                         <li><a href="https://meetlawrence.github.io/wdd231/index.html" >Lawrence Okon</a></li>
-                        <li><a href="https://meetlawrence.github.io/wdd231/index.html#course-list">WDD231</a></li>                        
+                        <li><a href="https://meetlawrence.github.io/wdd231/index.html#course-list">WDD231</a></li>
+
+                        
                     </ul>
                 </div>
 
