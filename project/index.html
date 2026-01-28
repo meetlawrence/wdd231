@@ -10,13 +10,13 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://meetlawrence.github.io/wdd231/project/index.html">
     <meta property="og:title" content="AbegChop - Calabar Campus Food Delivery">
-    <meta property="og:description" content="Fast, delicious campus meals delivered straight to your hostel. Mekke you no faint! 😁">
+    <meta property="og:description" content="Fast, delicious campus meals delivered straight to your hostel. Mek you no faint! 😁">
     <meta property="og:image" content="https://meetlawrence.github.io/wdd231/project/images/icons/abegchop.svg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://meetlawrence.github.io/wdd231/project/index.html">
     <meta name="twitter:title" content="AbegChop - Calabar Campus Food Delivery">
-    <meta name="twitter:description" content="Fast, delicious campus meals delivered straight to your hostel. Mekke you no faint! 😁">
+    <meta name="twitter:description" content="Fast, delicious campus meals delivered straight to your hostel. Mek you no faint! 😁">
     <meta name="twitter:image" content="https://meetlawrence.github.io/wdd231/project/images/icons/abegchop.svg">
 
     <link rel="icon" href="favicon.ico">
@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="styles/pages/home.css">
     <link rel="stylesheet" href="styles/pages/vendors.css">
 
-    <script type="module" src="scripts/main.js" defer></script>
-    <script type="module" src="scripts/popular-vendors.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/popular-vendors.js"></script>
 </head>
 
 <body class="light-theme">
@@ -36,7 +36,7 @@
         <div class="header-container">
             <div class="header-left">
                 <div class="logo-icon">
-                    <img class="icon-small" src="images/icons/abegchop.svg"></img>
+                    <img class="icon-small" src="images/icons/abegchop.svg" alt="AbegChop Logo">
                 </div>
                 <div class="logo-text">
                     <h1>AbegChop</h1>
@@ -48,7 +48,6 @@
             </div>
             
             <div class="header-right">
-                
                 <button id="cart-button" class="cart-button">
                     <svg class="icon"><use href="images/icons/sprites.svg#icon-cart"></use></svg>
                     <span>Cart</span>
@@ -67,7 +66,7 @@
                     </button>
                     
                     <nav id="menu-dropdown" class="dropdown-content">
-                        <a href="#" class="dropdown-item" class="active">
+                        <a href="index.html" class="dropdown-item active">
                             <span class="dropdown-emoji" aria-hidden="true">🛖</span>
                             <div>
                                 <p class="dropdown-title">Home</p>
@@ -85,15 +84,14 @@
                             <span class="dropdown-emoji" aria-hidden="true">👨‍🍳</span>
                             <div>
                                 <p class="dropdown-title">Vendors</p>
-                                <p class="dropdown-desc">Eplore or partner with us</p>
+                                <p class="dropdown-desc">Explore or partner with us</p>
                             </div>
                         </a>
-
 
                         <hr class="dropdown-divider">
 
                         <a href="#" class="dropdown-item" onclick="alert('Track Order feature coming soon! 🚀'); return false;">
-                            <span class="dropdown-emoji">📦</span>
+                            <span class="dropdown-emoji" aria-hidden="true">📦</span>
                             <div>
                                 <p class="dropdown-title">Track Order</p>
                                 <p class="dropdown-desc">Check order status</p>
@@ -108,7 +106,6 @@
                         </a>
                     </nav>
                 </div>
-                
             </div>
         </div>
     </header>
@@ -128,7 +125,7 @@
                 
                 <h2 class="hero-title">Abeg, Find Something Chop!</h2>
                 <p class="hero-subtitle">Delicious campus meals delivered straight to your hostel. <br> Order now and satisfy your cravings, mek you no faint! 😁</p>
-                                   
+                                    
                 <div class="order-btn-container">
                     <a href="order.html" class="btn">
                         <span>Order Now</span>
@@ -138,20 +135,20 @@
 
                 <div class="hero-stats">
                     <div class="stat-card">
-                    <div class="stat-icon stat-icon-orange">
-                        <svg class="icon"><use href="images/icons/sprites.svg#icon-vendor"></use></svg>
+                        <div class="stat-icon stat-icon-orange">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-vendor"></use></svg>
+                        </div>
+                        <p class="stat-title">50+ Vendors</p>
+                        <p class="stat-desc">Wide variety of meals</p>
                     </div>
-                    <p class="stat-title">50+ Vendors</p>
-                    <p class="stat-desc">Wide variety of delicious meals</p>
-                </div>
 
-                <div class="stat-card">
-                    <div class="stat-icon stat-icon-pink">
-                        <svg class="icon"><use href="images/icons/sprites.svg#icon-clock"></use></svg>
+                    <div class="stat-card">
+                        <div class="stat-icon stat-icon-pink">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-clock"></use></svg>
+                        </div>
+                        <p class="stat-title">30 Min Delivery</p>
+                        <p class="stat-desc">Fast & reliable service</p>
                     </div>
-                    <p class="stat-title">30 Min Delivery</p>
-                    <p class="stat-desc">Fast & reliable service</p>
-                </div>
                     
                     <div class="stat-card">
                         <div class="stat-icon stat-icon-green">
@@ -171,7 +168,7 @@
             <div class="view-all-container">
                 <a href="vendors.html#all-vendors" class="btn">
                     <span>Explore All Vendors</span>
-                    <svg class="icon"><use href="images/icons/sprites.svg#icon-explore"></use></svg>
+                    <svg class="icon"><use href="images/icons/explore.svg#icon-explore"></use></svg>
                 </a>
             </div>
         </section>
@@ -191,7 +188,7 @@
                         <div class="step-number step-number-blue">1</div>
                     </div>
                     <h3 class="step-title">Browse</h3>
-                    <p class="step-desc">Explore delicious food from campus vendors</p>
+                    <p class="step-desc">Explore food from campus vendors</p>
                 </div>
                 
                 <div class="step-card">
@@ -213,7 +210,7 @@
                         <div class="step-number step-number-orange">3</div>
                     </div>
                     <h3 class="step-title">Order</h3>
-                    <p class="step-desc">Add to cart and checkout easily</p>
+                    <p class="step-desc">Add to cart and checkout</p>
                 </div>
                 
                 <div class="step-card">
@@ -228,7 +225,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer class="footer">
@@ -237,26 +233,20 @@
                 <div class="footer-section">
                     <div class="footer-logo">
                         <div class="logo-icon">
-                            <img class="icon-small" src="images/icons/abegchop.svg"></img>
+                            <img class="icon-small" src="images/icons/abegchop.svg" alt="AbegChop Logo">
                         </div>
                         <h3>AbegChop</h3>
                     </div>
-                    <p class="footer-desc">Calabar's favorite food delivery service. Fast, delicious, and always reliable! 🔥</p>
+                    <p class="footer-desc">Calabar's favorite food delivery service. 🔥</p>
                     <div class="social-links">
-                        <a href="#" class="social-link">
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-facebook"></use>
-                            </svg>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-facebook"></use></svg>
                         </a>
-                        <a href="#" class="social-link">
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-instagram"></use>
-                            </svg>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-instagram"></use></svg>
                         </a>
-                        <a href="#" class="social-link">
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-twitter"></use>
-                            </svg>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-twitter"></use></svg>
                         </a>
                     </div>
                 </div>
@@ -264,9 +254,9 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="#">All Vendors</a></li>
-                        <li><a href="#">Popular Foods</a></li>
-                        <li><a href="#">Become a Vendor</a></li>
+                        <li><a href="vendors.html">All Vendors</a></li>
+                        <li><a href="order.html">Popular Foods</a></li>
+                        <li><a href="vendors.html">Become a Vendor</a></li>
                         <li><a href="#">Track Order</a></li>
                     </ul>
                 </div>
@@ -284,10 +274,8 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Developer</h4>
                     <ul class="footer-links">
-                        <li><a href="https://meetlawrence.github.io/wdd231/index.html" >Lawrence Okon</a></li>
-                        <li><a href="https://meetlawrence.github.io/wdd231/index.html#course-list">WDD231</a></li>
-
-                        
+                        <li><a href="https://meetlawrence.github.io/wdd231/index.html">Lawrence Okon</a></li>
+                        <li><a href="https://meetlawrence.github.io/wdd231/index.html#course-list">WDD231</a></li> 
                     </ul>
                 </div>
 
@@ -295,22 +283,15 @@
                     <h4 class="footer-title">Contact Us</h4>
                     <ul class="footer-contacts">
                         <li>
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-location"></use>
-                            </svg>
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-location"></use></svg>
                             <span>University of Calabar Campus</span>
                         </li>
                         <li>
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-phone"></use>
-                            </svg>
-                            <span>
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-phone"></use></svg>
                             <span>+234 800 ABEG CHOP</span>
                         </li>
                         <li>
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-mail"></use>
-                            </svg>
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-mail"></use></svg>
                             <span>hello@abegchop.com</span>
                         </li>
                     </ul>
@@ -323,14 +304,12 @@
         </div>
     </footer>
 
-    <!-- <script type="module" src="scripts/app.js"></script> -->
     <dialog id="mydialog">
         <div class="modal-header">
             <h2 id="mytitle">Vendor Name</h2>
             <button id="closeModal" aria-label="Close Modal">×</button>
         </div>
-        <div id="myinfo">
-            </div>
+        <div id="myinfo"></div>
     </dialog>
 </body>
 </html>

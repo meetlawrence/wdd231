@@ -64,14 +64,25 @@
 
     /* Highlight effect on hover */
     .dropdown-item:hover .dropdown-title {
-        color: var(--accent1, #fbbf24); 
+        color: none; 
         text-decoration: underline;
         text-underline-offset: 8px;
     }
 
-    /* 5. Space out the header-right elements */
+        
+    .dropdown-item.active {
+        background: none;
+        border: none;
+        border-radius: none;
+        box-shadow:none;
+    }
 
+    .dropdown-item.active .dropdown-title {
+        color: #fbbf24;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
 
+    /* Space out the header-right elements */
     /* Contains the logo and location */
     .header-left {
         display: flex;
@@ -83,11 +94,13 @@
     .header-right {
         display: flex;
         align-items: center;
-        gap: 2rem; /* Comfortable spacing between icons */
-        margin-left: auto; /* Solidifies the push to the right */
+        gap: 2rem; 
+        margin-left: auto;
     }
 
     .menu-dropdown { order: 1; }
     #cart-button { order: 2; }
     #theme-toggle { order: 3; }
+
+
 }

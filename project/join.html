@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="styles/pages/home.css">
     <link rel="stylesheet" href="styles/pages/join.css">
 
-    <script type="module" src="scripts/main.js" defer></script>
-    <script type="module" src="scripts/vendors.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/vendors.js"></script>
 </head>
 
 <body class="light-theme">
@@ -36,7 +36,7 @@
         <div class="header-container">
             <div class="header-left">
                 <div class="logo-icon">
-                    <img class="icon-small" src="images/icons/abegchop.svg"></img>
+                    <img class="icon-small" src="images/icons/abegchop.svg" alt="AbegChop Logo">
                 </div>
                 <div class="logo-text">
                     <h1>AbegChop</h1>
@@ -48,7 +48,6 @@
             </div>
             
             <div class="header-right">
-                
                 <button id="cart-button" class="cart-button">
                     <svg class="icon"><use href="images/icons/sprites.svg#icon-cart"></use></svg>
                     <span>Cart</span>
@@ -67,7 +66,7 @@
                     </button>
                     
                     <nav id="menu-dropdown" class="dropdown-content">
-                        <a href="index.html" class="dropdown-item" class="active">
+                        <a href="index.html" class="dropdown-item active">
                             <span class="dropdown-emoji" aria-hidden="true">🛖</span>
                             <div>
                                 <p class="dropdown-title">Home</p>
@@ -85,15 +84,14 @@
                             <span class="dropdown-emoji" aria-hidden="true">👨‍🍳</span>
                             <div>
                                 <p class="dropdown-title">Vendors</p>
-                                <p class="dropdown-desc">Eplore or partner with us</p>
+                                <p class="dropdown-desc">Explore or partner with us</p>
                             </div>
                         </a>
-
 
                         <hr class="dropdown-divider">
 
                         <a href="#" class="dropdown-item" onclick="alert('Track Order feature coming soon! 🚀'); return false;">
-                            <span class="dropdown-emoji">📦</span>
+                            <span class="dropdown-emoji" aria-hidden="true">📦</span>
                             <div>
                                 <p class="dropdown-title">Track Order</p>
                                 <p class="dropdown-desc">Check order status</p>
@@ -108,7 +106,6 @@
                         </a>
                     </nav>
                 </div>
-                
             </div>
         </div>
     </header>
@@ -119,16 +116,13 @@
                 <div class="blob blob-1"></div>
                 <div class="blob blob-2"></div>
             </div>
-            
             <div class="hero-content">
                 <div class="hero-badge">
                     <svg class="sparkle-icon"><use href="images/icons/sprites.svg#icon-sparkle"></use></svg>
                     <span>Calabar's #1 Food Delivery</span>
                 </div>
-                
                 <h2 class="hero-title">Start Selling on AbegChop</h2>
-                <p class="hero-subtitle">Turn your kitchen into a campus favorite. Easy setup, fast payouts, and zero stress.</p>                
-                
+                <p class="hero-subtitle">Turn your kitchen into a campus favorite. Easy setup, fast payouts, and zero stress.</p>
             </div>
         </section>
         
@@ -136,13 +130,17 @@
             <section class="vendor-form">
                 <h2>Vendor Partnership Application</h2>
                 <div class="form-body">
-                    <label>Manager First Name <input type="text" name="first" required autocomplete="given-name" title="Manager's First Name"></label>
-                    <label>Manager Last Name <input type="text" name="last" required autocomplete="family-name" title="Manager's Last Name"></label>
-                    
-                    <label>Business Name <input type="text" name="business-name" required title="Official Restaurant or Business Name" autocomplete="organization"></label>
-                    
+                    <label>Manager First Name 
+                        <input type="text" name="first" required autocomplete="given-name">
+                    </label>
+                    <label>Manager Last Name 
+                        <input type="text" name="last" required autocomplete="family-name">
+                    </label>
+                    <label>Business Name 
+                        <input type="text" name="business-name" required autocomplete="organization">
+                    </label>
                     <label>Cuisine/Business Type
-                        <select name="business-type" required title="Primary category of food">
+                        <select name="business-type" required>
                             <option value="" disabled selected>Select category...</option>
                             <option value="Local Delicacies">Local Delicacies (Afang, Edikang Ikong, etc.)</option>
                             <option value="Fast Food">Fast Food (Burgers, Pizza, Fries)</option>
@@ -151,26 +149,23 @@
                             <option value="Drinks">Drinks & Smoothies</option>
                         </select>
                     </label>
-
-                    <label>Business Email <input type="email" name="email" required placeholder="kitchen@abegchop.com" title="Business Email" autocomplete="email"></label>
-                    <label>Business Phone <input type="tel" name="phone" required autocomplete="tel" title="Format: 987-555-1234" placeholder="987-555-1234"></label>
-                    
+                    <label>Business Email 
+                        <input type="email" name="email" required placeholder="kitchen@abegchop.com" autocomplete="email">
+                    </label>
+                    <label>Business Phone 
+                        <input type="tel" name="phone" required autocomplete="tel" placeholder="987-555-1234">
+                    </label>
                     <label>Average Preparation Time (Minutes)
-                        <input type="number" name="prep-time" required min="5" max="60" placeholder="e.g. 20" title="How long it takes to prepare a standard meal">
+                        <input type="number" name="prep-time" required min="5" max="60" placeholder="e.g. 20">
                     </label>
-
                     <label>Business Address (Calabar Location)
-                        <input type="text" name="address" required placeholder="e.g. Mary Slessor Ave" title="Physical kitchen location">
+                        <input type="text" name="address" required placeholder="e.g. Mary Slessor Ave">
                     </label>
-
-                    <label>
-                        Menu Highlight / Short Description
-                        <textarea name="description" required title="Briefly describe your best-selling meals" placeholder="We specialize in authentic Calabar white soup and fresh poundo..."></textarea>
+                    <label>Menu Highlight / Short Description
+                        <textarea name="description" required placeholder="We specialize in authentic Calabar white soup..."></textarea>
                     </label>
-
                     <input type="hidden" name="timestamp" id="timestamp">
                 </div>
-
                 <div class="form-actions">
                     <input type="submit" value="Join AbegChop" class="submit-btn">
                 </div>
@@ -184,26 +179,20 @@
                 <div class="footer-section">
                     <div class="footer-logo">
                         <div class="logo-icon">
-                            <img class="icon-small" src="images/icons/abegchop.svg"></img>
+                            <img class="icon-small" src="images/icons/abegchop.svg" alt="AbegChop Logo">
                         </div>
                         <h3>AbegChop</h3>
                     </div>
                     <p class="footer-desc">Calabar's favorite food delivery service. Fast, delicious, and always reliable! 🔥</p>
                     <div class="social-links">
-                        <a href="#" class="social-link">
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-facebook"></use>
-                            </svg>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-facebook"></use></svg>
                         </a>
-                        <a href="#" class="social-link">
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-instagram"></use>
-                            </svg>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-instagram"></use></svg>
                         </a>
-                        <a href="#" class="social-link">
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-twitter"></use>
-                            </svg>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-twitter"></use></svg>
                         </a>
                     </div>
                 </div>
@@ -211,9 +200,9 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="#">All Vendors</a></li>
-                        <li><a href="#">Popular Foods</a></li>
-                        <li><a href="#">Become a Vendor</a></li>
+                        <li><a href="vendors.html">All Vendors</a></li>
+                        <li><a href="order.html">Popular Foods</a></li>
+                        <li><a href="join.html">Become a Vendor</a></li>
                         <li><a href="#">Track Order</a></li>
                     </ul>
                 </div>
@@ -231,10 +220,8 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Developer</h4>
                     <ul class="footer-links">
-                        <li><a href="https://meetlawrence.github.io/wdd231/index.html" >Lawrence Okon</a></li>
+                        <li><a href="https://meetlawrence.github.io/wdd231/index.html">Lawrence Okon</a></li>
                         <li><a href="https://meetlawrence.github.io/wdd231/index.html#course-list">WDD231</a></li>
-
-                        
                     </ul>
                 </div>
 
@@ -242,42 +229,32 @@
                     <h4 class="footer-title">Contact Us</h4>
                     <ul class="footer-contacts">
                         <li>
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-location"></use>
-                            </svg>
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-location"></use></svg>
                             <span>University of Calabar Campus</span>
                         </li>
                         <li>
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-phone"></use>
-                            </svg>
-                            <span>
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-phone"></use></svg>
                             <span>+234 800 ABEG CHOP</span>
                         </li>
                         <li>
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-mail"></use>
-                            </svg>
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-mail"></use></svg>
                             <span>hello@abegchop.com</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>&copy; 2026 AbegChop. All rights reserved. Made with ❤️ for Calabar students.</p>
             </div>
         </div>
     </footer>
 
-    <!-- <script type="module" src="scripts/app.js"></script> -->
     <dialog id="mydialog">
         <div class="modal-header">
             <h2 id="mytitle">Vendor Name</h2>
             <button id="closeModal" aria-label="Close Modal">×</button>
         </div>
-        <div id="myinfo">
-            </div>
+        <div id="myinfo"></div>
     </dialog>
 </body>
 </html>

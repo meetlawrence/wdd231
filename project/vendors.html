@@ -13,12 +13,6 @@
     <meta property="og:description" content="Fast, delicious campus meals delivered straight to your hostel. Mekke you no faint! 😁">
     <meta property="og:image" content="https://meetlawrence.github.io/wdd231/project/images/icons/abegchop.svg">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://meetlawrence.github.io/wdd231/project/index.html">
-    <meta name="twitter:title" content="AbegChop - Calabar Campus Food Delivery">
-    <meta name="twitter:description" content="Fast, delicious campus meals delivered straight to your hostel. Mekke you no faint! 😁">
-    <meta name="twitter:image" content="https://meetlawrence.github.io/wdd231/project/images/icons/abegchop.svg">
-
     <link rel="icon" href="favicon.ico">
     
     <link rel="stylesheet" href="styles/global/base.css">
@@ -27,8 +21,8 @@
     <link rel="stylesheet" href="styles/pages/home.css">
     <link rel="stylesheet" href="styles/pages/vendors.css">
 
-    <script type="module" src="scripts/main.js" defer></script>
-    <script type="module" src="scripts/vendors.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/vendors.js"></script>
 </head>
 
 <body class="light-theme">
@@ -36,7 +30,7 @@
         <div class="header-container">
             <div class="header-left">
                 <div class="logo-icon">
-                    <img class="icon-small" src="images/icons/abegchop.svg"></img>
+                    <img class="icon-small" src="images/icons/abegchop.svg" alt="AbegChop Logo">
                 </div>
                 <div class="logo-text">
                     <h1>AbegChop</h1>
@@ -48,7 +42,6 @@
             </div>
             
             <div class="header-right">
-                
                 <button id="cart-button" class="cart-button">
                     <svg class="icon"><use href="images/icons/sprites.svg#icon-cart"></use></svg>
                     <span>Cart</span>
@@ -81,18 +74,18 @@
                                 <p class="dropdown-desc">Browse available meals</p>
                             </div>
                         </a>
-                        <a href="vendors.html" class="dropdown-item" class="active">
+                        <a href="vendors.html" class="dropdown-item active">
                             <span class="dropdown-emoji" aria-hidden="true">👨‍🍳</span>
                             <div>
                                 <p class="dropdown-title">Vendors</p>
-                                <p class="dropdown-desc">Eplore or partner with us</p>
+                                <p class="dropdown-desc">Explore or partner with us</p>
                             </div>
                         </a>
 
                         <hr class="dropdown-divider">
 
                         <a href="#" class="dropdown-item" onclick="alert('Track Order feature coming soon! 🚀'); return false;">
-                            <span class="dropdown-emoji">📦</span>
+                            <span class="dropdown-emoji" aria-hidden="true">📦</span>
                             <div>
                                 <p class="dropdown-title">Track Order</p>
                                 <p class="dropdown-desc">Check order status</p>
@@ -107,7 +100,6 @@
                         </a>
                     </nav>
                 </div>
-                
             </div>
         </div>
     </header>
@@ -134,19 +126,19 @@
                     <svg class="icon"><use href="images/icons/sprites.svg#icon-sparkle"></use></svg>
                 </a>
             </div>
-
         </section>
 
         <section id="all-vendors" class="vendors-section">
             <div class="menu view-toggle">
-            <button id="grid" aria-label="Switch to Grid View">Grid View</button>
-            <button id="list" aria-label="Switch to List View">List View</button>
-        </div>
+                <button id="grid" class="active" aria-label="Switch to Grid View">Grid View</button>
+                <button id="list" aria-label="Switch to List View">List View</button>
+            </div>
 
-        <article id="cards" class="grid">
-            <div id="all-vendors-grid" class="vendors-grid grid-layout"></div>
-        </article>
-
+            <article id="cards" class="grid">
+                <div id="all-vendors-grid" class="vendors-grid grid-layout">
+                    </div>
+            </article>
+        </section>
     </main>
 
     <footer class="footer">
@@ -155,26 +147,20 @@
                 <div class="footer-section">
                     <div class="footer-logo">
                         <div class="logo-icon">
-                            <img class="icon-small" src="images/icons/abegchop.svg"></img>
+                            <img class="icon-small" src="images/icons/abegchop.svg" alt="AbegChop Icon">
                         </div>
                         <h3>AbegChop</h3>
                     </div>
                     <p class="footer-desc">Calabar's favorite food delivery service. Fast, delicious, and always reliable! 🔥</p>
                     <div class="social-links">
-                        <a href="#" class="social-link">
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-facebook"></use>
-                            </svg>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-facebook"></use></svg>
                         </a>
-                        <a href="#" class="social-link">
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-instagram"></use>
-                            </svg>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-instagram"></use></svg>
                         </a>
-                        <a href="#" class="social-link">
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-twitter"></use>
-                            </svg>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-twitter"></use></svg>
                         </a>
                     </div>
                 </div>
@@ -182,9 +168,9 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="#">All Vendors</a></li>
-                        <li><a href="#">Popular Foods</a></li>
-                        <li><a href="#">Become a Vendor</a></li>
+                        <li><a href="vendors.html">All Vendors</a></li>
+                        <li><a href="order.html">Popular Foods</a></li>
+                        <li><a href="join.html">Become a Vendor</a></li>
                         <li><a href="#">Track Order</a></li>
                     </ul>
                 </div>
@@ -202,8 +188,8 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Developer</h4>
                     <ul class="footer-links">
-                        <li><a href="https://meetlawrence.github.io/wdd231/index.html" >Lawrence Okon</a></li>
-                        <li><a href="https://meetlawrence.github.io/wdd231/index.html#course-list">WDD231</a></li>                        
+                        <li><a href="https://meetlawrence.github.io/wdd231/index.html">Lawrence Okon</a></li>
+                        <li><a href="https://meetlawrence.github.io/wdd231/index.html#course-list">WDD231</a></li>
                     </ul>
                 </div>
 
@@ -211,22 +197,15 @@
                     <h4 class="footer-title">Contact Us</h4>
                     <ul class="footer-contacts">
                         <li>
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-location"></use>
-                            </svg>
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-location"></use></svg>
                             <span>University of Calabar Campus</span>
                         </li>
                         <li>
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-phone"></use>
-                            </svg>
-                            <span>
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-phone"></use></svg>
                             <span>+234 800 ABEG CHOP</span>
                         </li>
                         <li>
-                            <svg class="icon">
-                                <use href="images/icons/sprites.svg#icon-mail"></use>
-                            </svg>
+                            <svg class="icon"><use href="images/icons/sprites.svg#icon-mail"></use></svg>
                             <span>hello@abegchop.com</span>
                         </li>
                     </ul>
@@ -239,14 +218,12 @@
         </div>
     </footer>
 
-    <!-- <script type="module" src="scripts/app.js"></script> -->
     <dialog id="mydialog">
         <div class="modal-header">
             <h2 id="mytitle">Vendor Name</h2>
             <button id="closeModal" aria-label="Close Modal">×</button>
         </div>
-        <div id="myinfo">
-            </div>
+        <div id="myinfo"></div>
     </dialog>
 </body>
 </html>

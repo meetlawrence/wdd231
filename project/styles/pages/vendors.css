@@ -36,7 +36,7 @@
     overflow: hidden;
     transition: all 0.3s;
     border: 2px solid;
-    animation: fadeIn 0.5s both;
+    animation: fadeIn 0.6s both;
 }
 
 .light-theme .vendor-card {

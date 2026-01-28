@@ -307,6 +307,18 @@ body {
     border-color: #374151;
 }
 
+.dropdown-item.active {
+    background: rgba(255, 255, 255, 0.2); /* Slightly brighter glass */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-item.active .dropdown-title {
+    color: #f97316; /* Keep text readable over the blur */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 /* Cart Button */
 .cart-button {
     position: relative;
