@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AbegChop - Calabar Campus Food Delivery</title>
-    <meta name="description" content="AbegChop: The fastest way to get delicious campus meals delivered to your hostel at the University of Calabar.">
+    <meta name="description"
+        content="AbegChop: The fastest way to get delicious campus meals delivered to your hostel at the University of Calabar.">
     <meta name="author" content="Lawrence Okon">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://meetlawrence.github.io/wdd231/project/index.html">
     <meta property="og:title" content="AbegChop - Calabar Campus Food Delivery">
-    <meta property="og:description" content="Fast, delicious campus meals delivered straight to your hostel. Mek you no faint! 😁">
+    <meta property="og:description"
+        content="Fast, delicious campus meals delivered straight to your hostel. Mek you no faint! 😁">
     <meta property="og:image" content="https://meetlawrence.github.io/wdd231/project/images/icons/abegchop.svg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://meetlawrence.github.io/wdd231/project/index.html">
     <meta name="twitter:title" content="AbegChop - Calabar Campus Food Delivery">
-    <meta name="twitter:description" content="Fast, delicious campus meals delivered straight to your hostel. Mek you no faint! 😁">
+    <meta name="twitter:description"
+        content="Fast, delicious campus meals delivered straight to your hostel. Mek you no faint! 😁">
     <meta name="twitter:image" content="https://meetlawrence.github.io/wdd231/project/images/icons/abegchop.svg">
 
     <link rel="icon" href="favicon.ico">
-    
+
     <link rel="stylesheet" href="styles/global/base.css">
     <link rel="stylesheet" href="styles/global/base-large.css">
     <link rel="stylesheet" href="styles/global/utilities.css">
@@ -41,30 +45,43 @@
                 <div class="logo-text">
                     <h1>AbegChop</h1>
                     <div class="location">
-                        <svg class="icon-small"><use href="images/icons/sprites.svg#icon-location"></use></svg>
+                        <svg class="icon-small">
+                            <use href="images/icons/sprites.svg#icon-location"></use>
+                        </svg>
                         <span>Calabar Campus</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="header-right">
                 <button id="cart-button" class="cart-button">
-                    <svg class="icon"><use href="images/icons/sprites.svg#icon-cart"></use></svg>
+                    <svg class="icon">
+                        <use href="images/icons/sprites.svg#icon-cart"></use>
+                    </svg>
                     <span>Cart</span>
                     <span id="cart-count" class="cart-badge hidden">0</span>
                 </button>
                 <button id="theme-toggle" class="icon-button" aria-label="Toggle Theme">
-                    <svg id="theme-icon-moon" class="icon"><use href="images/icons/sprites.svg#icon-moon"></use></svg>
-                    <svg id="theme-icon-sun" class="icon hidden"><use href="images/icons/sprites.svg#icon-sun"></use></svg>
+                    <svg id="theme-icon-moon" class="icon">
+                        <use href="images/icons/sprites.svg#icon-moon"></use>
+                    </svg>
+                    <svg id="theme-icon-sun" class="icon hidden">
+                        <use href="images/icons/sprites.svg#icon-sun"></use>
+                    </svg>
                 </button>
 
                 <div class="menu-dropdown">
-                    <button id="menu-button" class="menu-button" aria-haspopup="true" aria-expanded="false" aria-controls="menu-dropdown">
-                        <svg id="menu-icon" class="icon"><use href="images/icons/sprites.svg#icon-menu"></use></svg>
-                        <svg id="close-icon" class="icon hidden"><use href="images/icons/sprites.svg#icon-close"></use></svg>
+                    <button id="menu-button" class="menu-button" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="menu-dropdown">
+                        <svg id="menu-icon" class="icon">
+                            <use href="images/icons/sprites.svg#icon-menu"></use>
+                        </svg>
+                        <svg id="close-icon" class="icon hidden">
+                            <use href="images/icons/sprites.svg#icon-close"></use>
+                        </svg>
                         <span class="menu-text">Menu</span>
                     </button>
-                    
+
                     <nav id="menu-dropdown" class="dropdown-content">
                         <a href="index.html" class="dropdown-item active">
                             <span class="dropdown-emoji" aria-hidden="true">🛖</span>
@@ -90,14 +107,16 @@
 
                         <hr class="dropdown-divider">
 
-                        <a href="#" class="dropdown-item" onclick="alert('Track Order feature coming soon! 🚀'); return false;">
+                        <a href="#" class="dropdown-item"
+                            onclick="alert('Track Order feature coming soon! 🚀'); return false;">
                             <span class="dropdown-emoji" aria-hidden="true">📦</span>
                             <div>
                                 <p class="dropdown-title">Track Order</p>
                                 <p class="dropdown-desc">Check order status</p>
                             </div>
                         </a>
-                        <a href="#" class="dropdown-item" onclick="alert('Need help? Contact support at hello@abegchop.com'); return false;">
+                        <a href="#" class="dropdown-item"
+                            onclick="alert('Need help? Contact support at hello@abegchop.com'); return false;">
                             <span class="dropdown-emoji" aria-hidden="true">💬</span>
                             <div>
                                 <p class="dropdown-title">Help & Support</p>
@@ -116,27 +135,34 @@
                 <div class="blob blob-1"></div>
                 <div class="blob blob-2"></div>
             </div>
-            
+
             <div class="hero-content">
                 <div class="hero-badge">
-                    <svg class="sparkle-icon"><use href="images/icons/sprites.svg#icon-sparkle"></use></svg>
+                    <svg class="sparkle-icon">
+                        <use href="images/icons/sprites.svg#icon-sparkle"></use>
+                    </svg>
                     <span>Calabar's #1 Food Delivery</span>
                 </div>
-                
+
                 <h2 class="hero-title">Abeg, Find Something Chop!</h2>
-                <p class="hero-subtitle">Delicious campus meals delivered straight to your hostel. <br> Order now and satisfy your cravings, mek you no faint! 😁</p>
-                                    
+                <p class="hero-subtitle">Delicious campus meals delivered straight to your hostel. <br> Order now and
+                    satisfy your cravings, mek you no faint! 😁</p>
+
                 <div class="order-btn-container">
                     <a href="order.html" class="btn">
                         <span>Order Now</span>
-                        <svg class="icon"><use href="images/icons/sprites.svg#icon-order"></use></svg>
+                        <svg class="icon">
+                            <use href="images/icons/sprites.svg#icon-order"></use>
+                        </svg>
                     </a>
                 </div>
 
                 <div class="hero-stats">
                     <div class="stat-card">
                         <div class="stat-icon stat-icon-orange">
-                            <svg class="icon"><use href="images/icons/sprites.svg#icon-vendor"></use></svg>
+                            <svg class="icon">
+                                <use href="images/icons/sprites.svg#icon-vendor"></use>
+                            </svg>
                         </div>
                         <p class="stat-title">50+ Vendors</p>
                         <p class="stat-desc">Wide variety of meals</p>
@@ -144,12 +170,14 @@
 
                     <div class="stat-card">
                         <div class="stat-icon stat-icon-pink">
-                            <svg class="icon"><use href="images/icons/sprites.svg#icon-clock"></use></svg>
+                            <svg class="icon">
+                                <use href="images/icons/sprites.svg#icon-clock"></use>
+                            </svg>
                         </div>
                         <p class="stat-title">30 Min Delivery</p>
                         <p class="stat-desc">Fast & reliable service</p>
                     </div>
-                    
+
                     <div class="stat-card">
                         <div class="stat-icon stat-icon-green">
                             <span class="naira-icon">₦</span>
@@ -168,7 +196,9 @@
             <div class="view-all-container">
                 <a href="vendors.html#all-vendors" class="btn">
                     <span>Explore All Vendors</span>
-                    <svg class="icon"><use href="images/icons/explore.svg#icon-explore"></use></svg>
+                    <svg class="icon">
+                        <use href="images/icons/explore.svg#icon-explore"></use>
+                    </svg>
                 </a>
             </div>
         </section>
@@ -178,45 +208,53 @@
                 <h2 class="section-title">How It Works</h2>
                 <p class="section-subtitle">Getting your food is super easy!</p>
             </div>
-            
+
             <div class="steps-grid">
                 <div class="step-card">
                     <div class="step-content step-bg-blue">
                         <div class="step-icon step-icon-blue">
-                            <svg class="icon"><use href="images/icons/sprites.svg#icon-search"></use></svg>
+                            <svg class="icon">
+                                <use href="images/icons/sprites.svg#icon-search"></use>
+                            </svg>
                         </div>
                         <div class="step-number step-number-blue">1</div>
                     </div>
                     <h3 class="step-title">Browse</h3>
                     <p class="step-desc">Explore food from campus vendors</p>
                 </div>
-                
+
                 <div class="step-card">
                     <div class="step-content step-bg-green">
                         <div class="step-icon step-icon-green">
-                            <svg class="icon"><use href="images/icons/sprites.svg#icon-vendor"></use></svg>
+                            <svg class="icon">
+                                <use href="images/icons/sprites.svg#icon-vendor"></use>
+                            </svg>
                         </div>
                         <div class="step-number step-number-green">2</div>
                     </div>
                     <h3 class="step-title">Choose</h3>
                     <p class="step-desc">Select your favorite meals</p>
                 </div>
-                
+
                 <div class="step-card">
                     <div class="step-content step-bg-orange">
                         <div class="step-icon step-icon-orange">
-                            <svg class="icon"><use href="images/icons/sprites.svg#icon-cart"></use></svg>
+                            <svg class="icon">
+                                <use href="images/icons/sprites.svg#icon-cart"></use>
+                            </svg>
                         </div>
                         <div class="step-number step-number-orange">3</div>
                     </div>
                     <h3 class="step-title">Order</h3>
                     <p class="step-desc">Add to cart and checkout</p>
                 </div>
-                
+
                 <div class="step-card">
                     <div class="step-content step-bg-pink">
                         <div class="step-icon step-icon-pink">
-                            <svg class="icon"><use href="images/icons/sprites.svg#icon-enjoy"></use></svg>
+                            <svg class="icon">
+                                <use href="images/icons/sprites.svg#icon-enjoy"></use>
+                            </svg>
                         </div>
                         <div class="step-number step-number-pink">4</div>
                     </div>
@@ -240,27 +278,33 @@
                     <p class="footer-desc">Calabar's favorite food delivery service. 🔥</p>
                     <div class="social-links">
                         <a href="#" class="social-link" aria-label="Facebook">
-                            <svg class="icon"><use href="images/icons/sprites.svg#icon-facebook"></use></svg>
+                            <svg class="icon">
+                                <use href="images/icons/sprites.svg#icon-facebook"></use>
+                            </svg>
                         </a>
                         <a href="#" class="social-link" aria-label="Instagram">
-                            <svg class="icon"><use href="images/icons/sprites.svg#icon-instagram"></use></svg>
+                            <svg class="icon">
+                                <use href="images/icons/sprites.svg#icon-instagram"></use>
+                            </svg>
                         </a>
                         <a href="#" class="social-link" aria-label="Twitter">
-                            <svg class="icon"><use href="images/icons/sprites.svg#icon-twitter"></use></svg>
+                            <svg class="icon">
+                                <use href="images/icons/sprites.svg#icon-twitter"></use>
+                            </svg>
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="vendors.html">All Vendors</a></li>
                         <li><a href="order.html">Popular Foods</a></li>
-                        <li><a href="vendors.html">Become a Vendor</a></li>
+                        <li><a href="join.html">Become a Vendor</a></li>
                         <li><a href="#">Track Order</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4 class="footer-title">Support</h4>
                     <ul class="footer-links">
@@ -270,13 +314,16 @@
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4 class="footer-title">Developer</h4>
                     <ul class="footer-links">
-                        <li><a href="https://meetlawrence.github.io/wdd231/index.html" target="_blank">Lawrence Okon</a></li>
-                        <li><a href="https://meetlawrence.github.io/wdd131/project/index.html" target="_blank">Dream Nigeria</a></li> 
-                        <li><a href="https://meetlawrence.github.io/wdd231/index.html#course-list" target="_blank">WDD231</a></li> 
+                        <li><a href="https://meetlawrence.github.io/wdd231/index.html" target="_blank">Lawrence Okon</a>
+                        </li>
+                        <li><a href="https://meetlawrence.github.io/wdd131/project/index.html" target="_blank">Dream
+                                Nigeria</a></li>
+                        <li><a href="https://meetlawrence.github.io/wdd231/index.html#course-list"
+                                target="_blank">WDD231</a></li>
                     </ul>
                 </div>
 
@@ -284,21 +331,27 @@
                     <h4 class="footer-title">Contact Us</h4>
                     <ul class="footer-contacts">
                         <li>
-                            <svg class="icon"><use href="images/icons/sprites.svg#icon-location"></use></svg>
+                            <svg class="icon">
+                                <use href="images/icons/sprites.svg#icon-location"></use>
+                            </svg>
                             <span>University of Calabar Campus</span>
                         </li>
                         <li>
-                            <svg class="icon"><use href="images/icons/sprites.svg#icon-phone"></use></svg>
+                            <svg class="icon">
+                                <use href="images/icons/sprites.svg#icon-phone"></use>
+                            </svg>
                             <span>+234 800 ABEG CHOP</span>
                         </li>
                         <li>
-                            <svg class="icon"><use href="images/icons/sprites.svg#icon-mail"></use></svg>
+                            <svg class="icon">
+                                <use href="images/icons/sprites.svg#icon-mail"></use>
+                            </svg>
                             <span>hello@abegchop.com</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2026 AbegChop. All rights reserved. Made with ❤️ for Calabar students.</p>
             </div>
