@@ -20,38 +20,39 @@ document.getElementById("lastmodified").textContent = "Last Modification: " + fo
 
 
 
-// // --- Visit Tracker Toast Logic ---
-// const visitMessage = document.querySelector("#visit-message");
-// const toast = document.querySelector("#visit-toast");
-// const closeToast = document.querySelector("#close-toast");
-// const today = Date.now();
-// const msPerDay = 86400000; 
+// --- Visit Tracker Toast Logic ---
+// --- I learnt this from the internet --- 
+const visitMessage = document.querySelector("#visit-message");
+const toast = document.querySelector("#visit-toast");
+const closeToast = document.querySelector("#close-toast");
+const today = Date.now();
+const msPerDay = 86400000; 
 
-// const lastVisit = Number(window.localStorage.getItem("lastVisit-ls")) || 0;
+const lastVisit = Number(window.localStorage.getItem("lastVisit-ls")) || 0;
 
-// if (lastVisit === 0) {
-//     visitMessage.textContent = "Welcome! Let us know if you have any questions.";
-// } else {
-//     const timeDiff = today - lastVisit;
-//     const daysPassed = Math.floor(timeDiff / msPerDay);
+if (lastVisit === 0) {
+    visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    const timeDiff = today - lastVisit;
+    const daysPassed = Math.floor(timeDiff / msPerDay);
 
-//     if (timeDiff < msPerDay) {
-//         visitMessage.textContent = "Back so soon! Awesome!";
-//     } else {
-//         const unit = daysPassed === 1 ? "day" : "days";
-//         visitMessage.textContent = `You last visited ${daysPassed} ${unit} ago.`;
-//     }
-// }
+    if (timeDiff < msPerDay) {
+        visitMessage.textContent = "Back so soon! Awesome!";
+    } else {
+        const unit = daysPassed === 1 ? "day" : "days";
+        visitMessage.textContent = `You last visited ${daysPassed} ${unit} ago.`;
+    }
+}
 
-// // Show the toast after a 1-second delay
-// setTimeout(() => {
-//     toast.classList.add("show");
-// }, 1000);
+// Show the toast after a 2-second delay
+setTimeout(() => {
+    toast.classList.add("show");
+}, 2000);
 
-// // Close button logic
-// closeToast.addEventListener("click", () => {
-//     toast.classList.remove("show");
-// });
+// Close button logic
+closeToast.addEventListener("click", () => {
+    toast.classList.remove("show");
+});
 
-// window.localStorage.setItem("lastVisit-ls", today);
+window.localStorage.setItem("lastVisit-ls", today);
 

@@ -4,14 +4,14 @@
  */
 import { places } from '../data/places.mjs';
 
-// 1. SELECT DOM ELEMENTS
+// SELECT DOM ELEMENTS
 const showHere = document.querySelector('#allPlaces');
 const mydialog = document.querySelector("#mydialog");
 const mytitle = document.querySelector("#mytitle"); 
 const myinfo = document.querySelector("#myinfo");
 const closeBtn = document.querySelector("#closeModal");
 
-// 2. RENDER BUSINESS CARDS
+// RENDER BUSINESS CARDS
 const displayPlaces = (placeList) => {
     // Inject the cards into the grid container
     showHere.innerHTML = placeList.map(place => `
@@ -28,7 +28,7 @@ const displayPlaces = (placeList) => {
 
     // <div class="card-content"></div>
 
-    // 3. ATTACH EVENT LISTENERS TO BUTTONS
+    // ATTACH EVENT LISTENERS TO BUTTONS
     const buttons = document.querySelectorAll('.learnMoreBtn');
     buttons.forEach(button => {
         button.addEventListener('click', () => {

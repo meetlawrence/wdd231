@@ -145,9 +145,9 @@ form input[type="submit"]:hover {
     transition: background-color 0.2s;
 }
 
-.learn-more-btn:hover { background-color: var(--accent1); }
-
-
+.learn-more-btn:hover { 
+    background-color: var(--accent1); 
+}
 
 /* Card Animations */
 @keyframes floatIn {
