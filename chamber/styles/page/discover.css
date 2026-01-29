@@ -1,15 +1,13 @@
 /* ============================================ */
-/* HERO & DIRECTORY HEADER                      */
+/* HERO & DISCOVER HEADER                      */
 /* ============================================ */
 .hero-directory {
     position: relative;
     width: 100%;
     background-color: var(--primary) !important;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.04), 
-        rgba(0, 0, 0, 0.9)
-    ), 
-    url("../../images/banners/main4.webp") no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.04),
+            rgba(0, 0, 0, 0.9)),
+        url("../../images/banners/main4.webp") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,16 +40,17 @@
     align-items: center;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    grid-template-areas: 
-    "name"
-    "photograph"
-    "description"
-    "location"
-    "button";
+    grid-template-areas:
+        "name"
+        "photograph"
+        "description"
+        "location"
+        "button";
 }
 
 .card:hover {
-    transform: translateY(-5px); /*Lift effect on hover */
+    transform: translateY(-5px);
+    /*Lift effect on hover */
 }
 
 .card img {
@@ -81,12 +80,12 @@
 }
 
 .card strong {
-  color: #333;
+    color: #333;
 }
 
 /* Style for the Learn More button on each card */
 .learnMoreBtn {
-    background-color: var(--accent); 
+    background-color: var(--accent);
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
@@ -96,7 +95,8 @@
     cursor: pointer;
     transition: all 0.3s ease;
     width: fit-content;
-    margin-top: auto; /* Pushes button to bottom of card if using flex */
+    margin-top: auto;
+    /* Pushes button to bottom of card if using flex */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     grid-area: button;
 }
@@ -130,7 +130,8 @@
 /* The Dimmed Background */
 #mydialog::backdrop {
     background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px); /* Modern blur effect */
+    backdrop-filter: blur(4px);
+    /* Modern blur effect */
 }
 
 /* Close Button (top right) */
@@ -162,8 +163,15 @@
 
 /* Entrance Animation */
 @keyframes slideIn {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 
@@ -173,19 +181,20 @@
 /* Medium Display */
 @media only screen and (min-width: 38rem) {
     .card {
-        grid-template-areas: 
-        "photograph name"
-        "photograph description"
-        "button location"
+        grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "button location"
     }
-    
+
 
     .card img {
-    width: 200px;
+        width: 200px;
     }
 
     /* Ensure the image container hides the "zoom" overflow */
-    .card figure, .card {
+    .card figure,
+    .card {
         overflow: hidden;
     }
 
@@ -195,17 +204,19 @@
     }
 
     .card figure:hover img {
-        transform: scale(1.05); /* Slight zoom in */
-        filter: brightness(1.1); /* Subtle "light up" effect */
+        transform: scale(1.05);
+        /* Slight zoom in */
+        filter: brightness(1.1);
+        /* Subtle "light up" effect */
     }
 
 }
 
 /* Large Display */
-@media only screen and (min-width: 64rem){
+@media only screen and (min-width: 64rem) {
     #allPlaces {
         display: grid;
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr;
     }
 
 }
