@@ -343,6 +343,11 @@ footer ul {
     line-height: 1;
 }
 
+#visit-toast {
+    background-color: #333;
+    color: #ffffff;
+}
+
 #close-toast:hover {
     color: #ffcc00; /* Calabar Chamber gold/accent color */
 }
