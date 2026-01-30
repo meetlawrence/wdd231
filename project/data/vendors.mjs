@@ -5,59 +5,58 @@ export const categories = [
     { "id": "swallow", "name": "Swallow", "emoji": "🥘" },
     { "id": "drinks", "name": "Drinks", "emoji": "🥤" },
     { "id": "breakfast", "name": "Breakfast", "emoji": "🥞" },
-    { "id": "grills", "name": "Grills", "emoji": "🍗" },
-    { "id": "pastries", "name": "Pastries", "emoji": "🥐" }
 ];
 
 export const vendors = [  
   {
     id: "v1",
-    name: "Calabar Kitchen",
-    image: "images/vendors/image1.jpg",
+    name: "Suya Spot",
+    image: "images/vendors/vendor1.webp",
     rating: 4.8,
     deliveryTime: "20-30 min",
     address: "12 Marian Road",
     phone: "0803 123 4567",
-    email: "orders@calabarkitchen.com",
-    description: "Authentic Edikang Ikong and Afang soup.",
+    email: "orders@suyaspot.com",
+    description: "Spicy and authentic Beef and Chicken Suya.",
     menu: [
-      { id: "f1", name: "Afang Soup", price: 4500, image: "images/food/afang.webp", category: "swallow" },
-      { id: "f2", name: "Edikang Ikong", price: 5000, image: "images/food/edikang.webp", category: "swallow" }
+      { id: "f1", name: "Beef Suya", price: 2500, image: "images/food/suya1.webp", category: "snacks" },
+      { id: "f2", name: "Chicken Suya", price: 3000, image: "images/food/suya2.webp", category: "snacks" }
     ]
   },
   {
     id: "v2",
-    name: "Abeg Chop Grill",
-    image: "images/vendors/image4.jpg",
+    name: "Chill 'n Snack",
+    image: "images/vendors/vendor2.webp",
     rating: 4.5,
     deliveryTime: "15-25 min",
     address: "Etta Agbor",
     phone: "0812 987 6543",
-    email: "hello@abegchop.ng",
+    email: "hello@chillnsnack.ng",
     description: "Spicy Suya and roasted plantain specialists.",
     menu: [
-      { id: "f3", name: "Beef Suya", price: 2000, image: "images/food/suya.webp", category: "grills" },
-      { id: "f4", name: "Roasted Plantain", price: 1200, image: "images/food/bole.webp", category: "snacks" }
+      { id: "f3", name: "Full Chops", price: 4000, image: "images/food/snacks1.webp", category: "snacks" },
+      { id: "f4", name: "Soft Drinks", price: 700, image: "images/vendors/vendor23.webp", category: "drinks" }
     ]
   },
   {
     id: "v3",
-    name: "The Crunch Hub",
-    image: "images/vendors/crunch.webp",
+    name: "The Lunch Hub",
+    image: "images/vendors/vendor3.webp",
     rating: 4.2,
     deliveryTime: "30-45 min",
-    address: "Lanscape Boulevard",
+    address: "Etta Agbor Layout",
     phone: "0706 555 0192",
-    email: "crunchhub@gmail.com",
+    email: "lunchhub@gmail.com",
     description: "Fast food, burgers, and crispy fries.",
     menu: [
-      { id: "f5", name: "Cheeseburger", price: 3500, image: "images/food/burger.webp", category: "snacks" }
+      { id: "f5", name: "Boku Fries", price: 3500, image: "images/food/fries1.webp", category: "fries" },
+      { id: "f5", name: "Chicken Combo", price: 5500, image: "images/food/rice1.webp", category: "rice" }
     ]
   },
   {
     id: "v4",
     name: "Mama Ekaette's",
-    image: "images/vendors/image2.jpg",
+    image: "images/vendors/vendor4.webp",
     rating: 4.9,
     deliveryTime: "25-35 min",
     address: "Watt Market",
@@ -65,69 +64,75 @@ export const vendors = [
     email: "mamaekaette@calabar.ng",
     description: "Traditional Calabar delicacies.",
     menu: [
-      { id: "f6", name: "Ekpang Nkukwo", price: 4000, image: "images/food/ekpang.webp", category: "swallow" }
+      { id: "f6", name: "Egusi special", price: 4000, image: "images/food/swallow4.webp", category: "swallow" },
+      { id: "f6", name: "Pepper Soup", price: 3500, image: "images/food/chicken2.webp", category: "swallow" }
+
     ]
   },
   {
     id: "v5",
-    name: "Bole King",
-    image: "images/vendors/image3.jpg",
+    name: "Plasta Place",
+    image: "images/vendors/vendor5.webp",
     rating: 4.6,
     deliveryTime: "10-20 min",
-    address: "Atekong Drive",
+    address: "Uwanse Street",
     phone: "0810 444 5566",
-    email: "orders@boleking.com",
-    description: "Premium roasted plantain and fish.",
+    email: "orders@pastaplace.com",
+    description: "Yummy noodles, made with love.",
     menu: [
-      { id: "f7", name: "Large Fish & Bole", price: 5500, image: "images/food/fish-bole.webp", category: "snacks" }
+      { id: "f7", name: "Noodles & Egg", price: 5500, image: "images/vendors/vendor5.webp", category: "breakfast" },
+      { id: "f6", name: "Chicken Pasta", price: 4000, image: "images/food/noodles.webp", category: "pasta" }
     ]
   },
   {
     id: "v6",
-    name: "Pizza Palace",
-    image: "images/vendors/pizza.webp",
+    name: "Amanda Cuisine",
+    image: "images/vendors/vendor6.webp",
     rating: 4.1,
     deliveryTime: "40-50 min",
-    address: "Diamond Hill",
+    address: "Goldie by Mount Zion",
     phone: "0905 111 2222",
-    email: "contact@pizzapalace.ng",
-    description: "Italian style pizza.",
+    email: "contact@amanda.ng",
+    description: "Deliciously prepared meals specially for you!",
     menu: [
-      { id: "f8", name: "Pepperoni Pizza", price: 7000, image: "images/food/pizza.webp", category: "snacks" }
+      { id: "f8", name: "Classic Afang", price: 5000, image: "images/food/swallow5.webp", category: "swallow" },
+      { id: "f9", name: "Rice and Sauce", price: 4200, image: "images/food/swallow2.webp", category: "rice" }
     ]
   },
   {
     id: "v7",
-    name: "The Pasta Place",
-    image: "images/vendors/image4.jpg",
+    name: "Kitchen Splendor",
+    image: "images/vendors/vendor7.webp",
     rating: 4.7,
     deliveryTime: "20-30 min",
     address: "State Housing Estate",
     phone: "0808 222 3333",
-    email: "pastaplace@eatwell.com",
-    description: "Gourmet pasta.",
+    email: "kitchenplendor@eatwell.com",
+    description: "Assorted delicacies made in splendor",
     menu: [
-      { id: "f9", name: "Creamy Alfredo", price: 5200, image: "images/food/pasta.webp", category: "rice" }
+      { id: "f10", name: "Abacha", price: 5200, image: "images/food/snacks2.webp", category: "breakfast" },
+      { id: "f6", name: "Spicy Chicken", price: 3000, image: "images/food/chicken1.webp", category: "meat" }
     ]
   },
   {
     id: "v8",
-    name: "Suya Junction",
-    image: "images/vendors/image1.jpg",
+    name: "Glo Glo",
+    image: "images/vendors/vendor8.webp",
     rating: 4.5,
     deliveryTime: "15-20 min",
     address: "Mary Slessor",
     phone: "0703 666 7777",
-    email: "junction@suya.ng",
-    description: "Famous midnight suya spot.",
+    email: "glo@glo.ng",
+    description: "Famous kitchen innovation",
     menu: [
-      { id: "f10", name: "Chicken Suya", price: 2500, image: "images/food/c-suya.webp", category: "grills" }
+      { id: "f11", name: "Exotic Fried Rice", price: 3500, image: "images/food/rice5.webp", category: "rice" },
+      { id: "f6", name: "rice and Vegetable Sauce", price: 2500, image: "images/food/rice8.webp", category: "rice" }
     ]
   },
   {
     id: "v9",
-    name: "Fresh Salads",
-    image: "images/vendors/salad.webp",
+    name: "Ogbongolo",
+    image: "images/vendors/vendor9.webp",
     rating: 4.1,
     deliveryTime: "15-25 min",
     address: "MCC Road",
@@ -135,13 +140,14 @@ export const vendors = [
     email: "fresh@salads.ng",
     description: "Healthy bowls.",
     menu: [
-      { id: "f11", name: "Greek Salad", price: 3000, image: "images/food/salad.webp", category: "breakfast" }
+      { id: "f12", name: "Fisherman soup", price: 4500, image: "images/food/swallow3.webp", category: "swallow" },
+      { id: "f6", name: "Egusi", price: 4000, image: "images/food/swallow6.webp", category: "swallow" }
     ]
   },
   {
     id: "v10",
     name: "Native Pot",
-    image: "images/vendors/image2.jpg",
+    image: "images/vendors/vendor10.webp",
     rating: 4.8,
     deliveryTime: "30-40 min",
     address: "Calabar South",
@@ -149,13 +155,14 @@ export const vendors = [
     email: "chef@nativepot.com",
     description: "Fisherman soup specialists.",
     menu: [
-      { id: "f12", name: "Fisherman Soup", price: 6000, image: "images/food/fishsoup.webp", category: "swallow" }
+      { id: "f13", name: "Premium Egusi", price: 6000, image: "images/food/rice2.webp", category: "swallow" },
+      { id: "f6", name: "Rice and Stew", price: 5000, image: "images/food/rice7.webp", category: "rice" }
     ]
   },
   {
     id: "v11",
     name: "Chop Better",
-    image: "images/vendors/image3.jpg",
+    image: "images/vendors/vendor11.webp",
     rating: 4.5,
     deliveryTime: "20-30 min",
     address: "Goldie Street",
@@ -163,13 +170,14 @@ export const vendors = [
     email: "orders@chopbetter.com",
     description: "Rice dishes and local stews.",
     menu: [
-      { id: "f13", name: "Jollof Rice & Chicken", price: 3500, image: "images/food/jollof.webp", category: "rice" }
+      { id: "f14", name: "Chop Life", price: 3500, image: "images/food/suya3.webp", category: "breakfast" },
+      { id: "f15", name: "Jollof Rice & Chicken", price: 3500, image: "images/food/rice6.webp", category: "rice" }
     ]
   },
   {
     id: "v12",
-    name: "Wing Stop",
-    image: "images/vendors/wings.webp",
+    name: "Calabar Kitchen",
+    image: "images/vendors/vendor12.webp",
     rating: 4.3,
     deliveryTime: "25-35 min",
     address: "Airport Road",
@@ -177,134 +185,8 @@ export const vendors = [
     email: "wings@stop.ng",
     description: "Spicy buffalo wings.",
     menu: [
-      { id: "f14", name: "Buffalo Wings", price: 3200, image: "images/food/wings.webp", category: "grills" }
-    ]
-  },
-  {
-    id: "v13",
-    name: "Pastry Point",
-    image: "images/vendors/image1.jpg",
-    rating: 4.6,
-    deliveryTime: "10-15 min",
-    address: "Calabar Road",
-    phone: "0811 555 4444",
-    email: "pastries@point.com",
-    description: "Fresh meatpies.",
-    menu: [
-      { id: "f15", name: "Meat Pie", price: 800, image: "images/food/pie.webp", category: "pastries" }
-    ]
-  },
-  {
-    id: "v14",
-    name: "Oriental Spice",
-    image: "images/vendors/oriental.webp",
-    rating: 4.4,
-    deliveryTime: "35-45 min",
-    address: "Marian Extension",
-    phone: "0804 999 0000",
-    email: "oriental@spice.ng",
-    description: "Stir-fry noodles.",
-    menu: [
-      { id: "f16", name: "Special Fried Rice", price: 4200, image: "images/food/fried-rice.webp", category: "rice" }
-    ]
-  },
-  {
-    id: "v15",
-    name: "The Grill Box",
-    image: "images/vendors/image4.jpg",
-    rating: 4.7,
-    deliveryTime: "20-25 min",
-    address: "Federal Housing",
-    phone: "0704 333 2222",
-    email: "box@grill.com",
-    description: "Grilled chicken and chips.",
-    menu: [
-      { id: "f17", name: "Quarter Chicken & Chips", price: 4800, image: "images/food/grillbox.webp", category: "grills" }
-    ]
-  },
-  {
-    id: "v16",
-    name: "Smoothie Bar",
-    image: "images/vendors/smoothie.webp",
-    rating: 4.2,
-    deliveryTime: "10-20 min",
-    address: "Palm Street",
-    phone: "0902 444 6666",
-    email: "blend@smoothiebar.com",
-    description: "Fruit blends.",
-    menu: [
-      { id: "f18", name: "Berry Blast", price: 2500, image: "images/food/smoothie.webp", category: "drinks" }
-    ]
-  },
-  {
-    id: "v17",
-    name: "Efik Delights",
-    image: "images/vendors/image2.jpg",
-    rating: 4.9,
-    deliveryTime: "30-40 min",
-    address: "Duke Town",
-    phone: "0803 777 8888",
-    email: "info@efikdelights.com",
-    description: "Premium catering.",
-    menu: [
-      { id: "f19", name: "White Soup (Afia Efere)", price: 5500, image: "images/food/whitesoup.webp", category: "swallow" }
-    ]
-  },
-  {
-    id: "v18",
-    name: "Burger Bistro",
-    image: "images/vendors/image3.jpg",
-    rating: 4.5,
-    deliveryTime: "20-30 min",
-    address: "UNICAL Gate",
-    phone: "0702 111 9999",
-    email: "bistro@burgers.ng",
-    description: "Gourmet burgers.",
-    menu: [
-      { id: "f20", name: "BBQ Burger", price: 3800, image: "images/food/bbq-burger.webp", category: "snacks" }
-    ]
-  },
-  {
-    id: "v19",
-    name: "Taco Truck",
-    image: "images/vendors/taco.webp",
-    rating: 3.9,
-    deliveryTime: "25-35 min",
-    address: "Chamley Street",
-    phone: "0901 000 7777",
-    email: "tacos@truck.com",
-    description: "Fusion tacos.",
-    menu: [
-      { id: "f21", name: "Beef Tacos (3pcs)", price: 3500, image: "images/food/tacos.webp", category: "snacks" }
-    ]
-  },
-  {
-    id: "v20",
-    name: "Sweet Sensations",
-    image: "images/vendors/image1.jpg",
-    rating: 4.6,
-    deliveryTime: "15-25 min",
-    address: "Efio-Ette Junction",
-    phone: "0818 555 2222",
-    email: "sweet@sensations.ng",
-    description: "Cakes and desserts.",
-    menu: [
-      { id: "f22", name: "Chocolate Cake Slice", price: 2000, image: "images/food/cake.webp", category: "pastries" }
-    ]
-  },
-  {
-    id: "v21",
-    name: "Morning Glory Cafe",
-    image: "images/vendors/image4.jpg",
-    rating: 4.7,
-    deliveryTime: "15-25 min",
-    address: "Ikot Ansa",
-    phone: "0807 444 3333",
-    email: "morning@glory.com",
-    description: "Breakfast platters, pancakes, and fresh coffee.",
-    menu: [
-      { id: "f23", name: "Pancake Stack", price: 3000, image: "images/food/pancakes.webp", category: "breakfast" },
-      { id: "f24", name: "Full English Breakfast", price: 5500, image: "images/food/breakfast.webp", category: "breakfast" }
+      { id: "f16", name: "Afang Special", price: 3200, image: "images/food/swallow5.webp", category: "swallow" },
+      { id: "f17", name: "Ogbono", price: 6200, image: "images/food/swallow1.webp", category: "swallow" }
     ]
   }
 ];

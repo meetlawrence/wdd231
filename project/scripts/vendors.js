@@ -77,7 +77,7 @@ function renderDirectoryCards(list, container) {
             <h2 class="list-only-title">${vendor.name}</h2>
             <p class="list-only-info">${vendor.address}</p>
             <p class="list-only-info">${vendor.deliveryTime}</p>
-            <p class="list-only-info">${vendor.rating}</p>
+            <p class="list-only-info">⭐${vendor.rating}</p>
         `;
         card.addEventListener('click', () => showVendorModal(vendor));
         container.appendChild(card);
@@ -225,35 +225,6 @@ function renderCategories() {
         });
         categoriesList.appendChild(button);
     });
-}
-
-function addToCart(food, vendorName) {
-    cart.push({ ...food, vendorName });
-    localStorage.setItem('cart', JSON.stringify(cart));
-    showToast(`${food.name} added to basket!`);
-    updateCartBadge();
-}
-
-function showToast(message) {
-    const toast = document.getElementById('visit-toast');
-    const msgEl = document.getElementById('toast-message');
-    if (!toast || !msgEl) return;
-    msgEl.textContent = message;
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 3000);
-}
-
-function updateCartBadge() {
-    const badge = document.getElementById('cart-count'); 
-    if (badge) {
-        badge.textContent = cart.length;
-        // Show the badge if items exist, hide if 0
-        if (cart.length > 0) {
-            badge.classList.remove('hidden');
-        } else {
-            badge.classList.add('hidden');
-        }
-    }
 }
 
 function setupSearch() {
