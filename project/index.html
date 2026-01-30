@@ -32,7 +32,8 @@
     <link rel="stylesheet" href="styles/pages/vendors.css">
 
     <script type="module" src="scripts/main.js"></script>
-    <script type="module" src="scripts/popular-vendors.js"></script>
+    <script type="module" src="scripts/vendors.js"></script>
+    <script type="module" src="scripts/cart.js"></script>
 </head>
 
 <body class="light-theme">
@@ -365,5 +366,23 @@
         </div>
         <div id="myinfo"></div>
     </dialog>
+    <div id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+        <h2>My Basket</h2>
+        <button id="close-cart" aria-label="Close Cart">&times;</button>
+    </div>
+    
+    <div id="cart-items-list"></div>
+
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-amount">₦0</span>
+        </div>
+        <button class="checkout-btn">Checkout via WhatsApp</button>
+    </div>
+</div>
+
+<div id="cart-overlay" class="overlay"></div>
 </body>
 </html>

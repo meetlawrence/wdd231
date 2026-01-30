@@ -1,5 +1,4 @@
 
-
 /* Vendors Section */
 .vendors-section {
     max-width: 1280px;
@@ -128,6 +127,103 @@
     font-size: 0.875rem;
     font-weight: 500;
 }
+
+
+.vendor-foods {
+    padding: 1.25rem;
+}
+
+.food-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.food-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    border: 2px solid;
+    animation: fadeIn 0.4s both;
+}
+
+.light-theme .food-item {
+    background: linear-gradient(to right, #f9fafb, white);
+    border-color: #f3f4f6;
+}
+
+.dark-theme .food-item {
+    background: #374151;
+    border-color: #4b5563;
+}
+
+.food-item:hover {
+    transform: scale(1.02) translateX(4px);
+}
+
+.light-theme .food-item:hover {
+    background: linear-gradient(to right, #fff7ed, #fce7f3);
+    border-color: #fdba74;
+}
+
+.dark-theme .food-item:hover {
+    background: #4b5563;
+    border-color: #f97316;
+}
+
+.food-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 0.75rem;
+    object-fit: cover;
+    box-shadow: 0 4px 6px -1px var(--shadow);
+}
+
+.food-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.food-name {
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.food-price {
+    font-weight: 900;
+    font-size: 1.125rem;
+}
+
+.light-theme .food-price {
+    color: #ea580c;
+}
+
+.dark-theme .food-price {
+    color: #fb923c;
+}
+
+.add-to-cart-btn {
+    background: linear-gradient(to right, #f97316, #ef4444);
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background: linear-gradient(to right, #ea580c, #dc2626);
+    transform: scale(1.15) rotate(90deg);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
 
 
 /* ============================================ */

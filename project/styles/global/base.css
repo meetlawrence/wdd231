@@ -48,7 +48,7 @@ body {
 #header {
     position: sticky;
     top: 0;
-    z-index: 40;
+    z-index: 100;
     background: var(--header-bg);
     box-shadow: 0 4px 6px -1px var(--shadow);
 }
