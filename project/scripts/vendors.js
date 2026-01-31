@@ -3,7 +3,6 @@ import { vendors, categories } from '../data/vendors.mjs';
 // --- Global State ---
 const appData = { vendors, categories };
 let selectedCategory = 'all';
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 // --- DOM Elements ---
 const vendorsGrid = document.querySelector('#vendors-grid');
@@ -41,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setupCommonListeners();
-    updateCartBadge();
+    // updateCartBadge();
 });
 
 // --- Feature: Home Page Logic ---

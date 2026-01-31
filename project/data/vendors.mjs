@@ -5,6 +5,8 @@ export const categories = [
     { "id": "swallow", "name": "Swallow", "emoji": "🥘" },
     { "id": "drinks", "name": "Drinks", "emoji": "🥤" },
     { "id": "breakfast", "name": "Breakfast", "emoji": "🥞" },
+    { "id": "lunch", "name": "Lunch", "emoji": "🍚" },
+    { "id": "meat", "name": "Meats", "emoji": "🍗" },
 ];
 
 export const vendors = [  
@@ -20,7 +22,7 @@ export const vendors = [
     description: "Spicy and authentic Beef and Chicken Suya.",
     menu: [
       { id: "f1", name: "Beef Suya", price: 2500, image: "images/food/suya1.webp", category: "snacks" },
-      { id: "f2", name: "Chicken Suya", price: 3000, image: "images/food/suya2.webp", category: "snacks" }
+      { id: "f2", name: "Chicken Suya", price: 3000, image: "images/food/suya2.webp", category: "meat" }
     ]
   },
   {
