@@ -76,8 +76,10 @@ const initFeaturePlaceholders = () => {
  * @param {string} featureName - The name of the feature
  * @param {string} message - The specific status message
  */
+
+
 function showComingSoonModal(featureName, message) {
-    const mydialog = document.querySelector("#mydialog");
+    const mydialog = document.querySelector("#mydialog"); 
     const mytitle = document.querySelector("#mytitle");
     const myinfo = document.querySelector("#myinfo");
 
