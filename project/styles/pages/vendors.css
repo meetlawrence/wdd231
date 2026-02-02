@@ -272,7 +272,7 @@
     font-weight: 700;
     cursor: pointer;
     border: none;
-    color: #f97316;
+    color: #813803;
     transition: all 0.3s ease;
     outline: none;
 }
@@ -302,7 +302,7 @@
 /* Dark Theme Adjustments */
 .dark-theme .view-toggle button {
     border-color: #fb923c;
-    color: #fb923c;
+    color: #813803;
 }
 
 .dark-theme .view-toggle button.active {
