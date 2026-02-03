@@ -1,0 +1,371 @@
+{
+  "categories": [
+    {
+      "id": "all",
+      "name": "All",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "rice",
+      "name": "Rice Dishes",
+      "emoji": "🍚"
+    },
+    {
+      "id": "snacks",
+      "name": "Snacks",
+      "emoji": "🌯"
+    },
+    {
+      "id": "swallow",
+      "name": "Swallow",
+      "emoji": "🥘"
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks",
+      "emoji": "🥤"
+    },
+    {
+      "id": "breakfast",
+      "name": "Breakfast",
+      "emoji": "🥞"
+    },
+    {
+      "id": "lunch",
+      "name": "Lunch",
+      "emoji": "🍚"
+    },
+    {
+      "id": "meat",
+      "name": "Meats",
+      "emoji": "🍗"
+    }
+  ],
+  "vendors": [
+    
+    {
+      "id": "v1",
+      "name": "Suya Spot",
+      "image": "images/vendors/vendor1.webp",
+      "rating": 4.8,
+      "deliveryTime": "20-30 min",
+      "address": "12 Marian Road",
+      "phone": "0803 123 4567",
+      "email": "orders@suyaspot.com",
+      "description": "Spicy and authentic Beef and Chicken Suya.",
+      "menu": [
+        {
+          "id": "f1",
+          "name": "Beef Suya",
+          "price": 2500,
+          "image": "images/food/suya1.webp",
+          "category": "snacks"
+        },
+        {
+          "id": "f2",
+          "name": "Chicken Suya",
+          "price": 3000,
+          "image": "images/food/suya2.webp",
+          "category": "meat"
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "name": "Chill 'n Snack",
+      "image": "images/vendors/vendor2.webp",
+      "rating": 4.5,
+      "deliveryTime": "15-25 min",
+      "address": "Etta Agbor",
+      "phone": "0812 987 6543",
+      "email": "hello@chillnsnack.ng",
+      "description": "Spicy Suya and roasted plantain specialists.",
+      "menu": [
+        {
+          "id": "f3",
+          "name": "Full Chops",
+          "price": 4000,
+          "image": "images/food/snacks1.webp",
+          "category": "snacks"
+        },
+        {
+          "id": "f4",
+          "name": "Soft Drinks",
+          "price": 700,
+          "image": "images/vendors/vendor23.webp",
+          "category": "drinks"
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "name": "The Lunch Hub",
+      "image": "images/vendors/vendor3.webp",
+      "rating": 4.2,
+      "deliveryTime": "30-45 min",
+      "address": "Etta Agbor Layout",
+      "phone": "0706 555 0192",
+      "email": "lunchhub@gmail.com",
+      "description": "Fast food, burgers, and crispy fries.",
+      "menu": [
+        {
+          "id": "f5",
+          "name": "Boku Fries",
+          "price": 3500,
+          "image": "images/food/fries1.webp",
+          "category": "fries"
+        },
+        {
+          "id": "f18",
+          "name": "Chicken Combo",
+          "price": 5500,
+          "image": "images/food/rice1.webp",
+          "category": "rice"
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "name": "Mama Ekaette's",
+      "image": "images/vendors/vendor4.webp",
+      "rating": 4.9,
+      "deliveryTime": "25-35 min",
+      "address": "Watt Market",
+      "phone": "0802 333 4444",
+      "email": "mamaekaette@calabar.ng",
+      "description": "Traditional Calabar delicacies.",
+      "menu": [
+        {
+          "id": "f6",
+          "name": "Egusi special",
+          "price": 4000,
+          "image": "images/food/swallow4.webp",
+          "category": "swallow"
+        },
+        {
+          "id": "f19",
+          "name": "Pepper Soup",
+          "price": 3500,
+          "image": "images/food/chicken2.webp",
+          "category": "swallow"
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "name": "Plasta Place",
+      "image": "images/vendors/vendor5.webp",
+      "rating": 4.6,
+      "deliveryTime": "10-20 min",
+      "address": "Uwanse Street",
+      "phone": "0810 444 5566",
+      "email": "orders@pastaplace.com",
+      "description": "Yummy noodles, made with love.",
+      "menu": [
+        {
+          "id": "f7",
+          "name": "Noodles & Egg",
+          "price": 5500,
+          "image": "images/vendors/vendor5.webp",
+          "category": "breakfast"
+        },
+        {
+          "id": "f20",
+          "name": "Chicken Pasta",
+          "price": 4000,
+          "image": "images/food/noodles.webp",
+          "category": "pasta"
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "name": "Amanda Cuisine",
+      "image": "images/vendors/vendor6.webp",
+      "rating": 4.1,
+      "deliveryTime": "40-50 min",
+      "address": "Goldie by Mount Zion",
+      "phone": "0905 111 2222",
+      "email": "contact@amanda.ng",
+      "description": "Deliciously prepared meals specially for you!",
+      "menu": [
+        {
+          "id": "f8",
+          "name": "Classic Afang",
+          "price": 5000,
+          "image": "images/food/swallow5.webp",
+          "category": "swallow"
+        },
+        {
+          "id": "f9",
+          "name": "Rice and Sauce",
+          "price": 4200,
+          "image": "images/food/swallow2.webp",
+          "category": "rice"
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "name": "Kitchen Splendor",
+      "image": "images/vendors/vendor7.webp",
+      "rating": 4.7,
+      "deliveryTime": "20-30 min",
+      "address": "State Housing Estate",
+      "phone": "0808 222 3333",
+      "email": "kitchenplendor@eatwell.com",
+      "description": "Assorted delicacies made in splendor",
+      "menu": [
+        {
+          "id": "f10",
+          "name": "Abacha",
+          "price": 5200,
+          "image": "images/food/snacks2.webp",
+          "category": "breakfast"
+        },
+        {
+          "id": "f21",
+          "name": "Spicy Chicken",
+          "price": 3000,
+          "image": "images/food/chicken1.webp",
+          "category": "meat"
+        }
+      ]
+    },
+    {
+      "id": "v8",
+      "name": "Glo Glo",
+      "image": "images/vendors/vendor8.webp",
+      "rating": 4.5,
+      "deliveryTime": "15-20 min",
+      "address": "Mary Slessor",
+      "phone": "0703 666 7777",
+      "email": "glo@glo.ng",
+      "description": "Famous kitchen innovation",
+      "menu": [
+        {
+          "id": "f11",
+          "name": "Exotic Fried Rice",
+          "price": 3500,
+          "image": "images/food/rice5.webp",
+          "category": "rice"
+        },
+        {
+          "id": "f22",
+          "name": "rice and Vegetable Sauce",
+          "price": 2500,
+          "image": "images/food/rice8.webp",
+          "category": "rice"
+        }
+      ]
+    },
+    {
+      "id": "v9",
+      "name": "Ogbongolo",
+      "image": "images/vendors/vendor9.webp",
+      "rating": 4.1,
+      "deliveryTime": "15-25 min",
+      "address": "MCC Road",
+      "phone": "0814 888 9999",
+      "email": "fresh@salads.ng",
+      "description": "Healthy bowls.",
+      "menu": [
+        {
+          "id": "f12",
+          "name": "Fisherman soup",
+          "price": 4500,
+          "image": "images/food/swallow3.webp",
+          "category": "swallow"
+        },
+        {
+          "id": "f23",
+          "name": "Egusi",
+          "price": 4000,
+          "image": "images/food/swallow6.webp",
+          "category": "swallow"
+        }
+      ]
+    },
+    {
+      "id": "v10",
+      "name": "Native Pot",
+      "image": "images/vendors/vendor10.webp",
+      "rating": 4.8,
+      "deliveryTime": "30-40 min",
+      "address": "Calabar South",
+      "phone": "0809 000 1111",
+      "email": "chef@nativepot.com",
+      "description": "Fisherman soup specialists.",
+      "menu": [
+        {
+          "id": "f13",
+          "name": "Premium Egusi",
+          "price": 6000,
+          "image": "images/food/rice2.webp",
+          "category": "swallow"
+        },
+        {
+          "id": "f24",
+          "name": "Rice and Stew",
+          "price": 5000,
+          "image": "images/food/rice7.webp",
+          "category": "rice"
+        }
+      ]
+    },
+    {
+      "id": "v11",
+      "name": "Chop Better",
+      "image": "images/vendors/vendor11.webp",
+      "rating": 4.5,
+      "deliveryTime": "20-30 min",
+      "address": "Goldie Street",
+      "phone": "0701 444 8888",
+      "email": "orders@chopbetter.com",
+      "description": "Rice dishes and local stews.",
+      "menu": [
+        {
+          "id": "f14",
+          "name": "Chop Life",
+          "price": 3500,
+          "image": "images/food/suya3.webp",
+          "category": "breakfast"
+        },
+        {
+          "id": "f15",
+          "name": "Jollof Rice & Chicken",
+          "price": 3500,
+          "image": "images/food/rice6.webp",
+          "category": "rice"
+        }
+      ]
+    },
+    {
+      "id": "v12",
+      "name": "Calabar Kitchen",
+      "image": "images/vendors/vendor12.webp",
+      "rating": 4.3,
+      "deliveryTime": "25-35 min",
+      "address": "Airport Road",
+      "phone": "0805 777 6666",
+      "email": "wings@stop.ng",
+      "description": "Spicy buffalo wings.",
+      "menu": [
+        {
+          "id": "f16",
+          "name": "Afang Special",
+          "price": 3200,
+          "image": "images/food/swallow5.webp",
+          "category": "swallow"
+        },
+        {
+          "id": "f17",
+          "name": "Ogbono",
+          "price": 6200,
+          "image": "images/food/swallow1.webp",
+          "category": "swallow"
+        }
+      ]
+    }
+  ]
+}

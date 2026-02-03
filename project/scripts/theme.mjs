@@ -1,7 +1,7 @@
 // js/theme.mjs
 
 /**
- * Gets the stored theme preference or defaults to light
+ * Gets the default theme to light
  */
 export const getSavedTheme = () => localStorage.getItem('theme') || 'light';
 

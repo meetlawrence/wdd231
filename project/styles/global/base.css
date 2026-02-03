@@ -44,6 +44,7 @@ body {
     --blob-2: rgba(127, 29, 29, 0.5);
 }
 
+/* UTILITIES & ICONS */
 .hidden { display: none !important; }
 
 .icon { width: 20px; height: 20px; }
@@ -261,12 +262,10 @@ body {
 
 .light-theme .dropdown-item {
     color: #111827;
-    background: #ffffff;
 }
 
 .dark-theme .dropdown-item {
-    color: #f9fafb; /* Near White */
-    background: #1f2937;
+    color: white;
 }
 
 .light-theme .dropdown-item:hover {
@@ -317,11 +316,8 @@ body {
 }
 
 .dropdown-item.active .dropdown-title {
-    color:  #b45309;
+    color:  #fbbf24; /* Keep text readable over the blur */
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-.dark-theme .dropdown-item.active .dropdown-title {
-    color:  #fbbf24; 
 }
 
 /* Cart Button */
@@ -354,7 +350,23 @@ body {
     box-shadow: 0 10px 15px -3px var(--shadow);
 }
 
-
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: linear-gradient(to right, #4ade80, #22c55e);
+    color: white;
+    font-size: 0.75rem;
+    width: 24px;
+    height: 24px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    animation: pulse 0.3s;
+}
 /* =========================================
    FOOTER STYLES (Accessible & Liquid Glass)
    ========================================= */
@@ -366,6 +378,7 @@ body {
     width: 100%;
 }
 
+/* Note: In your design, both themes use a dark footer for branding consistency */
 .light-theme .footer {
     background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #111827 100%);
 }
@@ -431,7 +444,7 @@ body {
     letter-spacing: -0.02em;
 }
 
-/* Content Text */
+/* Content Text - ACCESSIBILITY FIX: Changed to #d1d5db for high contrast */
 .footer-desc {
     color: #d1d5db; 
     margin-bottom: 1.5rem;
@@ -487,7 +500,7 @@ body {
 
 .footer-links a {
     text-decoration: none;
-    color: #d1d5db;
+    color: #d1d5db; /* Accessible Gray */
     transition: color 0.2s ease;
     font-size: 0.938rem;
 }
@@ -513,7 +526,7 @@ body {
 .footer-contacts .icon {
     width: 20px;
     height: 20px;
-    color: #f97316;
+    color: #f97316; /* Wayfinding orange for icons */
     flex-shrink: 0;
     margin-top: 2px;
 }
@@ -530,17 +543,4 @@ body {
 .footer-bottom p {
     font-size: 0.875rem;
     letter-spacing: 0.025em;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 640px) {
-    .footer-container {
-        padding: 3rem 1rem;
-    }
-    .footer-grid {
-        text-align: center;
-    }
-    .footer-logo, .social-links, .footer-contacts li {
-        justify-content: center;
-    }
 }

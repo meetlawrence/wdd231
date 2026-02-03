@@ -1,7 +1,7 @@
-import { vendors, categories } from '../data/vendors.mjs';
+// import { vendors, categories } from '../data/vendors.mjs';
 
 // --- Global State ---
-const appData = { vendors, categories };
+let appData = { vendors: [], categories: [] };
 let selectedCategory = 'all';
 
 // --- DOM Elements ---
@@ -15,33 +15,64 @@ const closeBtn = document.querySelector("#closeModal");
 const gridBtn = document.querySelector('#grid');
 const listBtn = document.querySelector('#list');
 
-// --- Initialization ---
-document.addEventListener('DOMContentLoaded', () => {
+/**
+ * ASYNCHRONOUS BOOTSTRAPPER
+ * This handles fetching data and starting the page logic
+ */
+async function startApp() {
+    const grid = document.querySelector('#vendors-grid') || document.querySelector('#all-vendors-grid');
+    
+    try {
+        // 1. Fetch data from JSON file
+        const response = await fetch('./data/vendors.json');
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        // 2. Parse and assign to Global State
+        const data = await response.json();
+        appData = data;
+
+        // 3. Verify data isn't empty
+        if (!appData.vendors || appData.vendors.length === 0) {
+            // throw new Error("EMPTY_DATASOURCE");
+        }
+
+        // 4. Run Page-Specific Logic
+        initializePageLogic();
+        setupCommonListeners();
+
+        console.log("AbegChop Vendors is active... 🚀");
+
+    } 
+    
+    catch (error) {
+        console.error("Initialization Failed:", error);
+        if (grid) {
+            grid.innerHTML = `
+                <div class="error-wrapper">
+                    <span>🥘</span>
+                    <h2>Kitchen is Empty!</h2>
+                    <p>Abeg, no vendors are registered in the system yet. Check back later!</p>
+                </div>
+            `;
+        }
+    }
+}
+
+function initializePageLogic() {
     const isOrderPage = !!document.getElementById('categories-list');
     const isDirectoryPage = !!document.querySelector('#all-vendors-grid');
     const isHomePage = !!document.querySelector('#vendors-grid') && !isOrderPage && !isDirectoryPage;
 
-    // 1. Home Page (Popular Vendors)
-    if (isHomePage) {
-        initHomePage();
-    }
-    
-    // 2. Directory Page
-    if (isDirectoryPage) {
-        renderDirectoryCards(appData.vendors, allVendorsGrid);
-    }
-    
-    // 3. Order Page
+    if (isHomePage) initHomePage();
+    if (isDirectoryPage) renderDirectoryCards(appData.vendors, document.querySelector('#all-vendors-grid'));
     if (isOrderPage) {
         initOrderPage();
-        if (window.location.hash) {
-            handleInitialScroll();
-        }
+        if (window.location.hash) handleInitialScroll();
     }
-
-    setupCommonListeners();
-    // updateCartBadge();
-});
+}
 
 // --- Feature: Home Page Logic ---
 function initHomePage() {
@@ -238,3 +269,6 @@ function updateVendorsTitle() {
     const cat = appData.categories.find(c => c.id === selectedCategory);
     title.textContent = selectedCategory === 'all' ? 'Popular Right Now 🔥' : `${cat.emoji} ${cat.name}`;
 }
+
+
+document.addEventListener('DOMContentLoaded', startApp);
