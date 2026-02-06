@@ -68,26 +68,6 @@ const courses = [
         description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, and basic API usage.',
         technology: ['HTML', 'CSS', 'JavaScript'],
         completed: true
-    },
-    {
-        subject: 'WDD',
-        number: 330,
-        title: 'Web Frontend Development II',
-        credits: 3,
-        certificate: 'Web and Computer Programming',
-        description: 'Mastering vanilla JavaScript to provide a solid foundation for web development. This course focuses on pure JS without frameworks to prepare for full-stack development in WDD 430.',
-        technology: ['HTML', 'CSS', 'JavaScript'],
-        completed: false
-    },
-    {
-        subject: 'WDD',
-        number: 430,
-        title: 'Full Stack Web Development',
-        credits: 3,
-        certificate: 'Web and Computer Programming',
-        description: 'This course focuses on creating complete web applications. It uses a JavaScript framework to manage both client-side and server-side development, building upon the vanilla JS skills learned in WDD 330.',
-        technology: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'React'],
-        completed: false
     }
 ];
 
