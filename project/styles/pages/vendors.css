@@ -25,7 +25,7 @@
 
 .vendors-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 2rem;
 }
 
@@ -321,6 +321,11 @@
         margin: 1rem auto;
         text-align: center;
     }
+
+
+    .vendors-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
     /* --- LIST MODE OVERRIDES --- */
         
     /*  Change the wrapper to a simple vertical column */
