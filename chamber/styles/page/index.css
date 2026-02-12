@@ -258,8 +258,10 @@
 
 /* Hover State */
 .spotlight-card:hover {
-    background-color: var(--accent4);
+    /* background-color: var(--accent); */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* perspective: 1000px; */
+    /* filter: hue-rotate(150deg); */
 }
 
 .spotlight-card:hover .spotlight-name {
