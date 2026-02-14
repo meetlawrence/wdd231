@@ -38,8 +38,8 @@
     <link rel="stylesheet" href="styles/pages/join.css">
 
     <script type="module" src="scripts/main.js"></script>
-    <!-- <script type="module" src="scripts/vendors.js"></script> -->
-    <!-- <script type="module" src="scripts/cart.js"></script> -->
+    <script src="scripts/vendors.js" defer></script>
+
     
 </head>
 
@@ -115,8 +115,7 @@
 
                         <hr class="dropdown-divider">
 
-                        <a href="#" class="dropdown-item"
-                            onclick="alert('Track Order feature coming soon! 🚀'); return false;">
+                        <a href="#" id="track-order" class="dropdown-item">
                             <span class="dropdown-emoji" aria-hidden="true">📦</span>
                             <div>
                                 <p class="dropdown-title">Track Order</p>
