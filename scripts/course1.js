@@ -119,8 +119,19 @@ const courses = [
         certificate: 'Web Development',
         cat: 'C2',
         description: 'This course will continue with the topics presented in WDD 231 Web Front-end Development I: Building websites with HTML, CSS, and Javascript. This course will have a stronger emphasis on Javascript development and mobile design as students create mobile web applications.',
-        technology: ['HTML', 'CSS', 'JavaScript'],
-        completed: false
+        technology: ['HTML', 'CSS', 'JavaScript', 'AJAX'],
+        completed: true
+    },
+       {
+        subject: 'CSE',
+        number: 340,
+        title: 'Web Backend Development',
+        credits: 3,
+        certificate: 'Web Development',
+        cat: 'C2',
+        description: 'This programming course focuses on constructing dynamic web sites using server-side languages, making use of databases and design patterns. The concepts introduced in Web Frontend Development courses are expected to be continued and implemented.',
+        technology: ['node.js', 'PostgreSQL'],
+        completed: true
     },
     {
         subject: 'WDD',
@@ -131,6 +142,17 @@ const courses = [
         cat: 'C2',
         description: 'This course focuses on creating complete web applications. It uses a JavaScript framework to manage both client-side and server-side development, building upon the vanilla JS skills learned in WDD 330.',
         technology: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'React', 'NoSQL'],
+        completed: false
+    },
+    {
+        subject: 'CSE',
+        number: 341,
+        title: 'Web Services',
+        credits: 3,
+        certificate: 'Web Development',
+        cat: 'C2',
+        description: 'Learning to create and consume RESTful APIs and web services.',
+        technology: ['Node.js', 'MongoDB'],
         completed: false
     },
 
@@ -176,28 +198,6 @@ const courses = [
         cat: 'C3',
         description: 'Learning to build robust applications using the .NET framework and C#.',
         technology: ['.NET', 'C#'],
-        completed: false
-    },
-    {
-        subject: 'CSE',
-        number: 340,
-        title: 'Web Backend Development',
-        credits: 3,
-        certificate: 'Web Development',
-        cat: 'C2',
-        description: 'This programming course focuses on constructing dynamic web sites using server-side languages, making use of databases and design patterns. The concepts introduced in Web Frontend Development courses are expected to be continued and implemented.',
-        technology: ['PHP', 'MySQL'],
-        completed: false
-    },
-    {
-        subject: 'CSE',
-        number: 341,
-        title: 'Web Services',
-        credits: 3,
-        certificate: 'Web Development',
-        cat: 'C2',
-        description: 'Learning to create and consume RESTful APIs and web services.',
-        technology: ['Node.js', 'MongoDB'],
         completed: false
     },
     {

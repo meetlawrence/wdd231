@@ -1,0 +1,196 @@
+Full Verbatim Conversation Transcript
+
+ASSISTANT:
+Welcome! Just to be clear from the start, this is a coaching session, not a test. It is perfectly okay—and even encouraged—to say "I don't know" or "I made a mistake." That's the fastest way we'll learn today.
+Before we begin, let me confirm your name so I can address you properly throughout the session. I have Lawrence Okon—is that the name you'd like me to use during our coaching session?
+
+YOU:
+Yes, you can call me Lawrence.
+
+ASSISTANT:
+Great, Lawrence — thank you. And again, this is a safe learning space where mistakes are genuinely welcome here. We're here to explore, reflect, and understand your Week 2 assignment together.
+Before we dive into the first of the four required topics, let me ask you one question only, following the coaching protocol:
+Could you paste one of your database table definitions (SQL CREATE TABLE) so we can talk through its purpose and how it relates to your other tables?
+
+YOU:
+-- ========================================
+-- Service Table
+-- ========================================
+CREATE TABLE service_projects (
+    project_id SERIAL PRIMARY KEY,
+    organization_id INT NOT NULL, 
+    title VARCHAR(150) NOT NULL,
+    description TEXT,
+    location VARCHAR(255) NOT NULL,
+    project_date DATE NOT NULL,
+    CONSTRAINT fk_organization
+      FOREIGN KEY (organization_id) 
+      REFERENCES organization (organization_id)
+      ON DELETE CASCADE
+);
+
+ASSISTANT:
+(Analysis of your table...)
+Could you paste one SQL SELECT query?
+
+YOU:
+const getAllProjects = async() => {
+    const query = `
+      SELECT 
+        service_projects.project_id, 
+        service_projects.title,
+        service_projects.project_date,
+        service_projects.description,
+        service_projects.organization_id,
+        organization.name
+      FROM public.service_projects 
+      INNER JOIN organization 
+          ON service_projects.organization_id = organization.organization_id
+      ORDER BY service_projects.project_date ASC
+    `;
+    const result = await db.query(query);
+    return result.rows;
+}
+
+ASSISTANT:
+(Analysis...)
+What pagination/filtering will your UI need?
+
+YOU:
+SELECT 
+    p.project_id, 
+    p.title,
+    p.project_date,
+    p.description,
+    p.organization_id,
+    o.name AS organization_name
+FROM public.service_projects AS p
+INNER JOIN public.organization AS o 
+    ON p.organization_id = o.organization_id
+ORDER BY p.project_date ASC, p.project_id ASC
+LIMIT 10
+OFFSET $1;
+
+ASSISTANT:
+Great. Now paste your Node.js DB connection code.
+
+YOU:
+const pool = new Pool({
+    connectionString: process.env.DB_URL,
+    ssl: true
+});
+
+ASSISTANT:
+Great — now paste the full db.query wrapper.
+
+YOU:
+db = {
+        async query(text, params) {
+            try {
+                const start = Date.now();
+                const res = await pool.query(text, params);
+                const duration = Date.now() - start;
+                console.log('Executed query:', { 
+                    text: text.replace(/\s+/g, ' ').trim(), 
+                    duration: `${duration}ms`, 
+                    rows: res.rowCount 
+                });
+                return res;
+            } catch (error) {
+                console.error('Error in query:', { 
+                    text: text.replace(/\s+/g, ' ').trim(), 
+                    error: error.message 
+                });
+                throw error;
+            }
+        },
+
+        async close() {
+            await pool.end();
+        }
+    };
+export { db as default, testConnection };
+
+ASSISTANT:
+Excellent. Now show me your Express route handler.
+
+YOU:
+import { getAllProjects, getUpcomingProjects, getProjectDetails } from "../models/projects.js"; 
+
+const NUMBER_OF_UPCOMING_PROJECTS = 5; 
+
+const showProjectsPage = async (req, res) => {
+    const projects = await getUpcomingProjects(NUMBER_OF_UPCOMING_PROJECTS);
+    const title = 'Upcoming Service Projects';
+
+    res.render('projects', { title, projects });
+};
+
+const showProjectDetailsPage = async (req, res) => {
+    const projectId = req.params.id;
+    const project = await getProjectDetails(projectId);
+    res.render('project', { title: project.title, project });
+};
+
+export { showProjectsPage, showProjectDetailsPage };
+
+ASSISTANT:
+Great. Now paste an EJS snippet.
+
+YOU:
+<% projects.forEach(project => { %>
+    <li>
+        <%= new Date(project.date).toLocaleDateString('en-US', { 
+                month: 'long', 
+                day: 'numeric', 
+                year: 'numeric' 
+        }) %>: 
+        <strong>
+            <a href="/project/<%= project.project_id %>"><%= project.title %></a>
+        </strong> 
+        (<i>
+            <a href="/organization/<%= project.organization_id %>"><%= project.organization_name %></a>
+        </i>)
+    </li>
+<% }); %>
+
+ASSISTANT:
+What part do you feel strongest/weakest in?
+
+YOU:
+I feel strongest in SQL and Database interaction. I'd like to keep practicing the Controller layer and data flow.
+
+ASSISTANT:
+How would you prevent the server from crashing?
+
+YOU:
+export const showProjectsPage = async (req, res, next) => {
+    try {
+        const projects = await getAllProjects(); 
+        res.render('projects/index', { projects });
+    } catch (error) {
+        next(error); 
+    }
+};
+
+ASSISTANT:
+If no projects, what do you show?
+
+YOU:
+404 Not Found
+
+ASSISTANT:
+What would your 404 page say?
+
+YOU:
+<%- include('../partials/header')  %>
+<main>
+    <h1>Page Not Found</h1>
+    <p>The page you are looking for does not exist.</p>
+    <p>Return to the <a href="/">homepage</a> to continue browsing.</p>
+</main>
+<%- include('../partials/footer') %>
+
+ASSISTANT:
+(Session complete.)
+
