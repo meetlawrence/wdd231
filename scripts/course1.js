@@ -142,7 +142,7 @@ const courses = [
         cat: 'C2',
         description: 'This course focuses on creating complete web applications. It uses a JavaScript framework to manage both client-side and server-side development, building upon the vanilla JS skills learned in WDD 330.',
         technology: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'React', 'NoSQL'],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -153,7 +153,7 @@ const courses = [
         cat: 'C2',
         description: 'Learning to create and consume RESTful APIs and web services.',
         technology: ['Node.js', 'MongoDB'],
-        completed: false
+        completed: true
     },
 
     // --- Newly Added Courses (Software Development Certificate) ---
