@@ -165,8 +165,8 @@ const courses = [
         certificate: 'Software Development',
         cat: 'C3',
         description: 'Introduction to data structures such as stacks, queues, linked lists, trees, and hash tables to optimize data handling.',
-        technology: ['C#', '.NET'],
-        completed: false
+        technology: ['C#'],
+        completed: true
     },
     {
         subject: 'CSE',
@@ -177,7 +177,7 @@ const courses = [
         cat: 'C3',
         description: 'Focuses on the strategies and techniques for testing software to ensure reliability and quality.',
         technology: ['JavaScript', 'Jest'],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -198,7 +198,7 @@ const courses = [
         cat: 'C3',
         description: 'Learning to build robust applications using the .NET framework and C#.',
         technology: ['.NET', 'C#'],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -211,41 +211,40 @@ const courses = [
         technology: ['Agile', 'Git'],
         completed: false
     },
-    // {
-    //     subject: 'CSE',
-    //     number: 300,
-    //     title: 'Professional Readiness',
-    //     credits: 3,
-    //     certificate: 'Software Development',
-    //     cat: 'C3',
-    //     description: 'Preparing for the transition from student to professional in the tech industry.',
-    //     technology: ['Soft Skills'],
-    //     completed: false
-    // },
+    {
+        subject: 'CSE',
+        number: 300,
+        title: 'Professional Readiness',
+        credits: 3,
+        certificate: 'Software Development',
+        cat: 'C3',
+        description: 'Preparing for the transition from student to professional in the tech industry.',
+        technology: ['Soft Skills'],
+        completed: false
+    },
 
-    // --- Additional Required Courses ---
-    // {
-    //     subject: 'GS',
-    //     number: 170,
-    //     title: 'Career Development',
-    //     credits: 1,
-    //     certificate: 'General Education',
-    //     cat: 'GE',
-    //     description: 'Developing skills for career planning and job searching.',
-    //     technology: [],
-    //     completed: false
-    // },
-    // {
-    //     subject: 'BUS',
-    //     number: 321,
-    //     title: 'Organizational Leadership',
-    //     credits: 3,
-    //     certificate: 'General Education',
-    //     cat: 'GE',
-    //     description: 'Understanding the principles of leadership within organizations.',
-    //     technology: [],
-    //     completed: false
-    // },
+    {
+        subject: 'GS',
+        number: 170,
+        title: 'Career Development',
+        credits: 1,
+        certificate: 'General Education',
+        cat: 'GE',
+        description: 'Developing skills for career planning and job searching.',
+        technology: [],
+        completed: false
+    },
+    {
+        subject: 'BUS',
+        number: 321,
+        title: 'Organizational Leadership',
+        credits: 3,
+        certificate: 'General Education',
+        cat: 'GE',
+        description: 'Understanding the principles of leadership within organizations.',
+        technology: [],
+        completed: false
+    },
     {
         subject: 'CSE',
         number: 499,
